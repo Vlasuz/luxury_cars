@@ -1,0 +1,100 @@
+.blog-page{
+	.catalog__pagination{
+		margin-top: 80px;
+	}
+	.top{
+		height: 497px;
+		.wrapper{
+			height: 100%;
+			align-items: flex-start;
+		}
+		&__text{
+			position: relative;
+			z-index: 2;
+			padding-top: 36px;
+			padding-left: 46px;
+		}
+	}
+	time{
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 25px;
+		color: #C4C4C4;
+		margin-bottom: 10px;
+		display: block;
+	}
+	.service{
+		margin-top: 85px;
+		button{
+			background: radial-gradient(62.39% 62.39% at 50% 50%, #030B21 0%, #04102D 9.9%, #04102D 18.75%, #04102D 28.65%, #04102D 36.97%, #04102D 45.83%, #051235 52.6%, #0A1D4F 63%, #0B1C4A 63.01%, #203A7D 77.08%, #2E4B97 88.54%, #3252A7 93.75%, #4369CC 99.99%, #5181FF 100%);
+			border: 1px solid #FFFFFF;
+			backdrop-filter: blur(5px);
+			width: 122px;
+			height: 122px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			margin-left: auto;
+			margin-top: 50px;
+			&:hover{
+				background: #4F7DF6;
+			}
+			&:active{
+				background: radial-gradient(62.39% 62.39% at 50% 50%, #030B21 0%, #04102D 9.9%, #04102D 18.75%, #04102D 28.65%, #04102D 36.97%, #04102D 45.83%, #051235 52.6%, #0A1D4F 63%, #0B1C4A 63.01%, #203A7D 77.08%, #2E4B97 88.54%, #3252A7 93.75%, #4369CC 99.99%, #5181FF 100%);
+			}
+		}
+		&__item{
+			&:nth-child(2n + 2){
+				button{
+					margin-left: 0;
+					transform: rotate(180deg);
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 1024px) {
+		.service{
+			&__item{
+				&:nth-child(2n + 2){
+					button{
+						transform: rotate(-90deg);
+						margin-left: auto;
+					}
+				}
+			}
+			button{
+				width: 90px;
+				height: 90px;
+				transform: rotate(-90deg);
+				margin-top: 20px;
+				margin-bottom: 40px;
+				img{
+					height: 18px;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 576px) {
+		.catalog__pagination{
+			margin-top: 33px;
+		}
+		time{
+			font-size: 13px;
+			line-height: 25px;
+			margin-bottom: 5px;
+		}
+		.top{
+			height: 242px;
+			&__text{
+				padding-top: 20px;
+				padding-left: 20px;
+			}
+			&__bgd{
+				background-size: cover;
+				background-position: center;
+			}
+		}
+	}
+}

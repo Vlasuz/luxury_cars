@@ -1,0 +1,310 @@
+extends includes/head.pug
+block body
+
+	body
+		include includes/header.pug
+
+		main.blog-page
+
+			section.breadcrumbs
+				.wrapper
+					ul
+						li
+							a(href="index.html") Главная
+						li
+							span Блог
+
+			section.top
+				.wrapper
+					.top__bgd(style="background-image: url('img/description/photo-1.jpg');")
+					.top__text
+						h1 BMW X7 M60i xDrive 
+						b ab 66.402,00 €
+						button.btn.open-popup Сделать запрос
+
+
+			section.single.single-description
+				.wrapper.wrapper_mini
+					ul.single__navigation
+						li
+							a(href="#block-1").btn Основные данные
+						li
+							a(href="#block-2").btn Дополнительная (экстра) комплектация
+						li
+							a(href="#block-3").btn Базовая комплектация
+						li
+							a(href="#block-4").btn Расход и эмиссия
+					.single__navigation_mob
+						.select
+							.select__head
+								span Основные данные
+							.select__body
+								ul
+									li
+										a(href="#block-1").btn.select__item Основные данные
+									li
+										a(href="#block-2").btn.select__item Дополнительная (экстра) комплектация
+									li
+										a(href="#block-3").btn.select__item Базовая комплектация
+									li
+										a(href="#block-4").btn.select__item Расход и эмиссия
+
+					.single__slider
+						.swiper-wrapper
+							.swiper-slide
+								img(src="img/description/slide-1.jpg" alt="")
+							.swiper-slide
+								img(src="img/description/slide-2.jpg" alt="")
+							.swiper-slide
+								img(src="img/description/slide-3.jpg" alt="")
+
+						.arrows
+							.swiper-button-prev
+								img(src="img/icons/arr-left-wh.svg" alt="")
+
+							.swiper-button-next
+								img(src="img/icons/arr-right-wh.svg" alt="")
+
+
+
+					.block#block-1
+						h2 Основные данные:
+						ol
+							li
+								.li__icon
+									img(src="img/icons/arr-right-wh.svg" alt="")
+								.li__text
+									h3 Количество дверей:
+									p 5
+							li
+								.li__icon
+									img(src="img/icons/arr-right-wh.svg" alt="")
+								.li__text
+									h3 Обивка:
+									p Кожа двухцветная маккиато бежевая / черная Объём: 2,999 куб.см
+							li
+								.li__icon
+									img(src="img/icons/arr-right-wh.svg" alt="")
+								.li__text
+									h3 Количество посадочных мест:
+									p 7
+							li
+								.li__icon
+									img(src="img/icons/arr-right-wh.svg" alt="")
+								.li__text
+									h3 Количество посадочных мест:
+									p 7
+							li
+								.li__icon
+									img(src="img/icons/arr-right-wh.svg" alt="")
+								.li__text
+									h3 Количество посадочных мест:
+									p 7
+							li
+								.li__icon
+									img(src="img/icons/arr-right-wh.svg" alt="")
+								.li__text
+									h3 Количество посадочных мест:
+									p 7
+							li
+								.li__icon
+									img(src="img/icons/arr-right-wh.svg" alt="")
+								.li__text
+									h3 Количество посадочных мест:
+									p 7
+							li
+								.li__icon
+									img(src="img/icons/arr-right-wh.svg" alt="")
+								.li__text
+									h3 Количество посадочных мест:
+									p 7
+							li
+								.li__icon
+									img(src="img/icons/arr-right-wh.svg" alt="")
+								.li__text
+									h3 Количество посадочных мест:
+									p 7
+							li
+								.li__icon
+									img(src="img/icons/arr-right-wh.svg" alt="")
+								.li__text
+									h3 Количество посадочных мест:
+									p 7
+							li
+								.li__icon
+									img(src="img/icons/arr-right-wh.svg" alt="")
+								.li__text
+									h3 Количество посадочных мест:
+									p 7
+							li
+								.li__icon
+									img(src="img/icons/arr-right-wh.svg" alt="")
+								.li__text
+									h3 Количество посадочных мест:
+									p 7
+
+					.video
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/tGfM9vTRWqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						.video__poster
+							img(src="img/description/photo-2.jpg" alt="")
+						.video__play
+							img(src="img/icons/play.svg" alt="")
+
+					.block#block-2
+						h2 Дополнительная (экстра) комплектация:
+						.single__additional
+							.additional__item
+								h3 Колеса/Шасси
+								ul
+									li 45,7 см (18&quot;) 10-спицевые легкосплавные диски
+									li Пакет памяти для водителя и переднего пассажира
+									li Радио/Связь
+									li КОМАНД Онлайн
+									li Система экстренного вызова Mercedes-Benz
+							.additional__item
+								h3 Внутренний
+								ul
+									li Автоматический климат-контроль THERMOTRONIC
+									li Функция памяти
+									li Подогрев сидений водителя и переднего пассажира
+									li Подогрев сидений сзади
+							.additional__item
+								h3 Радио/Связь
+								ul
+									li КОМАНД Онлайн
+									li Система экстренного вызова Mercedes-Benz
+							.additional__item
+								h3 Безопасность/Технология
+								ul
+									li Адаптивная система помощи при дальнем свете Плюс
+									li Активная дистанционная помощь DISTRONIC
+									li Активная помощь при парковке с PARKTRONIC
+									li Стартер-генератор EQ Boost
+									li Светодиодная интеллектуальная система освещения правостороннего движения
+									li Kamera zadnego vida
+									li Боковые сумки сзади
+									li Тачпад с контроллером
+									li Raspoznovanie дорожных знакov
+							.additional__item
+								h3 Другое
+								ul
+									li 9Г-ЭЛЕКТРОНИК
+									li Экшн-кар
+									li Активная система помощи при ограничении скорости
+									li Активная система помощи при рулевом управлении
+									li Активная помощь в смене полосы движения
+									li Окружающее освещение
+									li Андроид Авто
+									li Эппл КарПлей
+									li Расширенный автоматический перезапуск в пробках
+									li Пакет помощи водителю
+									li Защита пешеходов
+									li Внутреннее и наружное зеркала заднего вида автоматически затемняются со стороны водителя
+									li Хедлайнер ткань черный
+									li Беспроводная система зарядки для мобильных устройств на переднем крае
+									li Модуль связи (LTE) для использования услуг Mercedes me connect
+									li КОЖА / НАППА / СЕМИАНИЛИН
+									li МНОГОЛУЧЕВОЙ СВЕТОДИОД
+									li Многофункциональное рулевое колесо из кожи наппа
+									li Бензиновый сажевый фильтр
+									li Парковочный пакет с камерой заднего вида
+									li Контроль давления в шинах
+									li Ступень нагрузки на корпус 1
+									li Интеграция со смартфонами
+									li Регулировка скорости на основе маршрута
+									li Вариант модуля технической связи для ЕЭК
+									li Предварительная установка для мониторинга транспортных средств
+									li Предварительная установка для настройки автомобиля
+									li Предварительная установка для автомобильного офиса
+
+					.photo
+						img(src="img/description/photo-3.jpg" alt="")
+
+					.block#block-3
+						.single__base
+							h2 Базовая комплектация:
+							.base__item
+								ul
+									li Смешанный
+									li 6 цил. Инжекторный двигатель
+									li АДАПТИВНЫЙ ТОРМОЗ с функцией УДЕРЖАНИЯ
+									li ПОМОЩЬ ВНИМАНИЮ
+									li Система помощи при торможении BAS
+									li Цифровые инструкции по эксплуатации для COMAND Online
+									li Прямое рулевое управление
+									li ESP Помощь в динамике поворотов
+									li ЕС 6dtemp
+									li Электронная программа стабилизации (ESP®)
+									li Система помощи при фарах
+									li Автомобильный ключ в черном глянце с обшивкой из матового хрома
+									li Электрический стояночный тормоз
+									li Бардачок запираемый, кондиционированный и освещенный
+									li Медиа интерфейс
+									li Задний противотуманный фонарь светодиодной технологии, центрально расположенный в заднем фартуке
+									li Система PRE-SAFE с импульсом PRE-SAFE®®
+									li Стеклоочистители с датчиком дождя
+									li Система помощи при боковом ветре
+									li Стандартное оборудование
+									li Боковые сумки для водителя и Beif. (гребень. Грудной/тазовый мешок)
+									li Скамейка с откидным центральным подлокотником, цельная и неподвижная
+									li Аптечка первой помощи
+									li Передние сиденья с электрорегулировкой
+									li Передние сиденья с функцией EASY-ENTRY
+									li Предупреждающий треугольник
+									li Оконные сумки
+									li Теплоизоляционное стекло для бокового, заднего и ветрового стекла
+
+					.block#block-4
+						h2 Расход и эмиссия:
+						ol
+							li
+								.li__icon
+									img(src="img/icons/arr-right-wh.svg" alt="")
+								.li__text
+									h3 Количество дверей:
+									p 5
+							li
+								.li__icon
+									img(src="img/icons/arr-right-wh.svg" alt="")
+								.li__text
+									h3 Количество дверей:
+									p 5
+							li
+								.li__icon
+									img(src="img/icons/arr-right-wh.svg" alt="")
+								.li__text
+									h3 Количество дверей:
+									p 5
+							li
+								.li__icon
+									img(src="img/icons/arr-right-wh.svg" alt="")
+								.li__text
+									h3 Количество дверей:
+									p 5
+							li
+								.li__icon
+									img(src="img/icons/arr-right-wh.svg" alt="")
+								.li__text
+									h3 Количество дверей:
+									p 5
+							li
+								.li__icon
+									img(src="img/icons/arr-right-wh.svg" alt="")
+								.li__text
+									h3 Количество дверей:
+									p 5
+
+
+
+
+
+			button.block-to-up
+				.arrs
+					svg(width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg")
+						path(d="M5.99274 2.88834L0.207681 8.6735C0.0737717 8.80731 -5.82426e-08 8.98592 -4.99176e-08 9.17638C-4.15926e-08 9.36683 0.0737717 9.54545 0.207681 9.67925L0.633613 10.1053C0.911155 10.3825 1.36224 10.3825 1.63936 10.1053L6.4973 5.24734L11.3606 10.1107C11.4945 10.2445 11.6731 10.3184 11.8634 10.3184C12.054 10.3184 12.2325 10.2445 12.3665 10.1107L12.7923 9.68464C12.9262 9.55073 13 9.37222 13 9.18177C13 8.99131 12.9262 8.8127 12.7923 8.67889L7.00197 2.88834C6.86764 2.75422 6.68829 2.68055 6.49762 2.68097C6.30622 2.68055 6.12697 2.75422 5.99274 2.88834Z" fill="white")
+					svg(width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg")
+						path(d="M5.99274 2.88834L0.207681 8.6735C0.0737717 8.80731 -5.82426e-08 8.98592 -4.99176e-08 9.17638C-4.15926e-08 9.36683 0.0737717 9.54545 0.207681 9.67925L0.633613 10.1053C0.911155 10.3825 1.36224 10.3825 1.63936 10.1053L6.4973 5.24734L11.3606 10.1107C11.4945 10.2445 11.6731 10.3184 11.8634 10.3184C12.054 10.3184 12.2325 10.2445 12.3665 10.1107L12.7923 9.68464C12.9262 9.55073 13 9.37222 13 9.18177C13 8.99131 12.9262 8.8127 12.7923 8.67889L7.00197 2.88834C6.86764 2.75422 6.68829 2.68055 6.49762 2.68097C6.30622 2.68055 6.12697 2.75422 5.99274 2.88834Z" fill="white")
+				span Вверх
+
+		include includes/footer.pug
+		include includes/scripts.pug

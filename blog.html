@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Luxury Cars</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Website">
+  <meta name="keywords" content="Website">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="fonts/oswald/stylesheet.css">
+  <link rel="stylesheet" href="fonts/roboto/stylesheet.css">
+  <link rel="stylesheet" href="fonts/mazzard/stylesheet.css">
+  <!-- ** STYLE ** -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- ** HEADER ** -->
+  <header>
+    <div class="wrapper">
+      <div class="header"><a class="header__logo" href="index.html"><span>Luxury Cars</span></a>
+        <nav class="header__menu">
+          <ul>
+            <li><a href="index.html">Главная</a>
+            </li>
+            <li class="li_active"><a href="catalog.html">Автомашины</a>
+            </li>
+            <li class="have-child"><a href="service.html">Сервис</a>
+              <ul>
+                <li><a href="service.html">Осмотр</a>
+                </li>
+                <li><a href="service.html">Оплата</a>
+                </li>
+                <li><a href="service.html">Доставка</a>
+                </li>
+                <li><a href="service.html">Покупка</a>
+                </li>
+                <li><a href="service.html">Оформление документов</a>
+                </li>
+                <li><a href="service.html">Растаможка</a>
+                </li>
+                <li><a href="service.html">Запчасти</a>
+                </li>
+                <li><a href="service.html">О компании</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="contacts.html">Контакты</a>
+            </li>
+            <li><a href="blog.html">Блог</a>
+            </li>
+            <li><a href="faq.html">Часто задаваемые вопросы</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__burger btn">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="header__rht">
+          <ul class="header__socials">
+            <li>
+              <a href="#">
+                <img src="img/icons/whatsapp.svg" alt="ico">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/icons/messenger.svg" alt="ico">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/icons/telegram.svg" alt="ico">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/icons/viber.svg" alt="ico">
+              </a>
+            </li>
+          </ul>
+          <div class="header__recall">
+            <div class="recall__head">
+              <div class="head__icon">
+                <img src="img/icons/call.svg" alt="">
+              </div>
+              <div class="head__arr">
+                <img src="img/icons/arr-down-wh.svg" alt="">
+              </div>
+            </div>
+            <div class="recall__body">
+              <ul>
+                <li><a href="#">DE +49 (67) 136-52-34</a>
+                </li>
+                <li><a href="#">KZ +7 (576) 576-14-65</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header__mob">
+          <div class="header__rht">
+            <ul class="header__socials">
+              <li>
+                <a href="#">
+                  <img src="img/icons/whatsapp.svg" alt="ico">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/icons/messenger.svg" alt="ico">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/icons/telegram.svg" alt="ico">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/icons/viber.svg" alt="ico">
+                </a>
+              </li>
+            </ul>
+            <ul class="header__calling">
+              <li><a href="tel:+49671365234">DE +49 (67) 136-52-34</a>
+              </li>
+              <li><a href="tel:+75765761465">KZ +7 (576) 576-14-65</a>
+              </li>
+            </ul>
+          </div>
+          <nav class="header__menu">
+            <ul>
+              <li><a href="index.html">Главная</a>
+              </li>
+              <li><a href="catalog.html">Автомашины</a>
+              </li>
+              <li class="have-child"><a href="service.html">Сервис</a>
+                <ul>
+                  <li><a href="service.html">Осмотр</a>
+                  </li>
+                  <li><a href="service.html">Оплата</a>
+                  </li>
+                  <li><a href="service.html">Доставка</a>
+                  </li>
+                  <li><a href="service.html">Покупка</a>
+                  </li>
+                  <li><a href="service.html">Оформление документов</a>
+                  </li>
+                  <li><a href="service.html">Растаможка</a>
+                  </li>
+                  <li><a href="service.html">Запчасти</a>
+                  </li>
+                  <li><a href="service.html">О компании</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="contacts.html">Контакты</a>
+              </li>
+              <li><a href="blog.html">Блог</a>
+              </li>
+              <li><a href="faq.html">Часто задаваемые вопросы</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ** HEADER ** -->
+  <main class="blog-page">
+    <section class="breadcrumbs">
+      <div class="wrapper">
+        <ul>
+          <li><a href="index.html">Главная</a>
+          </li>
+          <li><span>Блог</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="top">
+      <div class="wrapper">
+        <div class="top__bgd" style="background-image: url('img/blog/photo-1.png');"></div>
+        <div class="top__text">
+          <h1>Блог </h1>
+          <p>Открой для себя все новинки в мире автомашин</p>
+        </div>
+      </div>
+    </section>
+    <section class="service">
+      <div class="wrapper">
+        <div class="service__inner">
+          <a class="service__item" href="single.html">
+            <div class="item__text">
+              <time>Дата публикации: 19.01.2023</time>
+              <h2>Осмотр автомобиля лайф </h2>
+              <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании
+                генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового
+                восприятия.</p>
+              <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным
+                смыслом и придаст неповторимый колорит советских времен.</p>
+              <button>
+                <img src="img/icons/double-arr-rights.svg" alt="">
+              </button>
+            </div>
+            <div class="item__photo">
+              <picture>
+                <source srcset="img/service/photo-1.webp" type="image/webp">
+                  <img src="img/service/photo-1.webp" alt="">
+              </picture>
+            </div>
+          </a>
+          <a class="service__item" href="single.html">
+            <div class="item__text">
+              <time>Дата публикации: 19.01.2023</time>
+              <h2>Осмотр автомобиля лайф </h2>
+              <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании
+                генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового
+                восприятия.</p>
+              <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным
+                смыслом и придаст неповторимый колорит советских времен.</p>
+              <button>
+                <img src="img/icons/double-arr-rights.svg" alt="">
+              </button>
+            </div>
+            <div class="item__photo">
+              <picture>
+                <source srcset="img/service/photo-1.webp" type="image/webp">
+                  <img src="img/service/photo-1.webp" alt="">
+              </picture>
+            </div>
+          </a>
+          <a class="service__item" href="single.html">
+            <div class="item__text">
+              <time>Дата публикации: 19.01.2023</time>
+              <h2>Осмотр автомобиля лайф </h2>
+              <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании
+                генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового
+                восприятия.</p>
+              <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным
+                смыслом и придаст неповторимый колорит советских времен.</p>
+              <button>
+                <img src="img/icons/double-arr-rights.svg" alt="">
+              </button>
+            </div>
+            <div class="item__photo">
+              <picture>
+                <source srcset="img/service/photo-1.webp" type="image/webp">
+                  <img src="img/service/photo-1.webp" alt="">
+              </picture>
+            </div>
+          </a>
+          <a class="service__item" href="single.html">
+            <div class="item__text">
+              <time>Дата публикации: 19.01.20211</time>
+              <h2>Осмотр автомобиля лайф </h2>
+              <ol>
+                <li>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке.</li>
+                <li>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке.</li>
+                <li>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке.</li>
+              </ol>
+              <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным
+                смыслом и придаст неповторимый колорит советских времен.</p>
+              <ul class="payments">
+                <li>
+                  <img src="img/apay.svg" alt="">
+                </li>
+                <li>
+                  <img src="img/gpay.svg" alt="">
+                </li>
+                <li>
+                  <img src="img/mastercard.svg" alt="">
+                </li>
+                <li>
+                  <img src="img/visa.png" alt="">
+                </li>
+              </ul>
+              <button>
+                <img src="img/icons/double-arr-rights.svg" alt="">
+              </button>
+            </div>
+            <div class="item__photo">
+              <picture>
+                <source srcset="img/service/photo-1.webp" type="image/webp">
+                  <img src="img/service/photo-1.webp" alt="">
+              </picture>
+            </div>
+          </a>
+          <a class="service__item" href="single.html">
+            <div class="item__text">
+              <time>Дата публикации: 19.01.2023</time>
+              <h2>Осмотр автомобиля лайф </h2>
+              <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании
+                генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового
+                восприятия.</p>
+              <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным
+                смыслом и придаст неповторимый колорит советских времен.</p>
+              <button>
+                <img src="img/icons/double-arr-rights.svg" alt="">
+              </button>
+            </div>
+            <div class="item__photo">
+              <picture>
+                <source srcset="img/service/photo-1.webp" type="image/webp">
+                  <img src="img/service/photo-1.webp" alt="">
+              </picture>
+            </div>
+          </a>
+        </div>
+        <div class="catalog__pagination">
+          <a class="pagination__arr pagination__arr_prev" href="#">
+            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.55574 5.07078L3.6606 0.17573C3.54738 0.0624223 3.39625 0 3.23509 0C3.07394 0 2.9228 0.0624223 2.80958 0.17573L2.44909 0.536134C2.21451 0.770977 2.21451 1.15267 2.44909 1.38715L6.55966 5.49772L2.44453 9.61285C2.33131 9.72616 2.2688 9.8772 2.2688 10.0383C2.2688 10.1995 2.33131 10.3506 2.44453 10.464L2.80502 10.8243C2.91833 10.9376 3.06938 11 3.23053 11C3.39168 11 3.54282 10.9376 3.65604 10.8243L8.55574 5.92475C8.66923 5.81108 8.73156 5.65932 8.7312 5.49799C8.73156 5.33603 8.66923 5.18436 8.55574 5.07078Z"
+              fill="white" />
+            </svg>
+          </a>
+          <ul class="pagination__nums"><a class="current" href="#">1</a><a href="#">2</a><a href="#">3</a><span>...</span><a href="#">12</a>
+          </ul>
+          <a class="pagination__arr pagination__arr_next" href="#">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.12012 6.47304L9.36894 0.224326C9.51347 0.0796843 9.7064 0 9.91212 0C10.1178 0 10.3108 0.0796843 10.4553 0.224326L10.9155 0.684394C11.2149 0.984181 11.2149 1.47142 10.9155 1.77075L5.66819 7.01804L10.9213 12.2712C11.0658 12.4158 11.1456 12.6086 11.1456 12.8142C11.1456 13.02 11.0658 13.2129 10.9213 13.3576L10.4611 13.8176C10.3165 13.9622 10.1237 14.0419 9.91794 14.0419C9.71223 14.0419 9.51929 13.9622 9.37477 13.8176L3.12012 7.56316C2.97525 7.41806 2.89568 7.22433 2.89613 7.01838C2.89568 6.81164 2.97525 6.61802 3.12012 6.47304Z"
+              fill="white" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+    <button class="block-to-up">
+      <div class="arrs">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.99274 2.88834L0.207681 8.6735C0.0737717 8.80731 -5.82426e-08 8.98592 -4.99176e-08 9.17638C-4.15926e-08 9.36683 0.0737717 9.54545 0.207681 9.67925L0.633613 10.1053C0.911155 10.3825 1.36224 10.3825 1.63936 10.1053L6.4973 5.24734L11.3606 10.1107C11.4945 10.2445 11.6731 10.3184 11.8634 10.3184C12.054 10.3184 12.2325 10.2445 12.3665 10.1107L12.7923 9.68464C12.9262 9.55073 13 9.37222 13 9.18177C13 8.99131 12.9262 8.8127 12.7923 8.67889L7.00197 2.88834C6.86764 2.75422 6.68829 2.68055 6.49762 2.68097C6.30622 2.68055 6.12697 2.75422 5.99274 2.88834Z"
+          fill="white"></path>
+        </svg>
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.99274 2.88834L0.207681 8.6735C0.0737717 8.80731 -5.82426e-08 8.98592 -4.99176e-08 9.17638C-4.15926e-08 9.36683 0.0737717 9.54545 0.207681 9.67925L0.633613 10.1053C0.911155 10.3825 1.36224 10.3825 1.63936 10.1053L6.4973 5.24734L11.3606 10.1107C11.4945 10.2445 11.6731 10.3184 11.8634 10.3184C12.054 10.3184 12.2325 10.2445 12.3665 10.1107L12.7923 9.68464C12.9262 9.55073 13 9.37222 13 9.18177C13 8.99131 12.9262 8.8127 12.7923 8.67889L7.00197 2.88834C6.86764 2.75422 6.68829 2.68055 6.49762 2.68097C6.30622 2.68055 6.12697 2.75422 5.99274 2.88834Z"
+          fill="white"></path>
+        </svg>
+      </div><span>Вверх</span>
+    </button>
+  </main>
+  <!-- ** FOOTER ** -->
+  <!-- ** POPUP ** -->
+  <div class="popup popup-form">
+    <div class="popup__bgd"></div>
+    <div class="popup__content">
+      <button class="popup__close btn">
+        <img src="img/icons/cross.svg" alt="">
+      </button>
+      <h2>Оставить заявку</h2>
+      <p>Мы свяжемся с Вами в течении рабочего дня</p>
+      <form>
+        <input placeholder="Ваше имя">
+        <textarea placeholder="Напишите ваше обращение"></textarea>
+        <button class="btn" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+  <!-- ** POPUP ** -->
+  <div class="banner__socials">
+    <ul>
+      <li>
+        <button class="li__head">
+          <img src="img/icons/share-blue.svg" alt="">
+        </button>
+        <div class="li__body">
+          <ul class="ul__socials">
+            <li>
+              <a href="#">
+                <img src="img/icons/messenger.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/icons/viber.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/icons/telegram.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/icons/whatsapp.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <button class="li__head">
+          <img src="img/icons/chat-blue.svg" alt="">
+        </button>
+        <div class="li__body">
+          <ul class="ul__socials">
+            <li>
+              <a href="#">
+                <img src="img/icons/facebook-bd.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/icons/instagram-bd.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <button class="li__head">
+          <img src="img/icons/phone-blue.svg" alt="">
+        </button>
+        <div class="li__body">
+          <ul>
+            <li><a href="tel:+49671365234">DE +49 (67) 136-52-34</a>
+            </li>
+            <li><a href="tel:+75765761465">KZ +7 (576) 576-14-65</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <footer>
+    <div class="wrapper">
+      <div class="footer__top"><a class="footer__logo" href="index.html"><span>Luxury Cars</span></a>
+        <div class="footer__block">
+          <h4>Главная</h4>
+          <ul>
+            <li><a href="single.html">Мерседес</a>
+            </li>
+            <li><a href="single.html">БМВ</a>
+            </li>
+            <li><a href="single.html">Ауди</a>
+            </li>
+            <li><a href="single.html">Порше</a>
+            </li>
+            <li><a href="single.html">Рэнж Ровер</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__block">
+          <h4>Покупка</h4>
+          <ul>
+            <li><a href="service.html">Выбор</a>
+            </li>
+            <li><a href="service.html">Осмотр</a>
+            </li>
+            <li><a href="service.html">Оплата</a>
+            </li>
+            <li><a href="service.html">Доставка</a>
+            </li>
+            <li><a href="service.html">Растаможивание</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__block">
+          <h4>Блог</h4>
+          <ul>
+            <li><a href="single.html">Мерседес</a>
+            </li>
+            <li><a href="single.html">БМВ</a>
+            </li>
+            <li><a href="single.html">Ауди</a>
+            </li>
+            <li><a href="single.html">Порше</a>
+            </li>
+            <li><a href="single.html">Рэнж Ровер</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__block">
+          <h4>О компании</h4>
+          <ul>
+            <li><a href="faq.html">Консультация</a>
+            </li>
+            <li><a href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+          <div class="footer__share">
+            <button class="share__head">
+              <img src="img/icons/share.svg" alt=""><span>Поделиться</span>
+            </button>
+            <div class="share__body">
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="img/icons/facebook-bd.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="img/icons/instagram-bd.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__block">
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="tel:+497451735249">+49 (745) 173-52-49</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__mob">
+          <div class="footer__share">
+            <button class="share__head">
+              <img src="img/icons/share.svg" alt=""><span>Поделиться</span>
+            </button>
+            <div class="share__body">
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="img/icons/facebook-bd.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="img/icons/instagram-bd.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>Luxury Cars 2023</p>
+        <p class="copyright">ⓒ Все права защищены</p>
+        <ul class="footer__socials">
+          <li>
+            <a href="#">
+              <img src="img/icons/whatsapp.svg" alt="ico">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/icons/messenger.svg" alt="ico">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/icons/telegram.svg" alt="ico">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/icons/viber.svg" alt="ico">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- ** FOOTER ** -->
+  <!-- swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- main JS -->
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

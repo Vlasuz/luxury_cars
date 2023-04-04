@@ -1,0 +1,83 @@
+extends includes/head.pug
+block body
+
+	body
+		include includes/header.pug
+
+		main
+
+			section.breadcrumbs
+				.wrapper
+					ul
+						li
+							a(href="index.html") Главная
+						li
+							span Контакты
+
+			section.contacts
+				.wrapper
+					h1 Контакты 
+					.contacts__inner
+						.contacts__info
+							h2 Адрес Германия
+							ul
+								li
+									a(href="#")
+										img(src="img/icons/phone-blue.svg" alt="")
+										span +380 (44) 496-00-55
+								li
+									a(href="#")
+										img(src="img/icons/phone-blue.svg" alt="")
+										span +380 (67) 136-59-99
+								li
+									a(href="#")
+										img(src="img/icons/email-blue.svg" alt="")
+										span zakaz@atp.com.ua
+								li
+									a(href="#")
+										img(src="img/icons/pin-blue.svg" alt="")
+										span ул. Пушкинская офис 36
+							a(href="#").btn Открыть карту
+						.contacts__info
+							h2 Адрес Казахстан
+							ul
+								li
+									a(href="#")
+										img(src="img/icons/phone-blue.svg" alt="")
+										span +380 (44) 496-00-55
+								li
+									a(href="#")
+										img(src="img/icons/phone-blue.svg" alt="")
+										span +380 (67) 136-59-99
+								li
+									a(href="#")
+										img(src="img/icons/email-blue.svg" alt="")
+										span zakaz@atp.com.ua
+								li
+									a(href="#")
+										img(src="img/icons/pin-blue.svg" alt="")
+										span ул. Пушкинская офис 36
+							a(href="#").btn Открыть карту
+					form(action="#").contacts__form
+						h2 Возникли вопросы? заполните форму обратной связи
+						.inputs
+							input(placeholder="Ваше имя" type="text" required)
+							input(placeholder="Ваш e-mail" type="email" required)
+						textarea(placeholder="Напишите ваше обращение" required)
+						.form__bottom
+							p Техническая поддержка рассмотрит ваше обращение <span>в течение 24 часов</span>. Вы получите ответ на почту.
+							button(type="submit").btn Отправить
+
+			
+
+
+			button.block-to-up
+				.arrs
+					svg(width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg")
+						path(d="M5.99274 2.88834L0.207681 8.6735C0.0737717 8.80731 -5.82426e-08 8.98592 -4.99176e-08 9.17638C-4.15926e-08 9.36683 0.0737717 9.54545 0.207681 9.67925L0.633613 10.1053C0.911155 10.3825 1.36224 10.3825 1.63936 10.1053L6.4973 5.24734L11.3606 10.1107C11.4945 10.2445 11.6731 10.3184 11.8634 10.3184C12.054 10.3184 12.2325 10.2445 12.3665 10.1107L12.7923 9.68464C12.9262 9.55073 13 9.37222 13 9.18177C13 8.99131 12.9262 8.8127 12.7923 8.67889L7.00197 2.88834C6.86764 2.75422 6.68829 2.68055 6.49762 2.68097C6.30622 2.68055 6.12697 2.75422 5.99274 2.88834Z" fill="white")
+					svg(width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg")
+						path(d="M5.99274 2.88834L0.207681 8.6735C0.0737717 8.80731 -5.82426e-08 8.98592 -4.99176e-08 9.17638C-4.15926e-08 9.36683 0.0737717 9.54545 0.207681 9.67925L0.633613 10.1053C0.911155 10.3825 1.36224 10.3825 1.63936 10.1053L6.4973 5.24734L11.3606 10.1107C11.4945 10.2445 11.6731 10.3184 11.8634 10.3184C12.054 10.3184 12.2325 10.2445 12.3665 10.1107L12.7923 9.68464C12.9262 9.55073 13 9.37222 13 9.18177C13 8.99131 12.9262 8.8127 12.7923 8.67889L7.00197 2.88834C6.86764 2.75422 6.68829 2.68055 6.49762 2.68097C6.30622 2.68055 6.12697 2.75422 5.99274 2.88834Z" fill="white")
+				span Вверх
+
+		include includes/footer.pug
+		include includes/scripts.pug
