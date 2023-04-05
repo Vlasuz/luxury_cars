@@ -4,127 +4,95 @@ block body
 	body
 		include includes/header.pug
 
-		main.blog-page
-
-			section.breadcrumbs
-				.wrapper
-					ul
-						li
-							a(href="index.html") Главная
-						li
-							span Блог
-
-			section.top
-				.wrapper
-					.top__bgd(style="background-image: url('img/single/photo-1.jpg');")
-					.top__text
-						h1 BMW X7 M60i xDrive 
-						p Открой для себя все новинки в мире автомашин
-						button.btn.open-popup Сделать запрос
+		section.breadcrumbs
+			.wrapper
+				ul
+					li
+						a(href="index.html") Главная
+					li
+						span Блог
+		main.single
+			.wrapper
 
 
-			section.single
-				.wrapper.wrapper_mini
-					ul.single__navigation
-						li
-							a(href="#block-1").btn Дизайн
-						li
-							a(href="#block-2").btn Технологические особенности
-						li
-							a(href="#block-3").btn Подключаемый гибрид
-						li
-							a(href="#block-4").btn Спецификации
-						li
-							a(href="#block-5").btn Цены и финансирование
-					.single__navigation_mob
-						.select
-							.select__head
-								span Дизайн
-							.select__body
-								ul
-									li
-										a(href="#block-1").btn.select__item Дизайн
-									li
-										a(href="#block-2").btn.select__item Технологические особенности
-									li
-										a(href="#block-3").btn.select__item Подключаемый гибрид
-									li
-										a(href="#block-4").btn.select__item Спецификации
-									li
-										a(href="#block-5").btn.select__item Цены и финансирование
+				section.single__top
+					.top__back
+						img(src="img/single/back.svg" alt="")
+						span Вернуться к списку автомобилей
 
-					.photo
-						img(src="img/single/photo-2.jpg" alt="")
+					.top__navigate
+						a(href="#")
+							img(src="img/single/back.svg" alt="")
+							span Назад
+						p 1 / 67
+						a(href="#")
+							span Вперед
+							img(src="img/single/forward.svg" alt="")
 
-					.block#block-1
-						h2 BMW 740d xDrive Седан: Комбинированный расход топлива, л/100 км: - (NEDC) / 6,8-6,1 (WLTP); Комбинированные выбросы CO2 в г/км: - (NEDC) / 178-160 (WLTP).
-						p Дополнительную информацию об официальном расходе топлива и официальных удельных выбросах CO2 новых легковых автомобилей можно найти в «Руководстве по расходу топлива, выбросам CO2 и энергопотреблению новых легковых автомобилей», которое доступно во всех торговых точках на сайте Deutsche Automobil. Treuhand GmbH (DAT), Hellmuth-Hirth-Str. 1, 73760 Ostfildern-Scharnhausen, и доступен бесплатно по адресу https://www.dat.de/co2/ . На иллюстрации(ах) показано специальное оборудование.
-						b Чистая элегантность и мультисенсорные развлечения сочетаются в новом седане BMW 7 серии, чтобы создать абсолютное удовольствие от вождения:
-						p Чистая элегантность и мультисенсорные развлечения сочетаются в новом седане BMW 7 серии, чтобы создать абсолютное удовольствие от вождения:
-						ul
-							li Приветственный сценарий «Великие моменты входа»
-							li Хрустальные фары (опция) и светящаяся решетка радиатора BMW Iconic Glow.
-							li Роскошная лаунж-атмосфера в интерьере с индивидуальными режимами My Modes
-							li Кинотеатр на 31,3-дюймовом экране BMW Theater Screen в задней части салона (опция)
+					.top__back.top__back_hidden
+						img(src="img/single/back.svg" alt="")
+						span Вернуться к списку автомобилей
 
-					.block#block-2
-						h2 BMW 740d xDrive Седан: Комбинированный расход топлива, л/100 км: - (NEDC) / 6,8-6,1 (WLTP); Комбинированные выбросы CO2 в г/км: - (NEDC) / 178-160 (WLTP).
-						b Трансмісія, підвіска та продуктивність.
+				section.single__main
+					.main__slider
+						.slider__poster
+							.swiper-wrapper
+								.swiper-slide
+									img(src="img/single/slider-photo.jpg" alt="")
+									button.open-big-photo
+										img(src="img/single/open_big_photo.svg" alt="")
+								.swiper-slide
+									img(src="img/single/photo-1.jpg" alt="")
+									button.open-big-photo
+										img(src="img/single/open_big_photo.svg" alt="")
+								.swiper-slide
+									img(src="img/single/photo-2.jpg" alt="")
+									button.open-big-photo
+										img(src="img/single/open_big_photo.svg" alt="")
+								.swiper-slide
+									img(src="img/single/photo-3.jpg" alt="")
+									button.open-big-photo
+										img(src="img/single/open_big_photo.svg" alt="")
+								.swiper-slide
+									img(src="img/single/photo-4.jpg" alt="")
+									button.open-big-photo
+										img(src="img/single/open_big_photo.svg" alt="")
+								.swiper-slide
+									img(src="img/single/slider-photo.jpg" alt="")
+									button.open-big-photo
+										img(src="img/single/open_big_photo.svg" alt="")
+								.swiper-slide
+									img(src="img/single/slider-photo.jpg" alt="")
+									button.open-big-photo
+										img(src="img/single/open_big_photo.svg" alt="")
+									button.open-big-photo
+										img(src="img/single/open_big_photo.svg" alt="")
 
-						.block__cars
-							.cars__inner
-								h3 BMW X7 M60i xDrive.
-								ul
-									li 8-циліндровий бензиновий двигун M TwinPower Turbo V8 з потужністю 530 к.с*
-									li Спортивна 8-ступінчаста коробка передач Steptronic.
-									li 2-вісна пневматична підвіска М
-									li 390 кВт/530 к.с., 750 Нм, 0-100 км/год за 4,7 с*
-							.cars__photo
-								img(src="img/single/car-blue.png" alt="")
-							span.text-below-car Luxury Cars
+							.swiper-numbers 1 / 8
+							.swiper-button-prev
+							.swiper-button-next
 
-					.block#block-3
-						h2 BMW X7 M60i xDRIVE – ОСОБЛИВОСТІ ПРОДУКТУ.
-						b ДИНАМІЧНІ ЇАРАКТЕРИСТИКИ ТА ЕЛЕМЕНТИ ДИЗАЙНУ НОВОГО BMW X7 M60i xDRIVE.
-						.photo
-							img(src="img/single/photo-3.jpg" alt="")
+						.slider__nav
+							.swiper-wrapper
+								.swiper-slide
+									img(src="img/single/slider-photo.jpg" alt="")
+								.swiper-slide
+									img(src="img/single/photo-1.jpg" alt="")
+								.swiper-slide
+									img(src="img/single/photo-2.jpg" alt="")
+								.swiper-slide
+									img(src="img/single/photo-3.jpg" alt="")
+								.swiper-slide
+									img(src="img/single/photo-4.jpg" alt="")
+								.swiper-slide
+									img(src="img/single/slider-photo.jpg" alt="")
+								.swiper-slide
+									img(src="img/single/slider-photo.jpg" alt="")
 
-					.block#block-4
-						h2 ОСОБЕННОСТИ ИНТЕРЬЕРА НОВОГО BMW 7 СЕРИИ СЕДАН.
-						.block__grid
-							.grid__item
-								.item__photo
-									img(src="img/single/photo-3.jpg")
-								h3 Инновационная атмосфера в кабине.
-								p Многофункциональный элемент управления стандартной интерактивной панели BMW проходит горизонтально через всю кабину.
-							.grid__item
-								.item__photo
-									img(src="img/single/photo-2.jpg")
-								h3 Инновационная атмосфера в кабине.
-								p Откиньтесь назад и наслаждайтесь: с дополнительным 31,3-дюймовым экраном BMW Theater Screen со встроенным Amazon Fire TV развлекательная система в задней части салона создает уникальный кинематографический опыт.*
-							.grid__item
-								.item__photo
-									img(src="img/single/photo-1.jpg")
-								h3 Инновационная атмосфера в кабине.
-								p Опциональная панорамная стеклянная крыша Sky Lounge пропускает много света в салон в течение дня. Ночью динамические световые эффекты создают неповторимую атмосферу.
-
-					.block#block-5
-						h2 BMW 740d xDrive Седан: Комбинированный расход топлива, л/100 км: - (NEDC) / 6,8-6,1 (WLTP); Комбинированные выбросы CO2 в г/км: - (NEDC) / 178-160 (WLTP).
-						p Дополнительную информацию об официальном расходе топлива и официальных удельных выбросах CO2 новых легковых автомобилей можно найти в «Руководстве по расходу топлива, выбросам CO2 и энергопотреблению новых легковых автомобилей», которое доступно во всех торговых точках на сайте Deutsche Automobil. Treuhand GmbH (DAT), Hellmuth-Hirth-Str. 1, 73760 Ostfildern-Scharnhausen, и доступен бесплатно по адресу https://www.dat.de/co2/ . На иллюстрации(ах) показано специальное оборудование.
-
-						.photo
-							img(src="img/single/photo-4.jpg" alt="")
+					.main__info
 
 
 
-
-			button.block-to-up
-				.arrs
-					svg(width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg")
-						path(d="M5.99274 2.88834L0.207681 8.6735C0.0737717 8.80731 -5.82426e-08 8.98592 -4.99176e-08 9.17638C-4.15926e-08 9.36683 0.0737717 9.54545 0.207681 9.67925L0.633613 10.1053C0.911155 10.3825 1.36224 10.3825 1.63936 10.1053L6.4973 5.24734L11.3606 10.1107C11.4945 10.2445 11.6731 10.3184 11.8634 10.3184C12.054 10.3184 12.2325 10.2445 12.3665 10.1107L12.7923 9.68464C12.9262 9.55073 13 9.37222 13 9.18177C13 8.99131 12.9262 8.8127 12.7923 8.67889L7.00197 2.88834C6.86764 2.75422 6.68829 2.68055 6.49762 2.68097C6.30622 2.68055 6.12697 2.75422 5.99274 2.88834Z" fill="white")
-					svg(width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg")
-						path(d="M5.99274 2.88834L0.207681 8.6735C0.0737717 8.80731 -5.82426e-08 8.98592 -4.99176e-08 9.17638C-4.15926e-08 9.36683 0.0737717 9.54545 0.207681 9.67925L0.633613 10.1053C0.911155 10.3825 1.36224 10.3825 1.63936 10.1053L6.4973 5.24734L11.3606 10.1107C11.4945 10.2445 11.6731 10.3184 11.8634 10.3184C12.054 10.3184 12.2325 10.2445 12.3665 10.1107L12.7923 9.68464C12.9262 9.55073 13 9.37222 13 9.18177C13 8.99131 12.9262 8.8127 12.7923 8.67889L7.00197 2.88834C6.86764 2.75422 6.68829 2.68055 6.49762 2.68097C6.30622 2.68055 6.12697 2.75422 5.99274 2.88834Z" fill="white")
-				span Вверх
 
 		include includes/footer.pug
 		include includes/scripts.pug

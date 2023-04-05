@@ -3299,18 +3299,18 @@ footer {
     line-height: 1.75rem
   }
 }
-.single {
+.single-blog {
   margin-top: 6.1875rem
 }
-.single .photo {
+.single-blog .photo {
   margin: 3.125rem 0
 }
-.single .photo img {
+.single-blog .photo img {
   width: 100%;
   height: 100%;
   max-height: 37.5rem
 }
-.single h2 {
+.single-blog h2 {
   font-family: Oswald;
   font-weight: 300;
   font-size: 2.8125rem;
@@ -3318,15 +3318,15 @@ footer {
   color: #fff;
   margin-bottom: 1.875rem
 }
-.single .block {
+.single-blog .block {
   padding-top: 3.125rem
 }
-.single .block__cars {
+.single-blog .block__cars {
   position: relative;
   margin-top: 4.0625rem;
   margin-bottom: 10.3125rem
 }
-.single .block__cars .text-below-car {
+.single-blog .block__cars .text-below-car {
   font-family: Oswald;
   font-weight: 300;
   font-size: 8rem;
@@ -3336,84 +3336,84 @@ footer {
   position: absolute;
   right: 0
 }
-.single .block__cars .cars__photo {
+.single-blog .block__cars .cars__photo {
   position: absolute;
   bottom: -130px;
   right: 0;
   z-index: 2
 }
-.single .block__cars .cars__photo img {
+.single-blog .block__cars .cars__photo img {
   width: 64vw;
   max-width: 55.625rem
 }
-.single .block__cars h3 {
+.single-blog .block__cars h3 {
   font-weight: 500;
   font-size: 2.25rem;
   line-height: 2.25rem;
   color: #fff;
   margin-bottom: 1.25rem
 }
-.single .block__cars li {
+.single-blog .block__cars li {
   margin-bottom: 0.625rem;
   margin-left: 0.625rem
 }
-.single .block__cars li:before {
+.single-blog .block__cars li:before {
   background: #fff;
   border-radius: 50%;
   min-width: 0.3125rem;
   width: 0.3125rem;
   height: 0.3125rem
 }
-.single .block__cars .cars__inner {
+.single-blog .block__cars .cars__inner {
   background: -o-linear-gradient(326.77deg,#4f7df6 -186.86%,rgba(79,125,246,0) 69.79%);
   background: linear-gradient(123.23deg,#4f7df6 -186.86%,rgba(79,125,246,0) 69.79%);
   padding: 3rem 3.4375rem 3rem;
   padding-right: 47.5rem
 }
-.single .block__grid {
+.single-blog .block__grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3,1fr);
   grid-gap: 2.0625rem
 }
-.single .block__grid h3 {
+.single-blog .block__grid h3 {
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 2.25rem;
   color: #fff;
   margin-bottom: 0.625rem
 }
-.single .block__grid p {
+.single-blog .block__grid p {
   font-weight: 300;
   font-size: 1.25rem;
   line-height: 1.875rem;
   color: #fff
 }
-.single .block__grid .item__photo {
+.single-blog .block__grid .item__photo {
   width: 100%;
   height: 16.375rem;
   margin-bottom: 2.3125rem
 }
-.single .block__grid img {
+.single-blog .block__grid img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover
 }
-.single p {
+.single-blog p {
   font-weight: 300;
   font-size: 1.25rem;
   line-height: 1.875rem;
   margin: 1.25rem 0;
   color: #fff
 }
-.single b {
+.single-blog b {
   font-size: 1.5rem;
   line-height: 2.25rem;
   color: #fff
 }
-.single ul li {
+.single-blog ul li {
   font-weight: 300;
   font-size: 1.25rem;
   line-height: 1.875rem;
@@ -3423,10 +3423,10 @@ footer {
   display: flex;
   margin-bottom: 1.25rem
 }
-.single ul li:last-child {
+.single-blog ul li:last-child {
   margin-bottom: 0
 }
-.single ul li:before {
+.single-blog ul li:before {
   content: "";
   min-width: 0.4375rem;
   width: 0.4375rem;
@@ -3436,7 +3436,7 @@ footer {
   margin-right: 1.5625rem;
   margin-top: 0.625rem
 }
-.single__navigation {
+.single-blog__navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3447,41 +3447,41 @@ footer {
   flex-wrap: wrap;
   margin-bottom: 3.625rem
 }
-.single__navigation_mob {
+.single-blog__navigation_mob {
   display: none
 }
-.single__navigation li {
+.single-blog__navigation li {
   margin-bottom: 0!important;
   margin-right: 1rem
 }
-.single__navigation li:before {
+.single-blog__navigation li:before {
   display: none!important
 }
-.single__navigation li:last-child {
+.single-blog__navigation li:last-child {
   margin-right: 0
 }
 @media screen and (max-width:75em){
-  .single .block__cars .text-below-car {
+  .single-blog .block__cars .text-below-car {
     bottom: -130px
   }
-  .single .block__cars .cars__photo {
+  .single-blog .block__cars .cars__photo {
     bottom: -220px
   }
-  .single .block__cars .cars__inner {
+  .single-blog .block__cars .cars__inner {
     padding-right: 3.125rem
   }
 }
 @media screen and (max-width:48em){
-  .single__navigation {
+  .single-blog__navigation {
     display: none
   }
-  .single__navigation_mob {
+  .single-blog__navigation_mob {
     display: block
   }
-  .single__navigation_mob .select {
+  .single-blog__navigation_mob .select {
     position: relative
   }
-  .single__navigation_mob .select__head {
+  .single-blog__navigation_mob .select__head {
     width: 100%;
     background: #000;
     border: 0.0625rem solid #fff;
@@ -3497,7 +3497,7 @@ footer {
     -ms-flex-pack: justify;
     justify-content: space-between
   }
-  .single__navigation_mob .select__head:after {
+  .single-blog__navigation_mob .select__head:after {
     content: "";
     background: url(../img/icons/arr-down-wh.svg) no-repeat;
     background-size: contain;
@@ -3505,13 +3505,13 @@ footer {
     height: 0.625rem;
     display: block
   }
-  .single__navigation_mob .select__head span {
+  .single-blog__navigation_mob .select__head span {
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.125rem;
     color: #fff
   }
-  .single__navigation_mob .select__body {
+  .single-blog__navigation_mob .select__body {
     display: none;
     position: absolute;
     left: 0;
@@ -3519,99 +3519,251 @@ footer {
     width: 100%;
     z-index: 2
   }
-  .single__navigation_mob .select__body li {
+  .single-blog__navigation_mob .select__body li {
     margin: 0;
     width: 100%
   }
-  .single__navigation_mob .select__body li a {
+  .single-blog__navigation_mob .select__body li a {
     width: 100%;
     padding: 0.8125rem 1rem;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.125rem
   }
-  .single__navigation_mob .select__body li:before {
+  .single-blog__navigation_mob .select__body li:before {
     display: none
   }
-  .single__navigation_mob .select_active .select__head:after {
+  .single-blog__navigation_mob .select_active .select__head:after {
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg)
   }
-  .single__navigation_mob .select_active .select__body {
+  .single-blog__navigation_mob .select_active .select__body {
     display: block
   }
-  .single {
+  .single-blog {
     margin-top: 2.5rem
   }
-  .single h2 {
+  .single-blog h2 {
     font-size: 1.25rem;
     line-height: 1.75rem;
     margin-bottom: 1.25rem
   }
-  .single p {
+  .single-blog p {
     font-size: 0.875rem;
     line-height: 1.3125rem;
     margin: 0.625rem 0
   }
-  .single b {
+  .single-blog b {
     font-size: 1rem;
     line-height: 1.5rem
   }
-  .single .photo {
+  .single-blog .photo {
     margin: 1.25rem 0
   }
-  .single .photo img {
+  .single-blog .photo img {
     max-height: 12.5rem
   }
-  .single ul li {
+  .single-blog ul li {
     font-size: 0.875rem;
     line-height: 1.3125rem
   }
-  .single ul li:before {
+  .single-blog ul li:before {
     margin-right: 0.625rem;
     min-width: 0.3125rem;
     width: 0.3125rem;
     height: 0.3125rem
   }
-  .single .block {
+  .single-blog .block {
     padding-top: 1.875rem
   }
-  .single .block__grid {
+  .single-blog .block__grid {
     display: block
   }
-  .single .block__grid .item__photo {
+  .single-blog .block__grid .item__photo {
     margin-bottom: 0.625rem
   }
-  .single .block__grid h3 {
+  .single-blog .block__grid h3 {
     font-size: 1.125rem;
     line-height: 1.6875rem
   }
-  .single .block__grid p {
+  .single-blog .block__grid p {
     font-size: 0.875rem;
     line-height: 1.3125rem
   }
-  .single .block__cars {
+  .single-blog .block__cars {
     margin: 1.875rem 0
   }
-  .single .block__cars .text-below-car {
+  .single-blog .block__cars .text-below-car {
     display: none
   }
-  .single .block__cars .cars__photo {
+  .single-blog .block__cars .cars__photo {
     display: none
   }
-  .single .block__cars .cars__inner {
+  .single-blog .block__cars .cars__inner {
     padding: 1rem 1.25rem
   }
-  .single .block__cars h3 {
+  .single-blog .block__cars h3 {
     font-size: 1.25rem;
     line-height: 1.75rem
   }
-  .single .block__cars li:before {
+  .single-blog .block__cars li:before {
     min-width: 0.1875rem;
     width: 0.1875rem;
     height: 0.1875rem
   }
+}
+.single__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 1.0625rem;
+  border-bottom: 0.0625rem solid rgba(255,255,255,.4);
+  margin-bottom: 2.5625rem
+}
+.single__top .top__back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1rem 0.875rem;
+  background: #181818;
+  border-radius: 0.1875rem
+}
+.single__top .top__back img {
+  margin-right: 0.75rem
+}
+.single__top .top__back_hidden {
+  opacity: 0;
+  visibility: hidden
+}
+.single__top .top__navigate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.single__top .top__navigate p {
+  margin: 0 2rem
+}
+.single__top .top__navigate a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative
+}
+.single__top .top__navigate a:hover:after,
+.single__top .top__navigate a:hover:before {
+  opacity: 1;
+  bottom: -9px
+}
+.single__top .top__navigate a:first-child img {
+  margin-left: 0
+}
+.single__top .top__navigate a:last-child img {
+  margin-right: 0
+}
+.single__top .top__navigate a:after {
+  content: "";
+  background: #4f7df6;
+  height: 0.0625rem;
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 0.3125rem;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.single__top .top__navigate a:before {
+  content: "";
+  background: -webkit-gradient(linear,left top,left bottom,from(rgba(79,125,246,.15)),to(rgba(79,125,246,.75)));
+  background: -o-linear-gradient(top,rgba(79,125,246,.15) 0,rgba(79,125,246,.75) 100%);
+  background: linear-gradient(180deg,rgba(79,125,246,.15) 0,rgba(79,125,246,.75) 100%);
+  width: 100%;
+  height: 0.8125rem;
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  position: absolute;
+  bottom: 0.3125rem;
+  z-index: 0;
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.single__top .top__navigate a img {
+  display: block;
+  margin: 0 0.75rem
+}
+.single__top .top__navigate a span {
+  font-size: 1.125rem;
+  line-height: 0.875rem;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 1
+}
+.single__main .main__slider {
+  max-width: 55.1875rem;
+  overflow: hidden
+}
+.single__main .slider__poster {
+  position: relative;
+  height: 38.1875rem
+}
+.single__main .slider__nav {
+  margin-top: 0.6875rem
+}
+.single__main .slider__nav .swiper-slide {
+  border: 0.1875rem solid #181818;
+  height: 8.75rem;
+  width: 100%
+}
+.single__main .open-big-photo {
+  padding: 0.75rem;
+  background: #181818;
+  border-radius: 0.125rem;
+  position: absolute;
+  bottom: 1.1875rem;
+  right: 1.1875rem
+}
+.single__main .swiper-numbers {
+  background: #181818;
+  border-radius: 0.125rem;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: #d7d7d7;
+  padding: 0.625rem;
+  position: absolute;
+  bottom: 1.1875rem;
+  left: 1.1875rem;
+  z-index: 2
+}
+.single__main img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  display: block
 }
 .single-description ol {
   display: -ms-grid;

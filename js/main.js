@@ -10,8 +10,10 @@ document.onclick = function (e) {
 	}
 }
 
-document.querySelector('.block-to-up').onclick = function () {
-	window.scrollTo(0, 0);
+if(document.querySelector('.block-to-up')){
+	document.querySelector('.block-to-up').onclick = function () {
+		window.scrollTo(0, 0);
+	}
 }
 
 document.querySelector('.header__burger').onclick = function () {
@@ -152,7 +154,7 @@ new Swiper('.catalog .item__slider', {
 		type: 'bullets',
 	},
 })
-const swiper = new Swiper('.slider__inner', {
+new Swiper('.slider__inner', {
 	slidesPerView: 1,
 	loop: true,
 	spaceBetween: 5,
@@ -184,3 +186,39 @@ const swiper = new Swiper('.slider__inner', {
 	}
 
 });
+
+const swiper_nav = new Swiper('.slider__nav', {
+	slidesPerView: 4,
+	spaceBetween: 11
+})
+const swiper_poster = new Swiper('.slider__poster', {
+	slidesPerView: 1,
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	thumbs: {
+		swiper: swiper_nav
+	},
+})
+
+swiper_poster.on('slideChange', (e) => {
+
+	document.querySelector('.swiper-numbers').innerHTML = `${e.activeIndex + 1} / ${e.slides.length}`
+
+})
+swiper_poster.on('init', (e) => {
+
+	document.querySelector('.swiper-numbers').innerHTML = `${e.activeIndex + 1} / ${e.slides.length}`
+
+})
+swiper_poster.on('imagesReady', (e) => {
+
+	document.querySelector('.swiper-numbers').innerHTML = `${e.activeIndex + 1} / ${e.slides.length}`
+
+})
+
+
+
+
+
