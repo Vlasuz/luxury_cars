@@ -219,6 +219,42 @@ swiper_poster.on('imagesReady', (e) => {
 })
 
 
+if(document.querySelector('.ul__hidden + button')){
+	document.querySelector('.ul__hidden + button').onclick = (e) => {
+		e.target.closest('button').classList.toggle('_active')
+		e.target.closest('.params__item').querySelector('.ul__hidden').classList.toggle('ul__hidden_disabled')
+
+		if(e.target.closest('.params__item').querySelector('.ul__hidden').classList.contains('ul__hidden_disabled')) {
+			e.target.closest('button').querySelector('span').textContent = 'Показать меньше'
+		} else {
+			e.target.closest('button').querySelector('span').textContent = 'Показать больше'
+		}
+	}
+}
+if(document.querySelector('.li__hidden-text')){
+	document.querySelector('.li__hidden-text button').onclick = (e) => {
+
+		e.target.closest('button').classList.toggle('_active')
+		e.target.closest('.li__hidden-text').classList.toggle('li__hidden-text_active')
+
+		if(e.target.closest('.li__hidden-text').classList.contains('li__hidden-text_active')) {
+			e.target.closest('button').querySelector('span').textContent = 'Показать меньше'
+		} else {
+			e.target.closest('button').querySelector('span').textContent = 'Показать больше'
+		}
+	}
+}
+
+new Swiper('.slider-cars__slider', {
+	slidesPerView: 4,
+	spaceBetween: 30,
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+})
+
+Zoom(".zoomable");
 
 
 

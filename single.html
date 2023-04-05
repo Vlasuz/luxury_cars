@@ -184,9 +184,9 @@
   <main class="single">
     <div class="wrapper">
       <section class="single__top">
-        <div class="top__back">
+        <a class="top__back" href="#">
           <img src="img/single/back.svg" alt=""><span>Вернуться к списку автомобилей</span>
-        </div>
+        </a>
         <div class="top__navigate">
           <a href="#">
             <img src="img/single/back.svg" alt=""><span>Назад</span>
@@ -199,57 +199,60 @@
       </section>
       <section class="single__main">
         <div class="main__slider">
-          <div class="slider__poster">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="img/single/slider-photo.jpg" alt="">
-                <button class="open-big-photo">
-                  <img src="img/single/open_big_photo.svg" alt="">
-                </button>
+          <div class="slider__big">
+            <div class="slider__poster">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="zoomable" src="img/single/slider-photo.jpg" alt="">
+                  <button class="open-big-photo">
+                    <img src="img/single/open_big_photo.svg" alt="">
+                  </button>
+                </div>
+                <div class="swiper-slide">
+                  <img class="zoomable" src="img/single/photo-1.jpg" alt="">
+                  <button class="open-big-photo">
+                    <img src="img/single/open_big_photo.svg" alt="">
+                  </button>
+                </div>
+                <div class="swiper-slide">
+                  <img class="zoomable" src="img/single/photo-2.jpg" alt="">
+                  <button class="open-big-photo">
+                    <img src="img/single/open_big_photo.svg" alt="">
+                  </button>
+                </div>
+                <div class="swiper-slide">
+                  <img class="zoomable" src="img/single/photo-3.jpg" alt="">
+                  <button class="open-big-photo">
+                    <img src="img/single/open_big_photo.svg" alt="">
+                  </button>
+                </div>
+                <div class="swiper-slide">
+                  <img class="zoomable" src="img/single/photo-4.jpg" alt="">
+                  <button class="open-big-photo">
+                    <img src="img/single/open_big_photo.svg" alt="">
+                  </button>
+                </div>
+                <div class="swiper-slide">
+                  <img class="zoomable" src="img/single/slider-photo.jpg" alt="">
+                  <button class="open-big-photo">
+                    <img src="img/single/open_big_photo.svg" alt="">
+                  </button>
+                </div>
+                <div class="swiper-slide">
+                  <img class="zoomable" src="img/single/slider-photo.jpg" alt="">
+                  <button class="open-big-photo">
+                    <img src="img/single/open_big_photo.svg" alt="">
+                  </button>
+                </div>
               </div>
-              <div class="swiper-slide">
-                <img src="img/single/photo-1.jpg" alt="">
-                <button class="open-big-photo">
-                  <img src="img/single/open_big_photo.svg" alt="">
-                </button>
-              </div>
-              <div class="swiper-slide">
-                <img src="img/single/photo-2.jpg" alt="">
-                <button class="open-big-photo">
-                  <img src="img/single/open_big_photo.svg" alt="">
-                </button>
-              </div>
-              <div class="swiper-slide">
-                <img src="img/single/photo-3.jpg" alt="">
-                <button class="open-big-photo">
-                  <img src="img/single/open_big_photo.svg" alt="">
-                </button>
-              </div>
-              <div class="swiper-slide">
-                <img src="img/single/photo-4.jpg" alt="">
-                <button class="open-big-photo">
-                  <img src="img/single/open_big_photo.svg" alt="">
-                </button>
-              </div>
-              <div class="swiper-slide">
-                <img src="img/single/slider-photo.jpg" alt="">
-                <button class="open-big-photo">
-                  <img src="img/single/open_big_photo.svg" alt="">
-                </button>
-              </div>
-              <div class="swiper-slide">
-                <img src="img/single/slider-photo.jpg" alt="">
-                <button class="open-big-photo">
-                  <img src="img/single/open_big_photo.svg" alt="">
-                </button>
-                <button class="open-big-photo">
-                  <img src="img/single/open_big_photo.svg" alt="">
-                </button>
-              </div>
+              <div class="swiper-numbers">1 / 8</div>
             </div>
-            <div class="swiper-numbers">1 / 8</div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <button class="swiper-button-prev">
+              <img src="img/icons/arr-left-wh.svg" alt="">
+            </button>
+            <button class="swiper-button-next">
+              <img src="img/icons/arr-right-wh.svg" alt="">
+            </button>
           </div>
           <div class="slider__nav">
             <div class="swiper-wrapper">
@@ -277,9 +280,873 @@
             </div>
           </div>
         </div>
-        <div class="main__info"></div>
+        <div class="main__info">
+          <div class="info__buttons">
+            <button>
+              <img src="img/single/info_icon-1.svg" alt="">
+            </button>
+            <button>
+              <img src="img/single/info_icon-2.svg" alt="">
+            </button>
+            <button>
+              <img src="img/single/info_icon-3.svg" alt="">
+            </button>
+          </div>
+          <h1 class="info__title">BMW 7</h1>
+          <p class="info__model">M60i xDrive; SZH, Navi, Panorama, Klima, LED</p><span class="info__text">Мы предоставим вам автомобиль вашей мечты одним щелчком мыши</span>
+          <div class="info__location">
+            <img src="img/single/pin_icon.svg" alt=""><span>Wielenbach, DE</span>
+          </div>
+          <hr>
+          <p class="info__price">€ 107 790,-*</p>
+          <button class="info__calculate">Рассчитать финансирование</button>
+          <hr>
+          <div class="info__general">
+            <ul>
+              <li>
+                <img src="img/single/general_icon-1.svg" alt="">
+                <div class="li__text"><span>Пробег</span>
+                  <p>71.800 km</p>
+                </div>
+              </li>
+              <li>
+                <img src="img/single/general_icon-1.svg" alt="">
+                <div class="li__text"><span>Пробег</span>
+                  <p>71.800 km</p>
+                </div>
+              </li>
+              <li>
+                <img src="img/single/general_icon-1.svg" alt="">
+                <div class="li__text"><span>Пробег</span>
+                  <p>71.800 km</p>
+                </div>
+              </li>
+              <li>
+                <img src="img/single/general_icon-1.svg" alt="">
+                <div class="li__text"><span>Пробег</span>
+                  <p>71.800 km</p>
+                </div>
+              </li>
+              <li>
+                <img src="img/single/general_icon-1.svg" alt="">
+                <div class="li__text"><span>Пробег</span>
+                  <p>71.800 km</p>
+                </div>
+              </li>
+              <li>
+                <img src="img/single/general_icon-1.svg" alt="">
+                <div class="li__text"><span>Пробег</span>
+                  <p>71.800 km</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="info__bottom">
+            <button>Отправить E-mail</button>
+            <div class="select">
+              <div class="select__head"><span>Связаться</span>
+                <img>
+              </div>
+              <div class="select__body">
+                <a href="#">
+                  <div class="icon">
+                    <img src="img/icons/whatsapp.svg">
+                  </div><span>WhatsApp</span>
+                </a>
+                <a href="#">
+                  <div class="icon">
+                    <img src="img/icons/viber.svg">
+                  </div><span>Viber</span>
+                </a>
+                <a href="#">
+                  <div class="icon">
+                    <img src="img/icons/telegram.svg">
+                  </div><span>Telegram</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="info__links"><a href="#">Читать блог о BMW</a><a href="#">Получать уведомления о новых поступлениях автомобилей</a>
+          </div>
+        </div>
+      </section>
+      <section class="single__params">
+        <div class="params__block">
+          <div class="params__item">
+            <img src="img/single/params_ico-1.svg" alt=""><span>Основные данные</span>
+          </div>
+          <div class="params__item">
+            <ul>
+              <li><span>Форма кузова</span>
+                <p>Форма кузова внедорожник внедорожник/пикапФорма кузова внедорожник внедорожник/пикапФорма кузова внедорожник внедорожник/пикапФорма кузова внедорожник внедорожник/пикапФорма кузова внедорожник внедорожник/пикапФорма кузова внедорожник
+                  внедорожник/пикап</p>
+              </li>
+              <li><span>Тип машины</span>
+                <p>Новый</p>
+              </li>
+              <li><span>Тип вождения</span>
+                <p>Полноприводный автомобиль</p>
+              </li>
+              <li><span>Места</span>
+                <p>5</p>
+              </li>
+              <li><span>Двери</span>
+                <p>5</p>
+              </li>
+              <li><span>Страна</span>
+                <p>Венгрия</p>
+              </li>
+              <li><span>Номер ключа</span>
+                <p>0005/BYD</p>
+              </li>
+              <li><span>Доступность</span>
+                <p>через 150 дней с момента заказа</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="params__block">
+          <div class="params__item">
+            <img src="img/single/params_ico-1.svg" alt=""><span>История автомобиля</span>
+          </div>
+          <div class="params__item">
+            <ul>
+              <li><span>Чековая книжка поддерживается</span>
+                <p>Да</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="params__block">
+          <div class="params__item">
+            <img src="img/single/params_ico-1.svg" alt=""><span>Технические данные</span>
+          </div>
+          <div class="params__item">
+            <ul>
+              <li><span>Производительность</span>
+                <p>390 кВт (530 л.с.)</p>
+              </li>
+              <li><span>Передача</span>
+                <p>Автоматический</p>
+              </li>
+              <li><span>Смещение</span>
+                <p>2998 см3</p>
+              </li>
+              <li><span>Шестерни</span>
+                <p>8</p>
+              </li>
+              <li><span>Цилиндр</span>
+                <p>6</p>
+              </li>
+              <li><span>Снаряженная масса</span>
+                <p>2 130 кг</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="params__block params__block_without-underline">
+          <div class="params__item">
+            <img src="img/single/params_ico-1.svg" alt=""><span>Расход топлива</span>
+          </div>
+          <div class="params__item">
+            <ul>
+              <li><span>Топлево</span>
+                <p>Супер 95</p>
+              </li>
+              <li><span>Расход топлива</span>
+                <p>8 1/100 км (комб.)
+                  <br>8 л/100 км (город)
+                  <br>7 1/100 км (за городом)</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="params__block">
+          <div class="params__item">
+            <img src="img/single/params_ico-1.svg" alt=""><span>Расход энергии</span>
+          </div>
+          <div class="params__item">
+            <ul>
+              <li><span>кВт/100км</span>
+                <p>-</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="params__block">
+          <div class="params__item">
+            <img src="img/single/params_ico-1.svg" alt=""><span>Комплектация</span>
+          </div>
+          <div class="params__item">
+            <ul class="ul__hidden">
+              <li><span>Комфорт</span>
+                <p>Автоматический климат-контроль с 4 зонами подлокотник
+                  <br>Помощник горной поездки
+                  <br>Помощь в парковке
+                  <br>Камера парковочной помощи
+                  <br>Датчики помощи в парковке сзади
+                  <br>Парковать датчики помощи на фронте
+                  <br>Парковочная помощь
+                  <br>Electr. Window
+                  <br>Электрические боковые зеркала
+                  <br>Электрические места
+                  <br>кондиционер
+                  <br>Кожаное рулевое колесо
+                  <br>Световой датчик
+                  <br>Многофункциональное рулевое колесо
+                  <br>навигационная система
+                  <br>датчик дождя
+                  <br>Запуск/остановка автоматическая остановка
+                  <br>Круиз-контроль</p>
+              </li>
+              <li><span>Мультимедийная система</span>
+                <p>Apple CarPlay
+                  <br>Bluetooth
+                  <br>На доске компьютера
+                  <br>- CD
+                  <br>- Dab Radio
+                  <br>- Руки-Бесплатная система
+                  <br>- Аудиосистема
+                  <br>- USB
+                  <br>- Полный комбинированный инструмент</p>
+              </li>
+              <li><span>Безопасность</span>
+                <p>АБС
+                  <br>Abstandswarner
+                  <br>сигнализация
+                  <br>Beifahrerairbag
+                  <br>Биксеноновая шайнверфер
+                  <br>ЭСП
+                  <br>подушка безопасности Фарер
+                  <br>Fernlichtastant
+                  <br>изофикс
+                  <br>LED Tagfahrlicht
+                  <br>Mudigkeitswarnsystem
+                  <br>Небельшайнверфер
+                  <br>Нетормозной
+                  <br>Нотруфсистем
+                  <br>Reifendruckkontrollsystem
+                  <br>Seitenairbag
+                  <br>Серволенкунг
+                  <br>Spurhalteассистент
+                  <br>Тагфарлихт
+                  <br>Контроль тяги</p>
+              </li>
+              <li><span>Дополнение</span>
+                <p>литые диски
+                  <br>окружающее освещение
+                  <br>Внутреннее зеркало с автоматическим затемнением
+                  <br>аварийный комплект
+                  <br>летняя резина
+                  <br>спортивные сиденья
+                  <br>голосовое управление
+                  <br>сенсорный экран</p>
+              </li>
+            </ul>
+            <button><span>Показать больше</span>
+              <img src="img/icons/arr-down-blue.svg" alt="">
+            </button>
+          </div>
+        </div>
+        <div class="params__block params__block_comment">
+          <div class="params__item">
+            <img src="img/single/params_ico-1.svg" alt=""><span>Примечания</span>
+          </div>
+          <div class="params__item">
+            <ul>
+              <li class="li__hidden-text">
+                <p>Чтобы перейти непосредственно к предложению: просто скопируйте следующую ссылку в Адресная строка: https://apmk.eu/mc/4728/7 и создайте свою собственную с помощью нашего удобного конфигураторажелаемый автомобиль вместе.
+                  <br>
+                  <br>Для этого автомобиля доступны все варианты двигателей и оборудования, которые предлагает производитель. Кроме того, это может быть полностью по вашему вкусу настроено и заказано.
+                  <br>
+                  <br>Указанные цены включают трансфер до нашего офиса по адресу 82407...Чтобы перейти непосредственно к предложению: просто скопируйте следующую ссылку в Адресная строка: https://apmk.eu/mc/4728/7 и создайте свою собственную с помощью нашего
+                  удобного конфигураторажелаемый автомобиль вместе.
+                  <br>
+                  <br>Для этого автомобиля доступны все варианты двигателей и оборудования, которые предлагает производитель. Кроме того, это может быть полностью по вашему вкусу настроено и заказано.
+                  <br>
+                  <br>Указанные цены включают трансфер до нашего офиса по адресу 82407...Чтобы перейти непосредственно к предложению: просто скопируйте следующую ссылку в Адресная строка: https://apmk.eu/mc/4728/7 и создайте свою собственную с помощью нашего
+                  удобного конфигураторажелаемый автомобиль вместе.
+                  <br>
+                  <br>Для этого автомобиля доступны все варианты двигателей и оборудования, которые предлагает производитель. Кроме того, это может быть полностью по вашему вкусу настроено и заказано.
+                  <br>
+                  <br>Указанные цены включают трансфер до нашего офиса по адресу 82407...</p>
+                <button><span>Показать больше</span>
+                  <img src="img/icons/arr-down-blue.svg" alt="">
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="wrapper">
+          <div class="contacts__inner">
+            <div class="contacts__people">
+              <div class="contacts__info">
+                <div class="info__lft">
+                  <h1>Контакты </h1>
+                  <h2>Адрес Германия</h2>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <img src="img/icons/phone-blue.svg" alt=""><span>+380 (44) 496-00-55</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="img/icons/phone-blue.svg" alt=""><span>+380 (67) 136-59-99</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="img/icons/email-blue.svg" alt=""><span>zakaz@atp.com.ua</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="img/icons/pin-blue.svg" alt=""><span>ул. Пушкинская офис 36</span>
+                      </a>
+                    </li>
+                  </ul><a class="open-map" href="#">Открыть карту</a>
+                </div>
+                <div class="info__rht">
+                  <div class="info__photo">
+                    <img src="img/contacts/person-1.jpg" alt="">
+                  </div>
+                  <h3>Имя</h3>
+                  <p>Должность</p>
+                </div>
+              </div>
+              <div class="contacts__info">
+                <div class="info__lft">
+                  <h2>Адрес Германия</h2>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <img src="img/icons/phone-blue.svg" alt=""><span>+380 (44) 496-00-55</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="img/icons/phone-blue.svg" alt=""><span>+380 (67) 136-59-99</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="img/icons/email-blue.svg" alt=""><span>zakaz@atp.com.ua</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="img/icons/pin-blue.svg" alt=""><span>ул. Пушкинская офис 36</span>
+                      </a>
+                    </li>
+                  </ul><a class="open-map" href="#">Открыть карту</a>
+                </div>
+                <div class="info__rht">
+                  <div class="info__photo">
+                    <img src="img/contacts/person-2.jpg" alt="">
+                  </div>
+                  <h3>Имя</h3>
+                  <p>Должность</p>
+                </div>
+              </div>
+            </div>
+            <form class="contacts__form" action="#">
+              <h2>Связаться с нами</h2>
+              <label><span>Ваше сообщение</span>
+                <textarea placeholder="Ваше сообщение" required></textarea>
+              </label>
+              <label><span>Ваше имя</span>
+                <input type="text" placeholder="Ваше имя" required>
+              </label>
+              <label><span>E-mail</span>
+                <input type="email" placeholder="E-mail" required>
+              </label>
+              <label><span>Телефон</span>
+                <input type="tel" placeholder="Телефон">
+              </label>
+              <div class="checkbox">
+                <input type="checkbox" checked id="ch-bx-1">
+                <label for="ch-bx-1">Я хотел бы получить предложения, соответствующие моим интересам и новости от Luxury Cars по электронной почте.</label>
+              </div>
+              <button>Отправить
+                <br>E-mail</button>
+              <p class="bottom__text">мы используем ваш адрес электронной почты в соответствии с нашими. Правила защиты данных, например, для рекомендаций транспортных средств, похожих на ваш поиск. Если у вас нет других рекомендаций по транспортным средствам. Если вы хотите
+                получить больше, вы можете возразить здесь в любое время.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="slider-cars">
+        <h2>Похожие автомобили</h2>
+        <div class="slider-cars__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide__photo">
+                <img src="img/single/slider-photo.jpg" alt="">
+              </div>
+              <div class="slide__text">
+                <h4>BMW X7</h4>
+                <p class="slide__p">M60i xDrive: SZH, Navi, Panorama, Kl...</p>
+                <div class="slide__location">
+                  <img src="img/single/pin_icon.svg" alt=""><span>Wielenbach, DE</span>
+                </div>
+                <div class="slide__price">66.402,00 €</div>
+                <ul class="slide__info">
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide__photo">
+                <img src="img/single/slider-photo.jpg" alt="">
+              </div>
+              <div class="slide__text">
+                <h4>BMW X7</h4>
+                <p class="slide__p">M60i xDrive: SZH, Navi, Panorama, Kl...</p>
+                <div class="slide__location">
+                  <img src="img/single/pin_icon.svg" alt=""><span>Wielenbach, DE</span>
+                </div>
+                <div class="slide__price">66.402,00 €</div>
+                <ul class="slide__info">
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide__photo">
+                <img src="img/single/slider-photo.jpg" alt="">
+              </div>
+              <div class="slide__text">
+                <h4>BMW X7</h4>
+                <p class="slide__p">M60i xDrive: SZH, Navi, Panorama, Kl...</p>
+                <div class="slide__location">
+                  <img src="img/single/pin_icon.svg" alt=""><span>Wielenbach, DE</span>
+                </div>
+                <div class="slide__price">66.402,00 €</div>
+                <ul class="slide__info">
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide__photo">
+                <img src="img/single/slider-photo.jpg" alt="">
+              </div>
+              <div class="slide__text">
+                <h4>BMW X7</h4>
+                <p class="slide__p">M60i xDrive: SZH, Navi, Panorama, Kl...</p>
+                <div class="slide__location">
+                  <img src="img/single/pin_icon.svg" alt=""><span>Wielenbach, DE</span>
+                </div>
+                <div class="slide__price">66.402,00 €</div>
+                <ul class="slide__info">
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide__photo">
+                <img src="img/single/slider-photo.jpg" alt="">
+              </div>
+              <div class="slide__text">
+                <h4>BMW X7</h4>
+                <p class="slide__p">M60i xDrive: SZH, Navi, Panorama, Kl...</p>
+                <div class="slide__location">
+                  <img src="img/single/pin_icon.svg" alt=""><span>Wielenbach, DE</span>
+                </div>
+                <div class="slide__price">66.402,00 €</div>
+                <ul class="slide__info">
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide__photo">
+                <img src="img/single/slider-photo.jpg" alt="">
+              </div>
+              <div class="slide__text">
+                <h4>BMW X7</h4>
+                <p class="slide__p">M60i xDrive: SZH, Navi, Panorama, Kl...</p>
+                <div class="slide__location">
+                  <img src="img/single/pin_icon.svg" alt=""><span>Wielenbach, DE</span>
+                </div>
+                <div class="slide__price">66.402,00 €</div>
+                <ul class="slide__info">
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide__photo">
+                <img src="img/single/slider-photo.jpg" alt="">
+              </div>
+              <div class="slide__text">
+                <h4>BMW X7</h4>
+                <p class="slide__p">M60i xDrive: SZH, Navi, Panorama, Kl...</p>
+                <div class="slide__location">
+                  <img src="img/single/pin_icon.svg" alt=""><span>Wielenbach, DE</span>
+                </div>
+                <div class="slide__price">66.402,00 €</div>
+                <ul class="slide__info">
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="li__icon">
+                      <img src="img/icons/speedometer.svg" alt="">
+                    </div>
+                    <div class="li__text"><span>Пробег</span>
+                      <p>71.800 km</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <button class="swiper-button-prev">
+            <img src="img/icons/arr-left-wh.svg" alt="">
+          </button>
+          <button class="swiper-button-next">
+            <img src="img/icons/arr-right-wh.svg" alt="">
+          </button>
+        </div>
+      </section>
+      <section class="single__bottom"><a class="goto-catalog" href="#"><span>Каталог</span><img src="img/icons/arr-right-wh.svg" alt=""></a><a class="link" href="#">Читать блог о BMW</a><a class="link" href="#">Получать уведомления о новых поступлениях автомобилей</a>
       </section>
     </div>
+    <button class="block-to-up">
+      <div class="arrs">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.99274 2.88834L0.207681 8.6735C0.0737717 8.80731 -5.82426e-08 8.98592 -4.99176e-08 9.17638C-4.15926e-08 9.36683 0.0737717 9.54545 0.207681 9.67925L0.633613 10.1053C0.911155 10.3825 1.36224 10.3825 1.63936 10.1053L6.4973 5.24734L11.3606 10.1107C11.4945 10.2445 11.6731 10.3184 11.8634 10.3184C12.054 10.3184 12.2325 10.2445 12.3665 10.1107L12.7923 9.68464C12.9262 9.55073 13 9.37222 13 9.18177C13 8.99131 12.9262 8.8127 12.7923 8.67889L7.00197 2.88834C6.86764 2.75422 6.68829 2.68055 6.49762 2.68097C6.30622 2.68055 6.12697 2.75422 5.99274 2.88834Z"
+          fill="white"></path>
+        </svg>
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.99274 2.88834L0.207681 8.6735C0.0737717 8.80731 -5.82426e-08 8.98592 -4.99176e-08 9.17638C-4.15926e-08 9.36683 0.0737717 9.54545 0.207681 9.67925L0.633613 10.1053C0.911155 10.3825 1.36224 10.3825 1.63936 10.1053L6.4973 5.24734L11.3606 10.1107C11.4945 10.2445 11.6731 10.3184 11.8634 10.3184C12.054 10.3184 12.2325 10.2445 12.3665 10.1107L12.7923 9.68464C12.9262 9.55073 13 9.37222 13 9.18177C13 8.99131 12.9262 8.8127 12.7923 8.67889L7.00197 2.88834C6.86764 2.75422 6.68829 2.68055 6.49762 2.68097C6.30622 2.68055 6.12697 2.75422 5.99274 2.88834Z"
+          fill="white"></path>
+        </svg>
+      </div><span>Вверх</span>
+    </button>
   </main>
   <!-- ** FOOTER ** -->
   <!-- ** POPUP ** -->
@@ -500,6 +1367,8 @@
   <!-- ** FOOTER ** -->
   <!-- swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- zoom JS -->
+  <script src="js/zoom.min.js"></script>
   <!-- main JS -->
   <script src="js/app.min.js"></script>
 </body>

@@ -1,18 +1,41 @@
 .contacts{
-	.wrapper{
-		max-width: 1500px;
-	}
 	h1{
 		font-family: 'Oswald';
 		font-weight: 300;
 		font-size: 65px;
 		line-height: 75px;
-		margin-bottom: 30px;
+		margin-bottom: 42px;
 		color: #FFFFFF;
 	}
 	&__info{
-		background: #181818;
-		padding: 30px 24px 24px;
+		padding-right: 38px;
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+		padding-bottom: 27px;
+		margin-bottom: 60px;
+		&:last-child{
+			border: none;
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
+		.info__photo{
+			height: 331px;
+			margin-bottom: 9px;
+		}
+		.info__rht{
+			h3{
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 28px;
+				color: #FFFFFF;
+			}
+			p{
+				font-size: 14px;
+				line-height: 28px;
+				color: #FFFFFF;
+			}
+		}
 		h2{
 			margin-bottom: 28px;
 		}
@@ -46,23 +69,38 @@
 					color: #4F7DF6;
 				}
 			}
-			&:after{
-				content: '';
-				background: url('../img/icons/arr-right-wh.svg') no-repeat;
-				background-size: contain;
-				display: block;
-				width: 12px;
-				height: 12px;
-				margin-left: auto;
-			}
 			img{
 				margin-right: 10px;
 				width: 14px;
 			}
 		}
-		.btn{
+		.open-map{
+			
+			font-size: 18px;
+			line-height: 18px;
+			text-align: center;
+			color: #FFFFFF;
+			position: relative;
+			width: fit-content;
 			&:after{
-				display: none;
+				content: '';
+				background: #4F7DF6;
+				position: absolute;
+				left: 0;
+				width: 100%;
+				height: 1px;
+				bottom: -7px;
+				z-index: 2;
+			}
+			&:before{
+				content: '';
+				background: linear-gradient(180deg, rgba(79, 125, 246, 0.15) 0%, rgba(79, 125, 246, 0.75) 100%);
+				filter: blur(2px);
+				bottom: -7px;
+				height: 13px;
+				width: 100%;
+				z-index: 1;
+				position: absolute;
 			}
 		}
 	}
@@ -78,11 +116,72 @@
 		grid-gap: 30px;
 		margin-bottom: 30px;
 	}
+	button{
+		margin: 0 auto;
+		background: radial-gradient(62.39% 62.39% at 50% 50%, #030B21 0%, #04102D 2.6%, #04102D 7.29%, #04102D 18.23%, #0B1C4A 30.21%, #0A1D4F 34.9%, #203A7D 50.52%, #2E4B97 62.5%, #3252A7 70.83%, #5382FF 88.54%, #5181FF 95.83%);
+		border: 1px solid #FFFFFF;
+		box-shadow: 0px 6px 30px #4F7DF6;
+		backdrop-filter: blur(5px);
+		border-radius: 50%;
+		width: 130px;
+		height: 130px;
+		font-size: 15px;
+		line-height: 20px;
+		text-align: center;
+		color: #FFFFFF;
+		margin-bottom: 19px;
+		display: block;
+	}
+	.bottom__text{
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 22px;
+		color: #BFBFBF;
+	}
+	.checkbox{
+		margin-bottom: 24px;
+		input{
+			opacity: 0;
+			position: absolute;
+			visibility: hidden;
+			top: 0;
+			left: 0;
+		}
+		label{
+			display: flex;
+			align-items: center;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 18px;
+			color: #FFFFFF;
+			&:before{
+				content: '';
+				min-width: 21px;
+				width: 21px;
+				height: 21px;
+				background: #121418;
+				border: 1px solid #414447;
+				border-radius: 2px;
+				margin-right: 11px;
+			}
+		}
+		input:checked + label:before{
+			background: #121418 url('../img/icons/check.svg') no-repeat;
+			background-position: center;
+		}
+	}
 	&__form{
 		background: #181818;
-		padding: 40px 40px 20px;
+		padding: 30px 40px 20px;
+		max-width: 885px;
+		width: 100%;
 		h2{
-			margin-bottom: 40px;
+			font-family: 'Oswald';
+			font-weight: 300;
+			font-size: 40px;
+			line-height: 41px;
+			color: #FFFFFF;
+			margin-bottom: 18px;
 		}
 		.inputs{
 			display: flex;
@@ -95,10 +194,20 @@
 				}
 			}
 		}
+		label{
+			span{
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 20px;
+				color: #FFFFFF;
+				margin-bottom: 10px;
+				display: block;
+			}
+		}
 		textarea,
 		input{
 			background: #121418;
-			border: 1px solid #414447;
+			border: 1px solid rgba(255, 255, 255, 0.4);
 			border-radius: 3px;
 			margin-bottom: 15px;
 			width: 100%;
@@ -109,6 +218,10 @@
 			line-height: 20px;
 			color: #fff;
 			outline: none;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 20px;
+			color: rgba(255, 255, 255, 0.8);
 			&::placeholder{
 				color: rgba(255, 255, 255, 0.37);
 			}
