@@ -16,7 +16,7 @@ block body
 
 
 				section.single__top
-					.top__back
+					a(href="#").top__back
 						img(src="img/single/back.svg" alt="")
 						span Вернуться к списку автомобилей
 
@@ -35,42 +35,43 @@ block body
 
 				section.single__main
 					.main__slider
-						.slider__poster
-							.swiper-wrapper
-								.swiper-slide
-									img(src="img/single/slider-photo.jpg" alt="")
-									button.open-big-photo
-										img(src="img/single/open_big_photo.svg" alt="")
-								.swiper-slide
-									img(src="img/single/photo-1.jpg" alt="")
-									button.open-big-photo
-										img(src="img/single/open_big_photo.svg" alt="")
-								.swiper-slide
-									img(src="img/single/photo-2.jpg" alt="")
-									button.open-big-photo
-										img(src="img/single/open_big_photo.svg" alt="")
-								.swiper-slide
-									img(src="img/single/photo-3.jpg" alt="")
-									button.open-big-photo
-										img(src="img/single/open_big_photo.svg" alt="")
-								.swiper-slide
-									img(src="img/single/photo-4.jpg" alt="")
-									button.open-big-photo
-										img(src="img/single/open_big_photo.svg" alt="")
-								.swiper-slide
-									img(src="img/single/slider-photo.jpg" alt="")
-									button.open-big-photo
-										img(src="img/single/open_big_photo.svg" alt="")
-								.swiper-slide
-									img(src="img/single/slider-photo.jpg" alt="")
-									button.open-big-photo
-										img(src="img/single/open_big_photo.svg" alt="")
-									button.open-big-photo
-										img(src="img/single/open_big_photo.svg" alt="")
+						.slider__big
+							.slider__poster
+								.swiper-wrapper
+									.swiper-slide
+										img(src="img/single/slider-photo.jpg" alt="").zoomable
+										button.open-big-photo
+											img(src="img/single/open_big_photo.svg" alt="")
+									.swiper-slide
+										img(src="img/single/photo-1.jpg" alt="").zoomable
+										button.open-big-photo
+											img(src="img/single/open_big_photo.svg" alt="")
+									.swiper-slide
+										img(src="img/single/photo-2.jpg" alt="").zoomable
+										button.open-big-photo
+											img(src="img/single/open_big_photo.svg" alt="")
+									.swiper-slide
+										img(src="img/single/photo-3.jpg" alt="").zoomable
+										button.open-big-photo
+											img(src="img/single/open_big_photo.svg" alt="")
+									.swiper-slide
+										img(src="img/single/photo-4.jpg" alt="").zoomable
+										button.open-big-photo
+											img(src="img/single/open_big_photo.svg" alt="")
+									.swiper-slide
+										img(src="img/single/slider-photo.jpg" alt="").zoomable
+										button.open-big-photo
+											img(src="img/single/open_big_photo.svg" alt="")
+									.swiper-slide
+										img(src="img/single/slider-photo.jpg" alt="").zoomable
+										button.open-big-photo
+											img(src="img/single/open_big_photo.svg" alt="")
 
-							.swiper-numbers 1 / 8
-							.swiper-button-prev
-							.swiper-button-next
+								.swiper-numbers 1 / 8
+							button.swiper-button-prev
+								img(src="img/icons/arr-left-wh.svg" alt="")
+							button.swiper-button-next
+								img(src="img/icons/arr-right-wh.svg" alt="")
 
 						.slider__nav
 							.swiper-wrapper
@@ -90,7 +91,642 @@ block body
 									img(src="img/single/slider-photo.jpg" alt="")
 
 					.main__info
+						.info__buttons
+							button
+								img(src="img/single/info_icon-1.svg" alt="")
+							button
+								img(src="img/single/info_icon-2.svg" alt="")
+							button
+								img(src="img/single/info_icon-3.svg" alt="")
 
+						h1.info__title BMW 7
+						p.info__model M60i xDrive; SZH, Navi, Panorama, Klima, LED
+						span.info__text Мы предоставим вам автомобиль вашей мечты одним щелчком мыши
+						.info__location
+							img(src="img/single/pin_icon.svg" alt="")
+							span Wielenbach, DE
+						hr
+						p.info__price € 107 790,-*
+						button.info__calculate Рассчитать финансирование
+						hr
+						.info__general
+							ul
+								li
+									img(src="img/single/general_icon-1.svg" alt="")
+									.li__text
+										span Пробег
+										p 71.800 km
+								li
+									img(src="img/single/general_icon-1.svg" alt="")
+									.li__text
+										span Пробег
+										p 71.800 km
+								li
+									img(src="img/single/general_icon-1.svg" alt="")
+									.li__text
+										span Пробег
+										p 71.800 km
+								li
+									img(src="img/single/general_icon-1.svg" alt="")
+									.li__text
+										span Пробег
+										p 71.800 km
+								li
+									img(src="img/single/general_icon-1.svg" alt="")
+									.li__text
+										span Пробег
+										p 71.800 km
+								li
+									img(src="img/single/general_icon-1.svg" alt="")
+									.li__text
+										span Пробег
+										p 71.800 km
+
+						.info__bottom
+							button Отправить E-mail
+							.select
+								.select__head
+									span Связаться
+									img()
+								.select__body
+									a(href="#")
+										.icon
+											img(src="img/icons/whatsapp.svg")
+										span WhatsApp
+									a(href="#")
+										.icon
+											img(src="img/icons/viber.svg")
+										span Viber
+									a(href="#")
+										.icon
+											img(src="img/icons/telegram.svg")
+										span Telegram
+						.info__links
+							a(href="#") Читать блог о BMW
+							a(href="#") Получать уведомления о новых поступлениях автомобилей
+
+				section.single__params
+					.params__block
+						.params__item
+							img(src="img/single/params_ico-1.svg" alt="")
+							span Основные данные
+						.params__item
+							ul
+								li
+									span Форма кузова
+									p Форма кузова внедорожник внедорожник/пикапФорма кузова внедорожник внедорожник/пикапФорма кузова внедорожник внедорожник/пикапФорма кузова внедорожник внедорожник/пикапФорма кузова внедорожник внедорожник/пикапФорма кузова внедорожник внедорожник/пикап
+								li
+									span Тип машины
+									p Новый
+								li
+									span Тип вождения
+									p Полноприводный автомобиль
+								li
+									span Места
+									p 5
+								li
+									span Двери
+									p 5
+								li
+									span Страна
+									p Венгрия
+								li
+									span Номер ключа
+									p 0005/BYD
+								li
+									span Доступность
+									p через 150 дней с момента заказа
+					.params__block
+						.params__item
+							img(src="img/single/params_ico-1.svg" alt="")
+							span История автомобиля
+						.params__item
+							ul
+								li
+									span Чековая книжка поддерживается
+									p Да
+					.params__block
+						.params__item
+							img(src="img/single/params_ico-1.svg" alt="")
+							span Технические данные
+						.params__item
+							ul
+								li
+									span Производительность
+									p 390 кВт (530 л.с.)
+								li
+									span Передача
+									p Автоматический
+								li
+									span Смещение
+									p 2998 см3
+								li
+									span Шестерни
+									p 8
+								li
+									span Цилиндр
+									p 6
+								li
+									span Снаряженная масса
+									p 2 130 кг
+					.params__block.params__block_without-underline
+						.params__item
+							img(src="img/single/params_ico-1.svg" alt="")
+							span Расход топлива
+						.params__item
+							ul
+								li
+									span Топлево
+									p Супер 95
+								li
+									span Расход топлива
+									p 8 1/100 км (комб.) <br>8 л/100 км (город) <br>7 1/100 км (за городом)
+					.params__block
+						.params__item
+							img(src="img/single/params_ico-1.svg" alt="")
+							span Расход энергии
+						.params__item
+							ul
+								li
+									span кВт/100км
+									p -
+					.params__block
+						.params__item
+							img(src="img/single/params_ico-1.svg" alt="")
+							span Комплектация
+						.params__item
+							ul.ul__hidden
+								li
+									span Комфорт
+									p Автоматический климат-контроль с 4 зонами подлокотник <br>Помощник горной поездки <br>Помощь в парковке <br>Камера парковочной помощи <br>Датчики помощи в парковке сзади <br>Парковать датчики помощи на фронте <br>Парковочная помощь <br>Electr. Window <br>Электрические боковые зеркала <br>Электрические места <br>кондиционер <br>Кожаное рулевое колесо <br>Световой датчик <br>Многофункциональное рулевое колесо <br>навигационная система <br>датчик дождя <br>Запуск/остановка автоматическая остановка <br>Круиз-контроль
+
+								li
+									span Мультимедийная система
+									p Apple CarPlay <br>Bluetooth <br>На доске компьютера <br>- CD <br>- Dab Radio <br>- Руки-Бесплатная система <br>- Аудиосистема <br>- USB <br>- Полный комбинированный инструмент
+
+								li
+									span Безопасность
+									p АБС <br>Abstandswarner <br>сигнализация <br>Beifahrerairbag <br>Биксеноновая шайнверфер <br>ЭСП <br>подушка безопасности Фарер <br>Fernlichtastant <br>изофикс <br>LED Tagfahrlicht <br>Mudigkeitswarnsystem <br>Небельшайнверфер <br>Нетормозной <br>Нотруфсистем <br>Reifendruckkontrollsystem <br>Seitenairbag <br>Серволенкунг <br>Spurhalteассистент <br>Тагфарлихт <br>Контроль тяги
+
+								li
+									span Дополнение
+									p литые диски <br>окружающее освещение <br>Внутреннее зеркало с автоматическим затемнением <br>аварийный комплект <br>летняя резина <br>спортивные сиденья <br>голосовое управление <br>сенсорный экран
+							button
+								span Показать больше
+								img(src="img/icons/arr-down-blue.svg" alt="")
+					.params__block.params__block_comment
+						.params__item
+							img(src="img/single/params_ico-1.svg" alt="")
+							span Примечания
+						.params__item
+							ul
+								li.li__hidden-text
+									p Чтобы перейти непосредственно к предложению: просто скопируйте следующую ссылку в Адресная строка: https://apmk.eu/mc/4728/7 и создайте свою собственную с помощью нашего удобного конфигураторажелаемый автомобиль вместе. <br><br>Для этого автомобиля доступны все варианты двигателей и оборудования, которые предлагает производитель. Кроме того, это может быть полностью по вашему вкусу настроено и заказано. <br><br>Указанные цены включают трансфер до нашего офиса по адресу 82407...Чтобы перейти непосредственно к предложению: просто скопируйте следующую ссылку в Адресная строка: https://apmk.eu/mc/4728/7 и создайте свою собственную с помощью нашего удобного конфигураторажелаемый автомобиль вместе. <br><br>Для этого автомобиля доступны все варианты двигателей и оборудования, которые предлагает производитель. Кроме того, это может быть полностью по вашему вкусу настроено и заказано. <br><br>Указанные цены включают трансфер до нашего офиса по адресу 82407...Чтобы перейти непосредственно к предложению: просто скопируйте следующую ссылку в Адресная строка: https://apmk.eu/mc/4728/7 и создайте свою собственную с помощью нашего удобного конфигураторажелаемый автомобиль вместе. <br><br>Для этого автомобиля доступны все варианты двигателей и оборудования, которые предлагает производитель. Кроме того, это может быть полностью по вашему вкусу настроено и заказано. <br><br>Указанные цены включают трансфер до нашего офиса по адресу 82407...
+									button
+										span Показать больше
+										img(src="img/icons/arr-down-blue.svg" alt="")
+
+				section.contacts
+					.wrapper
+						.contacts__inner
+							.contacts__people
+								.contacts__info
+									.info__lft
+										h1 Контакты 
+										h2 Адрес Германия
+										ul
+											li
+												a(href="#")
+													img(src="img/icons/phone-blue.svg" alt="")
+													span +380 (44) 496-00-55
+											li
+												a(href="#")
+													img(src="img/icons/phone-blue.svg" alt="")
+													span +380 (67) 136-59-99
+											li
+												a(href="#")
+													img(src="img/icons/email-blue.svg" alt="")
+													span zakaz@atp.com.ua
+											li
+												a(href="#")
+													img(src="img/icons/pin-blue.svg" alt="")
+													span ул. Пушкинская офис 36
+										a(href="#").open-map Открыть карту
+									.info__rht
+										.info__photo
+											img(src="img/contacts/person-1.jpg" alt="")
+										h3 Имя
+										p Должность
+								.contacts__info
+									.info__lft
+										h2 Адрес Германия
+										ul
+											li
+												a(href="#")
+													img(src="img/icons/phone-blue.svg" alt="")
+													span +380 (44) 496-00-55
+											li
+												a(href="#")
+													img(src="img/icons/phone-blue.svg" alt="")
+													span +380 (67) 136-59-99
+											li
+												a(href="#")
+													img(src="img/icons/email-blue.svg" alt="")
+													span zakaz@atp.com.ua
+											li
+												a(href="#")
+													img(src="img/icons/pin-blue.svg" alt="")
+													span ул. Пушкинская офис 36
+										a(href="#").open-map Открыть карту
+									.info__rht
+										.info__photo
+											img(src="img/contacts/person-2.jpg" alt="")
+										h3 Имя
+										p Должность
+							form(action="#").contacts__form
+								h2 Связаться с нами
+								label
+									span Ваше сообщение
+									textarea(placeholder="Ваше сообщение" required)
+								label
+									span Ваше имя
+									input(type="text" placeholder="Ваше имя" required)
+								label
+									span E-mail
+									input(type="email" placeholder="E-mail" required)
+								label
+									span Телефон
+									input(type="tel" placeholder="Телефон")
+
+								.checkbox
+									input(type="checkbox" checked)#ch-bx-1
+									label(for="ch-bx-1") Я хотел бы получить предложения, соответствующие моим интересам и новости от Luxury Cars по электронной почте.
+
+								button Отправить<br>E-mail
+
+								p.bottom__text мы используем ваш адрес электронной почты в соответствии с нашими. Правила защиты данных, например, для рекомендаций транспортных средств, похожих на ваш поиск. Если у вас нет других рекомендаций по транспортным средствам. Если вы хотите получить больше, вы можете возразить здесь в любое время.
+
+								//- .inputs
+								//- 	input(placeholder="Ваше имя" type="text" required)
+								//- 	input(placeholder="Ваш e-mail" type="email" required)
+								//- textarea(placeholder="Напишите ваше обращение" required)
+								//- .form__bottom
+								//- 	p Техническая поддержка рассмотрит ваше обращение <span>в течение 24 часов</span>. Вы получите ответ на почту.
+								//- 	button(type="submit").btn Отправить
+
+				section.slider-cars
+					h2 Похожие автомобили
+					.slider-cars__slider
+						.swiper-wrapper
+							.swiper-slide
+								.slide__photo
+									img(src="img/single/slider-photo.jpg" alt="")
+								.slide__text
+									h4 BMW X7
+									p.slide__p M60i xDrive: SZH, Navi, Panorama, Kl...
+									.slide__location
+										img(src="img/single/pin_icon.svg" alt="")
+										span Wielenbach, DE
+									.slide__price 66.402,00 €
+									ul.slide__info
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+							.swiper-slide
+								.slide__photo
+									img(src="img/single/slider-photo.jpg" alt="")
+								.slide__text
+									h4 BMW X7
+									p.slide__p M60i xDrive: SZH, Navi, Panorama, Kl...
+									.slide__location
+										img(src="img/single/pin_icon.svg" alt="")
+										span Wielenbach, DE
+									.slide__price 66.402,00 €
+									ul.slide__info
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+							.swiper-slide
+								.slide__photo
+									img(src="img/single/slider-photo.jpg" alt="")
+								.slide__text
+									h4 BMW X7
+									p.slide__p M60i xDrive: SZH, Navi, Panorama, Kl...
+									.slide__location
+										img(src="img/single/pin_icon.svg" alt="")
+										span Wielenbach, DE
+									.slide__price 66.402,00 €
+									ul.slide__info
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+							.swiper-slide
+								.slide__photo
+									img(src="img/single/slider-photo.jpg" alt="")
+								.slide__text
+									h4 BMW X7
+									p.slide__p M60i xDrive: SZH, Navi, Panorama, Kl...
+									.slide__location
+										img(src="img/single/pin_icon.svg" alt="")
+										span Wielenbach, DE
+									.slide__price 66.402,00 €
+									ul.slide__info
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+							.swiper-slide
+								.slide__photo
+									img(src="img/single/slider-photo.jpg" alt="")
+								.slide__text
+									h4 BMW X7
+									p.slide__p M60i xDrive: SZH, Navi, Panorama, Kl...
+									.slide__location
+										img(src="img/single/pin_icon.svg" alt="")
+										span Wielenbach, DE
+									.slide__price 66.402,00 €
+									ul.slide__info
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+							.swiper-slide
+								.slide__photo
+									img(src="img/single/slider-photo.jpg" alt="")
+								.slide__text
+									h4 BMW X7
+									p.slide__p M60i xDrive: SZH, Navi, Panorama, Kl...
+									.slide__location
+										img(src="img/single/pin_icon.svg" alt="")
+										span Wielenbach, DE
+									.slide__price 66.402,00 €
+									ul.slide__info
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+							.swiper-slide
+								.slide__photo
+									img(src="img/single/slider-photo.jpg" alt="")
+								.slide__text
+									h4 BMW X7
+									p.slide__p M60i xDrive: SZH, Navi, Panorama, Kl...
+									.slide__location
+										img(src="img/single/pin_icon.svg" alt="")
+										span Wielenbach, DE
+									.slide__price 66.402,00 €
+									ul.slide__info
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+										li
+											.li__icon
+												img(src="img/icons/speedometer.svg" alt="")
+											.li__text
+												span Пробег
+												p 71.800 km
+						button.swiper-button-prev
+							img(src="img/icons/arr-left-wh.svg" alt="")
+						button.swiper-button-next
+							img(src="img/icons/arr-right-wh.svg" alt="")
+
+				section.single__bottom
+					a(href="#").goto-catalog
+						span Каталог
+						img(src="img/icons/arr-right-wh.svg" alt="")
+					a(href="#").link Читать блог о BMW
+					a(href="#").link Получать уведомления о новых поступлениях автомобилей
+
+								
+			button.block-to-up
+				.arrs
+					svg(width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg")
+						path(d="M5.99274 2.88834L0.207681 8.6735C0.0737717 8.80731 -5.82426e-08 8.98592 -4.99176e-08 9.17638C-4.15926e-08 9.36683 0.0737717 9.54545 0.207681 9.67925L0.633613 10.1053C0.911155 10.3825 1.36224 10.3825 1.63936 10.1053L6.4973 5.24734L11.3606 10.1107C11.4945 10.2445 11.6731 10.3184 11.8634 10.3184C12.054 10.3184 12.2325 10.2445 12.3665 10.1107L12.7923 9.68464C12.9262 9.55073 13 9.37222 13 9.18177C13 8.99131 12.9262 8.8127 12.7923 8.67889L7.00197 2.88834C6.86764 2.75422 6.68829 2.68055 6.49762 2.68097C6.30622 2.68055 6.12697 2.75422 5.99274 2.88834Z" fill="white")
+					svg(width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg")
+						path(d="M5.99274 2.88834L0.207681 8.6735C0.0737717 8.80731 -5.82426e-08 8.98592 -4.99176e-08 9.17638C-4.15926e-08 9.36683 0.0737717 9.54545 0.207681 9.67925L0.633613 10.1053C0.911155 10.3825 1.36224 10.3825 1.63936 10.1053L6.4973 5.24734L11.3606 10.1107C11.4945 10.2445 11.6731 10.3184 11.8634 10.3184C12.054 10.3184 12.2325 10.2445 12.3665 10.1107L12.7923 9.68464C12.9262 9.55073 13 9.37222 13 9.18177C13 8.99131 12.9262 8.8127 12.7923 8.67889L7.00197 2.88834C6.86764 2.75422 6.68829 2.68055 6.49762 2.68097C6.30622 2.68055 6.12697 2.75422 5.99274 2.88834Z" fill="white")
+				span Вверх
 
 
 

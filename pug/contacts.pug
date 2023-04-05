@@ -18,55 +18,89 @@ block body
 				.wrapper
 					h1 Контакты 
 					.contacts__inner
-						.contacts__info
-							h2 Адрес Германия
-							ul
-								li
-									a(href="#")
-										img(src="img/icons/phone-blue.svg" alt="")
-										span +380 (44) 496-00-55
-								li
-									a(href="#")
-										img(src="img/icons/phone-blue.svg" alt="")
-										span +380 (67) 136-59-99
-								li
-									a(href="#")
-										img(src="img/icons/email-blue.svg" alt="")
-										span zakaz@atp.com.ua
-								li
-									a(href="#")
-										img(src="img/icons/pin-blue.svg" alt="")
-										span ул. Пушкинская офис 36
-							a(href="#").btn Открыть карту
-						.contacts__info
-							h2 Адрес Казахстан
-							ul
-								li
-									a(href="#")
-										img(src="img/icons/phone-blue.svg" alt="")
-										span +380 (44) 496-00-55
-								li
-									a(href="#")
-										img(src="img/icons/phone-blue.svg" alt="")
-										span +380 (67) 136-59-99
-								li
-									a(href="#")
-										img(src="img/icons/email-blue.svg" alt="")
-										span zakaz@atp.com.ua
-								li
-									a(href="#")
-										img(src="img/icons/pin-blue.svg" alt="")
-										span ул. Пушкинская офис 36
-							a(href="#").btn Открыть карту
-					form(action="#").contacts__form
-						h2 Возникли вопросы? заполните форму обратной связи
-						.inputs
-							input(placeholder="Ваше имя" type="text" required)
-							input(placeholder="Ваш e-mail" type="email" required)
-						textarea(placeholder="Напишите ваше обращение" required)
-						.form__bottom
-							p Техническая поддержка рассмотрит ваше обращение <span>в течение 24 часов</span>. Вы получите ответ на почту.
-							button(type="submit").btn Отправить
+						.contacts__people
+							.contacts__info
+								.info__lft
+									h2 Адрес Германия
+									ul
+										li
+											a(href="#")
+												img(src="img/icons/phone-blue.svg" alt="")
+												span +380 (44) 496-00-55
+										li
+											a(href="#")
+												img(src="img/icons/phone-blue.svg" alt="")
+												span +380 (67) 136-59-99
+										li
+											a(href="#")
+												img(src="img/icons/email-blue.svg" alt="")
+												span zakaz@atp.com.ua
+										li
+											a(href="#")
+												img(src="img/icons/pin-blue.svg" alt="")
+												span ул. Пушкинская офис 36
+									a(href="#").open-map Открыть карту
+								.info__rht
+									.info__photo
+										img(src="img/contacts/person-1.jpg" alt="")
+									h3 Имя
+									p Должность
+							.contacts__info
+								.info__lft
+									h2 Адрес Германия
+									ul
+										li
+											a(href="#")
+												img(src="img/icons/phone-blue.svg" alt="")
+												span +380 (44) 496-00-55
+										li
+											a(href="#")
+												img(src="img/icons/phone-blue.svg" alt="")
+												span +380 (67) 136-59-99
+										li
+											a(href="#")
+												img(src="img/icons/email-blue.svg" alt="")
+												span zakaz@atp.com.ua
+										li
+											a(href="#")
+												img(src="img/icons/pin-blue.svg" alt="")
+												span ул. Пушкинская офис 36
+									a(href="#").open-map Открыть карту
+								.info__rht
+									.info__photo
+										img(src="img/contacts/person-2.jpg" alt="")
+									h3 Имя
+									p Должность
+						form(action="#").contacts__form
+							h2 Связаться с нами
+							label
+								span Ваше сообщение
+								textarea(placeholder="Ваше сообщение")
+							label
+								span Ваше имя
+								input(type="text" placeholder="Ваше имя")
+							label
+								span E-mail
+								input(type="email" placeholder="E-mail")
+							label
+								span Телефон
+								input(type="tel" placeholder="Телефон")
+
+							.checkbox
+								input(type="checkbox")#ch-bx-1
+								label(for="ch-bx-1") Я хотел бы получить предложения, соответствующие моим интересам и новости от Luxury Cars по электронной почте.
+
+							button Отправить<br>E-mail
+
+							p.bottom__text мы используем ваш адрес электронной почты в соответствии с нашими. Правила защиты данных, например, для рекомендаций транспортных средств, похожих на ваш поиск. Если у вас нет других рекомендаций по транспортным средствам. Если вы хотите получить больше, вы можете возразить здесь в любое время.
+
+							//- .inputs
+							//- 	input(placeholder="Ваше имя" type="text" required)
+							//- 	input(placeholder="Ваш e-mail" type="email" required)
+							//- textarea(placeholder="Напишите ваше обращение" required)
+							//- .form__bottom
+							//- 	p Техническая поддержка рассмотрит ваше обращение <span>в течение 24 часов</span>. Вы получите ответ на почту.
+							//- 	button(type="submit").btn Отправить
 
 			
 
