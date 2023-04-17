@@ -14,6 +14,27 @@ block body
 		main.single
 			.wrapper
 
+				section.scroll-block.scroll-block_active
+					.scroll-block__lft
+						.scroll-block__image
+							img(src="img/single/car-blue.png" alt="Photo")
+						.scroll-block__text
+							h3 BMW 7 
+							p M60i xDrive; SZH, Navi, Panorama, Klima, LED
+							span Мы предоставим вам автомобиль вашей мечты одним щелчком мыши
+							p.mob Первичный взнос 50% в размере
+								b 66.402,00 €
+					.scroll-block__rht
+						.scroll-block__info
+							.info__buttons
+								button
+									img(src="img/single/info_icon-1.svg" alt="")
+								button
+									img(src="img/single/info_icon-2.svg" alt="")
+								button
+									img(src="img/single/info_icon-3.svg" alt="")
+						button(data-popup="popup-email").btn.open-popup Связаться с провайдером
+
 
 				section.single__top
 					a(href="#").top__back
@@ -91,15 +112,16 @@ block body
 									img(src="img/single/slider-photo.jpg" alt="")
 
 					.main__info
-						.info__buttons
-							button
-								img(src="img/single/info_icon-1.svg" alt="")
-							button
-								img(src="img/single/info_icon-2.svg" alt="")
-							button
-								img(src="img/single/info_icon-3.svg" alt="")
+						.button__title
+							.info__buttons
+								button
+									img(src="img/single/info_icon-1.svg" alt="")
+								button
+									img(src="img/single/info_icon-2.svg" alt="")
+								button
+									img(src="img/single/info_icon-3.svg" alt="")
 
-						h1.info__title BMW 7
+							h1.info__title BMW 7
 						p.info__model M60i xDrive; SZH, Navi, Panorama, Klima, LED
 						span.info__text Мы предоставим вам автомобиль вашей мечты одним щелчком мыши
 						.info__location
@@ -143,7 +165,7 @@ block body
 										p 71.800 km
 
 						.info__bottom
-							button Отправить E-mail
+							button(data-popup="popup-email").open-popup Отправить E-mail
 							.select
 								.select__head
 									span Связаться
@@ -199,36 +221,33 @@ block body
 					.params__block
 						.params__item
 							img(src="img/single/params_ico-1.svg" alt="")
-							span История автомобиля
+							span Особая комплектация
 						.params__item
 							ul
 								li
-									span Чековая книжка поддерживается
-									p Да
+									span Трансмиссия / Колеса
+									p --- <br>--- <br>---
+								li
+									span Мультимедия
+									p --- <br>--- <br>---
+								li
+									span Безопасность
+									p --- <br>--- <br>---
+								li
+									span Комфорт и интерьер
+									p --- <br>--- <br>---
+								li
+									span Разное
+									p --- <br>--- <br>---
 					.params__block
 						.params__item
 							img(src="img/single/params_ico-1.svg" alt="")
-							span Технические данные
+							span Базовая комплектация
 						.params__item
 							ul
 								li
-									span Производительность
-									p 390 кВт (530 л.с.)
-								li
-									span Передача
-									p Автоматический
-								li
-									span Смещение
-									p 2998 см3
-								li
-									span Шестерни
-									p 8
-								li
-									span Цилиндр
-									p 6
-								li
-									span Снаряженная масса
-									p 2 130 кг
+									span Стандарт
+									p --- <br>--- <br>---
 					.params__block.params__block_without-underline
 						.params__item
 							img(src="img/single/params_ico-1.svg" alt="")
@@ -236,11 +255,17 @@ block body
 						.params__item
 							ul
 								li
-									span Топлево
-									p Супер 95
+									span Расход комбинированный
+									p 11,9 л. /100 км.
 								li
-									span Расход топлива
-									p 8 1/100 км (комб.) <br>8 л/100 км (город) <br>7 1/100 км (за городом)
+									span Расход за городом
+									p 10 л. / 100 км.
+								li
+									span Расход в городе
+									p 7 л. / 100 км.
+								li
+									span Экологический стандарт
+									p Евро 6
 					.params__block
 						.params__item
 							img(src="img/single/params_ico-1.svg" alt="")
@@ -248,131 +273,103 @@ block body
 						.params__item
 							ul
 								li
-									span кВт/100км
-									p -
-					.params__block
-						.params__item
-							img(src="img/single/params_ico-1.svg" alt="")
-							span Комплектация
-						.params__item
-							ul.ul__hidden
-								li
-									span Комфорт
-									p Автоматический климат-контроль с 4 зонами подлокотник <br>Помощник горной поездки <br>Помощь в парковке <br>Камера парковочной помощи <br>Датчики помощи в парковке сзади <br>Парковать датчики помощи на фронте <br>Парковочная помощь <br>Electr. Window <br>Электрические боковые зеркала <br>Электрические места <br>кондиционер <br>Кожаное рулевое колесо <br>Световой датчик <br>Многофункциональное рулевое колесо <br>навигационная система <br>датчик дождя <br>Запуск/остановка автоматическая остановка <br>Круиз-контроль
-
-								li
-									span Мультимедийная система
-									p Apple CarPlay <br>Bluetooth <br>На доске компьютера <br>- CD <br>- Dab Radio <br>- Руки-Бесплатная система <br>- Аудиосистема <br>- USB <br>- Полный комбинированный инструмент
-
-								li
-									span Безопасность
-									p АБС <br>Abstandswarner <br>сигнализация <br>Beifahrerairbag <br>Биксеноновая шайнверфер <br>ЭСП <br>подушка безопасности Фарер <br>Fernlichtastant <br>изофикс <br>LED Tagfahrlicht <br>Mudigkeitswarnsystem <br>Небельшайнверфер <br>Нетормозной <br>Нотруфсистем <br>Reifendruckkontrollsystem <br>Seitenairbag <br>Серволенкунг <br>Spurhalteассистент <br>Тагфарлихт <br>Контроль тяги
-
-								li
-									span Дополнение
-									p литые диски <br>окружающее освещение <br>Внутреннее зеркало с автоматическим затемнением <br>аварийный комплект <br>летняя резина <br>спортивные сиденья <br>голосовое управление <br>сенсорный экран
-							button
-								span Показать больше
-								img(src="img/icons/arr-down-blue.svg" alt="")
+									span Электричества
+									p 8 кВт / 100 км
 					.params__block.params__block_comment
 						.params__item
 							img(src="img/single/params_ico-1.svg" alt="")
 							span Примечания
 						.params__item
 							ul
-								li.li__hidden-text
-									p Чтобы перейти непосредственно к предложению: просто скопируйте следующую ссылку в Адресная строка: https://apmk.eu/mc/4728/7 и создайте свою собственную с помощью нашего удобного конфигураторажелаемый автомобиль вместе. <br><br>Для этого автомобиля доступны все варианты двигателей и оборудования, которые предлагает производитель. Кроме того, это может быть полностью по вашему вкусу настроено и заказано. <br><br>Указанные цены включают трансфер до нашего офиса по адресу 82407...Чтобы перейти непосредственно к предложению: просто скопируйте следующую ссылку в Адресная строка: https://apmk.eu/mc/4728/7 и создайте свою собственную с помощью нашего удобного конфигураторажелаемый автомобиль вместе. <br><br>Для этого автомобиля доступны все варианты двигателей и оборудования, которые предлагает производитель. Кроме того, это может быть полностью по вашему вкусу настроено и заказано. <br><br>Указанные цены включают трансфер до нашего офиса по адресу 82407...Чтобы перейти непосредственно к предложению: просто скопируйте следующую ссылку в Адресная строка: https://apmk.eu/mc/4728/7 и создайте свою собственную с помощью нашего удобного конфигураторажелаемый автомобиль вместе. <br><br>Для этого автомобиля доступны все варианты двигателей и оборудования, которые предлагает производитель. Кроме того, это может быть полностью по вашему вкусу настроено и заказано. <br><br>Указанные цены включают трансфер до нашего офиса по адресу 82407...
-									button
-										span Показать больше
-										img(src="img/icons/arr-down-blue.svg" alt="")
+								li
+									p Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности играет важную роль в формировании дальнейших направлений развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки модели развития.
 
 				section.contacts
-					.wrapper
-						.contacts__inner
-							.contacts__people
-								.contacts__info
-									.info__lft
-										h1 Контакты 
-										h2 Адрес Германия
-										ul
-											li
-												a(href="#")
-													img(src="img/icons/phone-blue.svg" alt="")
-													span +380 (44) 496-00-55
-											li
-												a(href="#")
-													img(src="img/icons/phone-blue.svg" alt="")
-													span +380 (67) 136-59-99
-											li
-												a(href="#")
-													img(src="img/icons/email-blue.svg" alt="")
-													span zakaz@atp.com.ua
-											li
-												a(href="#")
-													img(src="img/icons/pin-blue.svg" alt="")
-													span ул. Пушкинская офис 36
-										a(href="#").open-map Открыть карту
-									.info__rht
-										.info__photo
-											img(src="img/contacts/person-1.jpg" alt="")
-										h3 Имя
-										p Должность
-								.contacts__info
-									.info__lft
-										h2 Адрес Германия
-										ul
-											li
-												a(href="#")
-													img(src="img/icons/phone-blue.svg" alt="")
-													span +380 (44) 496-00-55
-											li
-												a(href="#")
-													img(src="img/icons/phone-blue.svg" alt="")
-													span +380 (67) 136-59-99
-											li
-												a(href="#")
-													img(src="img/icons/email-blue.svg" alt="")
-													span zakaz@atp.com.ua
-											li
-												a(href="#")
-													img(src="img/icons/pin-blue.svg" alt="")
-													span ул. Пушкинская офис 36
-										a(href="#").open-map Открыть карту
-									.info__rht
-										.info__photo
-											img(src="img/contacts/person-2.jpg" alt="")
-										h3 Имя
-										p Должность
-							form(action="#").contacts__form
-								h2 Связаться с нами
-								label
-									span Ваше сообщение
-									textarea(placeholder="Ваше сообщение" required)
-								label
-									span Ваше имя
-									input(type="text" placeholder="Ваше имя" required)
-								label
-									span E-mail
-									input(type="email" placeholder="E-mail" required)
-								label
-									span Телефон
-									input(type="tel" placeholder="Телефон")
+					.contacts__inner
+						.contacts__people
+							.contacts__info
+								.info__lft
+									h1 Контакты 
+									h2 Адрес Германия
+									ul
+										li
+											a(href="#")
+												img(src="img/icons/phone-blue.svg" alt="")
+												span +380 (44) 496-00-55
+										li
+											a(href="#")
+												img(src="img/icons/phone-blue.svg" alt="")
+												span +380 (67) 136-59-99
+										li
+											a(href="#")
+												img(src="img/icons/email-blue.svg" alt="")
+												span zakaz@atp.com.ua
+										li
+											a(href="#")
+												img(src="img/icons/pin-blue.svg" alt="")
+												span ул. Пушкинская офис 36
+									a(href="#").open-map Открыть карту
+								.info__rht
+									.info__photo
+										img(src="img/contacts/person-1.jpg" alt="")
+									h3 Имя
+									p Должность
+							.contacts__info
+								.info__lft
+									h2 Адрес Германия
+									ul
+										li
+											a(href="#")
+												img(src="img/icons/phone-blue.svg" alt="")
+												span +380 (44) 496-00-55
+										li
+											a(href="#")
+												img(src="img/icons/phone-blue.svg" alt="")
+												span +380 (67) 136-59-99
+										li
+											a(href="#")
+												img(src="img/icons/email-blue.svg" alt="")
+												span zakaz@atp.com.ua
+										li
+											a(href="#")
+												img(src="img/icons/pin-blue.svg" alt="")
+												span ул. Пушкинская офис 36
+									a(href="#").open-map Открыть карту
+								.info__rht
+									.info__photo
+										img(src="img/contacts/person-2.jpg" alt="")
+									h3 Имя
+									p Должность
+						form(action="#").contacts__form
+							h2 Связаться с нами
+							label
+								span Ваше сообщение
+								textarea(placeholder="Ваше сообщение" required)
+							label
+								span Ваше имя
+								input(type="text" placeholder="Ваше имя" required)
+							label
+								span E-mail
+								input(type="email" placeholder="E-mail" required)
+							label
+								span Телефон
+								input(type="tel" placeholder="Телефон")
 
-								.checkbox
-									input(type="checkbox" checked)#ch-bx-1
-									label(for="ch-bx-1") Я хотел бы получить предложения, соответствующие моим интересам и новости от Luxury Cars по электронной почте.
+							.checkbox
+								input(type="checkbox" checked)#ch-bx-1
+								label(for="ch-bx-1") Я хотел бы получить предложения, соответствующие моим интересам и новости от Luxury Cars по электронной почте.
 
-								button Отправить<br>E-mail
+							button Отправить<br>E-mail
 
-								p.bottom__text мы используем ваш адрес электронной почты в соответствии с нашими. Правила защиты данных, например, для рекомендаций транспортных средств, похожих на ваш поиск. Если у вас нет других рекомендаций по транспортным средствам. Если вы хотите получить больше, вы можете возразить здесь в любое время.
+							p.bottom__text мы используем ваш адрес электронной почты в соответствии с нашими. Правила защиты данных, например, для рекомендаций транспортных средств, похожих на ваш поиск. Если у вас нет других рекомендаций по транспортным средствам. Если вы хотите получить больше, вы можете возразить здесь в любое время.
 
-								//- .inputs
-								//- 	input(placeholder="Ваше имя" type="text" required)
-								//- 	input(placeholder="Ваш e-mail" type="email" required)
-								//- textarea(placeholder="Напишите ваше обращение" required)
-								//- .form__bottom
-								//- 	p Техническая поддержка рассмотрит ваше обращение <span>в течение 24 часов</span>. Вы получите ответ на почту.
-								//- 	button(type="submit").btn Отправить
+							//- .inputs
+							//- 	input(placeholder="Ваше имя" type="text" required)
+							//- 	input(placeholder="Ваш e-mail" type="email" required)
+							//- textarea(placeholder="Напишите ваше обращение" required)
+							//- .form__bottom
+							//- 	p Техническая поддержка рассмотрит ваше обращение <span>в течение 24 часов</span>. Вы получите ответ на почту.
+							//- 	button(type="submit").btn Отправить
 
 				section.slider-cars
 					h2 Похожие автомобили

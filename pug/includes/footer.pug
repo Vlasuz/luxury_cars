@@ -15,6 +15,21 @@
 			input(placeholder="Ваше имя")
 			textarea(placeholder="Напишите ваше обращение")
 			button(type="submit").btn Отправить
+.popup#popup-email
+	.popup__bgd
+	.popup__content
+		button.popup__close.btn
+			img(src="img/icons/cross.svg" alt="")
+		h2 Оставьте свою почту
+		form
+			label
+				span E-mail
+				input(type="email" placeholder="например, макс.obrazcov@ ")
+			.checkbox
+				input(type="checkbox" checked)#chbxinp
+				label(for="chbxinp") Я согласен(-на) на 
+					a(href="#") обработку персональных данных
+			button(type="submit") Отправить
 
 <!-- ** POPUP ** -->
 

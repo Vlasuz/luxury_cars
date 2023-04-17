@@ -183,6 +183,35 @@
   </section>
   <main class="single">
     <div class="wrapper">
+      <section class="scroll-block scroll-block_active">
+        <div class="scroll-block__lft">
+          <div class="scroll-block__image">
+            <img src="img/single/car-blue.png" alt="Photo">
+          </div>
+          <div class="scroll-block__text">
+            <h3>BMW 7 </h3>
+            <p>M60i xDrive; SZH, Navi, Panorama, Klima, LED</p><span>Мы предоставим вам автомобиль вашей мечты одним щелчком мыши</span>
+            <p class="mob">Первичный взнос 50% в размере<b>66.402,00 €</b>
+            </p>
+          </div>
+        </div>
+        <div class="scroll-block__rht">
+          <div class="scroll-block__info">
+            <div class="info__buttons">
+              <button>
+                <img src="img/single/info_icon-1.svg" alt="">
+              </button>
+              <button>
+                <img src="img/single/info_icon-2.svg" alt="">
+              </button>
+              <button>
+                <img src="img/single/info_icon-3.svg" alt="">
+              </button>
+            </div>
+          </div>
+          <button class="btn open-popup" data-popup="popup-email">Связаться с провайдером</button>
+        </div>
+      </section>
       <section class="single__top">
         <a class="top__back" href="#">
           <img src="img/single/back.svg" alt=""><span>Вернуться к списку автомобилей</span>
@@ -281,18 +310,20 @@
           </div>
         </div>
         <div class="main__info">
-          <div class="info__buttons">
-            <button>
-              <img src="img/single/info_icon-1.svg" alt="">
-            </button>
-            <button>
-              <img src="img/single/info_icon-2.svg" alt="">
-            </button>
-            <button>
-              <img src="img/single/info_icon-3.svg" alt="">
-            </button>
+          <div class="button__title">
+            <div class="info__buttons">
+              <button>
+                <img src="img/single/info_icon-1.svg" alt="">
+              </button>
+              <button>
+                <img src="img/single/info_icon-2.svg" alt="">
+              </button>
+              <button>
+                <img src="img/single/info_icon-3.svg" alt="">
+              </button>
+            </div>
+            <h1 class="info__title">BMW 7</h1>
           </div>
-          <h1 class="info__title">BMW 7</h1>
           <p class="info__model">M60i xDrive; SZH, Navi, Panorama, Klima, LED</p><span class="info__text">Мы предоставим вам автомобиль вашей мечты одним щелчком мыши</span>
           <div class="info__location">
             <img src="img/single/pin_icon.svg" alt=""><span>Wielenbach, DE</span>
@@ -342,7 +373,7 @@
             </ul>
           </div>
           <div class="info__bottom">
-            <button>Отправить E-mail</button>
+            <button class="open-popup" data-popup="popup-email">Отправить E-mail</button>
             <div class="select">
               <div class="select__head"><span>Связаться</span>
                 <img>
@@ -407,39 +438,48 @@
         </div>
         <div class="params__block">
           <div class="params__item">
-            <img src="img/single/params_ico-1.svg" alt=""><span>История автомобиля</span>
+            <img src="img/single/params_ico-1.svg" alt=""><span>Особая комплектация</span>
           </div>
           <div class="params__item">
             <ul>
-              <li><span>Чековая книжка поддерживается</span>
-                <p>Да</p>
+              <li><span>Трансмиссия / Колеса</span>
+                <p>---
+                  <br>---
+                  <br>---</p>
+              </li>
+              <li><span>Мультимедия</span>
+                <p>---
+                  <br>---
+                  <br>---</p>
+              </li>
+              <li><span>Безопасность</span>
+                <p>---
+                  <br>---
+                  <br>---</p>
+              </li>
+              <li><span>Комфорт и интерьер</span>
+                <p>---
+                  <br>---
+                  <br>---</p>
+              </li>
+              <li><span>Разное</span>
+                <p>---
+                  <br>---
+                  <br>---</p>
               </li>
             </ul>
           </div>
         </div>
         <div class="params__block">
           <div class="params__item">
-            <img src="img/single/params_ico-1.svg" alt=""><span>Технические данные</span>
+            <img src="img/single/params_ico-1.svg" alt=""><span>Базовая комплектация</span>
           </div>
           <div class="params__item">
             <ul>
-              <li><span>Производительность</span>
-                <p>390 кВт (530 л.с.)</p>
-              </li>
-              <li><span>Передача</span>
-                <p>Автоматический</p>
-              </li>
-              <li><span>Смещение</span>
-                <p>2998 см3</p>
-              </li>
-              <li><span>Шестерни</span>
-                <p>8</p>
-              </li>
-              <li><span>Цилиндр</span>
-                <p>6</p>
-              </li>
-              <li><span>Снаряженная масса</span>
-                <p>2 130 кг</p>
+              <li><span>Стандарт</span>
+                <p>---
+                  <br>---
+                  <br>---</p>
               </li>
             </ul>
           </div>
@@ -450,13 +490,17 @@
           </div>
           <div class="params__item">
             <ul>
-              <li><span>Топлево</span>
-                <p>Супер 95</p>
+              <li><span>Расход комбинированный</span>
+                <p>11,9 л. /100 км.</p>
               </li>
-              <li><span>Расход топлива</span>
-                <p>8 1/100 км (комб.)
-                  <br>8 л/100 км (город)
-                  <br>7 1/100 км (за городом)</p>
+              <li><span>Расход за городом</span>
+                <p>10 л. / 100 км.</p>
+              </li>
+              <li><span>Расход в городе</span>
+                <p>7 л. / 100 км.</p>
+              </li>
+              <li><span>Экологический стандарт</span>
+                <p>Евро 6</p>
               </li>
             </ul>
           </div>
@@ -467,85 +511,10 @@
           </div>
           <div class="params__item">
             <ul>
-              <li><span>кВт/100км</span>
-                <p>-</p>
+              <li><span>Электричества</span>
+                <p>8 кВт / 100 км</p>
               </li>
             </ul>
-          </div>
-        </div>
-        <div class="params__block">
-          <div class="params__item">
-            <img src="img/single/params_ico-1.svg" alt=""><span>Комплектация</span>
-          </div>
-          <div class="params__item">
-            <ul class="ul__hidden">
-              <li><span>Комфорт</span>
-                <p>Автоматический климат-контроль с 4 зонами подлокотник
-                  <br>Помощник горной поездки
-                  <br>Помощь в парковке
-                  <br>Камера парковочной помощи
-                  <br>Датчики помощи в парковке сзади
-                  <br>Парковать датчики помощи на фронте
-                  <br>Парковочная помощь
-                  <br>Electr. Window
-                  <br>Электрические боковые зеркала
-                  <br>Электрические места
-                  <br>кондиционер
-                  <br>Кожаное рулевое колесо
-                  <br>Световой датчик
-                  <br>Многофункциональное рулевое колесо
-                  <br>навигационная система
-                  <br>датчик дождя
-                  <br>Запуск/остановка автоматическая остановка
-                  <br>Круиз-контроль</p>
-              </li>
-              <li><span>Мультимедийная система</span>
-                <p>Apple CarPlay
-                  <br>Bluetooth
-                  <br>На доске компьютера
-                  <br>- CD
-                  <br>- Dab Radio
-                  <br>- Руки-Бесплатная система
-                  <br>- Аудиосистема
-                  <br>- USB
-                  <br>- Полный комбинированный инструмент</p>
-              </li>
-              <li><span>Безопасность</span>
-                <p>АБС
-                  <br>Abstandswarner
-                  <br>сигнализация
-                  <br>Beifahrerairbag
-                  <br>Биксеноновая шайнверфер
-                  <br>ЭСП
-                  <br>подушка безопасности Фарер
-                  <br>Fernlichtastant
-                  <br>изофикс
-                  <br>LED Tagfahrlicht
-                  <br>Mudigkeitswarnsystem
-                  <br>Небельшайнверфер
-                  <br>Нетормозной
-                  <br>Нотруфсистем
-                  <br>Reifendruckkontrollsystem
-                  <br>Seitenairbag
-                  <br>Серволенкунг
-                  <br>Spurhalteассистент
-                  <br>Тагфарлихт
-                  <br>Контроль тяги</p>
-              </li>
-              <li><span>Дополнение</span>
-                <p>литые диски
-                  <br>окружающее освещение
-                  <br>Внутреннее зеркало с автоматическим затемнением
-                  <br>аварийный комплект
-                  <br>летняя резина
-                  <br>спортивные сиденья
-                  <br>голосовое управление
-                  <br>сенсорный экран</p>
-              </li>
-            </ul>
-            <button><span>Показать больше</span>
-              <img src="img/icons/arr-down-blue.svg" alt="">
-            </button>
           </div>
         </div>
         <div class="params__block params__block_comment">
@@ -554,128 +523,110 @@
           </div>
           <div class="params__item">
             <ul>
-              <li class="li__hidden-text">
-                <p>Чтобы перейти непосредственно к предложению: просто скопируйте следующую ссылку в Адресная строка: https://apmk.eu/mc/4728/7 и создайте свою собственную с помощью нашего удобного конфигураторажелаемый автомобиль вместе.
-                  <br>
-                  <br>Для этого автомобиля доступны все варианты двигателей и оборудования, которые предлагает производитель. Кроме того, это может быть полностью по вашему вкусу настроено и заказано.
-                  <br>
-                  <br>Указанные цены включают трансфер до нашего офиса по адресу 82407...Чтобы перейти непосредственно к предложению: просто скопируйте следующую ссылку в Адресная строка: https://apmk.eu/mc/4728/7 и создайте свою собственную с помощью нашего
-                  удобного конфигураторажелаемый автомобиль вместе.
-                  <br>
-                  <br>Для этого автомобиля доступны все варианты двигателей и оборудования, которые предлагает производитель. Кроме того, это может быть полностью по вашему вкусу настроено и заказано.
-                  <br>
-                  <br>Указанные цены включают трансфер до нашего офиса по адресу 82407...Чтобы перейти непосредственно к предложению: просто скопируйте следующую ссылку в Адресная строка: https://apmk.eu/mc/4728/7 и создайте свою собственную с помощью нашего
-                  удобного конфигураторажелаемый автомобиль вместе.
-                  <br>
-                  <br>Для этого автомобиля доступны все варианты двигателей и оборудования, которые предлагает производитель. Кроме того, это может быть полностью по вашему вкусу настроено и заказано.
-                  <br>
-                  <br>Указанные цены включают трансфер до нашего офиса по адресу 82407...</p>
-                <button><span>Показать больше</span>
-                  <img src="img/icons/arr-down-blue.svg" alt="">
-                </button>
+              <li>
+                <p>Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности играет важную роль в формировании дальнейших направлений развития. Таким образом консультация с широким активом представляет собой интересный
+                  эксперимент проверки новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки модели развития.</p>
               </li>
             </ul>
           </div>
         </div>
       </section>
       <section class="contacts">
-        <div class="wrapper">
-          <div class="contacts__inner">
-            <div class="contacts__people">
-              <div class="contacts__info">
-                <div class="info__lft">
-                  <h1>Контакты </h1>
-                  <h2>Адрес Германия</h2>
-                  <ul>
-                    <li>
-                      <a href="#">
-                        <img src="img/icons/phone-blue.svg" alt=""><span>+380 (44) 496-00-55</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="img/icons/phone-blue.svg" alt=""><span>+380 (67) 136-59-99</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="img/icons/email-blue.svg" alt=""><span>zakaz@atp.com.ua</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="img/icons/pin-blue.svg" alt=""><span>ул. Пушкинская офис 36</span>
-                      </a>
-                    </li>
-                  </ul><a class="open-map" href="#">Открыть карту</a>
-                </div>
-                <div class="info__rht">
-                  <div class="info__photo">
-                    <img src="img/contacts/person-1.jpg" alt="">
-                  </div>
-                  <h3>Имя</h3>
-                  <p>Должность</p>
-                </div>
+        <div class="contacts__inner">
+          <div class="contacts__people">
+            <div class="contacts__info">
+              <div class="info__lft">
+                <h1>Контакты </h1>
+                <h2>Адрес Германия</h2>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <img src="img/icons/phone-blue.svg" alt=""><span>+380 (44) 496-00-55</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/icons/phone-blue.svg" alt=""><span>+380 (67) 136-59-99</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/icons/email-blue.svg" alt=""><span>zakaz@atp.com.ua</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/icons/pin-blue.svg" alt=""><span>ул. Пушкинская офис 36</span>
+                    </a>
+                  </li>
+                </ul><a class="open-map" href="#">Открыть карту</a>
               </div>
-              <div class="contacts__info">
-                <div class="info__lft">
-                  <h2>Адрес Германия</h2>
-                  <ul>
-                    <li>
-                      <a href="#">
-                        <img src="img/icons/phone-blue.svg" alt=""><span>+380 (44) 496-00-55</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="img/icons/phone-blue.svg" alt=""><span>+380 (67) 136-59-99</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="img/icons/email-blue.svg" alt=""><span>zakaz@atp.com.ua</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <img src="img/icons/pin-blue.svg" alt=""><span>ул. Пушкинская офис 36</span>
-                      </a>
-                    </li>
-                  </ul><a class="open-map" href="#">Открыть карту</a>
+              <div class="info__rht">
+                <div class="info__photo">
+                  <img src="img/contacts/person-1.jpg" alt="">
                 </div>
-                <div class="info__rht">
-                  <div class="info__photo">
-                    <img src="img/contacts/person-2.jpg" alt="">
-                  </div>
-                  <h3>Имя</h3>
-                  <p>Должность</p>
-                </div>
+                <h3>Имя</h3>
+                <p>Должность</p>
               </div>
             </div>
-            <form class="contacts__form" action="#">
-              <h2>Связаться с нами</h2>
-              <label><span>Ваше сообщение</span>
-                <textarea placeholder="Ваше сообщение" required></textarea>
-              </label>
-              <label><span>Ваше имя</span>
-                <input type="text" placeholder="Ваше имя" required>
-              </label>
-              <label><span>E-mail</span>
-                <input type="email" placeholder="E-mail" required>
-              </label>
-              <label><span>Телефон</span>
-                <input type="tel" placeholder="Телефон">
-              </label>
-              <div class="checkbox">
-                <input type="checkbox" checked id="ch-bx-1">
-                <label for="ch-bx-1">Я хотел бы получить предложения, соответствующие моим интересам и новости от Luxury Cars по электронной почте.</label>
+            <div class="contacts__info">
+              <div class="info__lft">
+                <h2>Адрес Германия</h2>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <img src="img/icons/phone-blue.svg" alt=""><span>+380 (44) 496-00-55</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/icons/phone-blue.svg" alt=""><span>+380 (67) 136-59-99</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/icons/email-blue.svg" alt=""><span>zakaz@atp.com.ua</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/icons/pin-blue.svg" alt=""><span>ул. Пушкинская офис 36</span>
+                    </a>
+                  </li>
+                </ul><a class="open-map" href="#">Открыть карту</a>
               </div>
-              <button>Отправить
-                <br>E-mail</button>
-              <p class="bottom__text">мы используем ваш адрес электронной почты в соответствии с нашими. Правила защиты данных, например, для рекомендаций транспортных средств, похожих на ваш поиск. Если у вас нет других рекомендаций по транспортным средствам. Если вы хотите
-                получить больше, вы можете возразить здесь в любое время.</p>
-            </form>
+              <div class="info__rht">
+                <div class="info__photo">
+                  <img src="img/contacts/person-2.jpg" alt="">
+                </div>
+                <h3>Имя</h3>
+                <p>Должность</p>
+              </div>
+            </div>
           </div>
+          <form class="contacts__form" action="#">
+            <h2>Связаться с нами</h2>
+            <label><span>Ваше сообщение</span>
+              <textarea placeholder="Ваше сообщение" required></textarea>
+            </label>
+            <label><span>Ваше имя</span>
+              <input type="text" placeholder="Ваше имя" required>
+            </label>
+            <label><span>E-mail</span>
+              <input type="email" placeholder="E-mail" required>
+            </label>
+            <label><span>Телефон</span>
+              <input type="tel" placeholder="Телефон">
+            </label>
+            <div class="checkbox">
+              <input type="checkbox" checked id="ch-bx-1">
+              <label for="ch-bx-1">Я хотел бы получить предложения, соответствующие моим интересам и новости от Luxury Cars по электронной почте.</label>
+            </div>
+            <button>Отправить
+              <br>E-mail</button>
+            <p class="bottom__text">мы используем ваш адрес электронной почты в соответствии с нашими. Правила защиты данных, например, для рекомендаций транспортных средств, похожих на ваш поиск. Если у вас нет других рекомендаций по транспортным средствам. Если вы хотите получить
+              больше, вы можете возразить здесь в любое время.</p>
+          </form>
         </div>
       </section>
       <section class="slider-cars">
@@ -1162,6 +1113,26 @@
         <input placeholder="Ваше имя">
         <textarea placeholder="Напишите ваше обращение"></textarea>
         <button class="btn" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+  <div class="popup" id="popup-email">
+    <div class="popup__bgd"></div>
+    <div class="popup__content">
+      <button class="popup__close btn">
+        <img src="img/icons/cross.svg" alt="">
+      </button>
+      <h2>Оставьте свою почту</h2>
+      <form>
+        <label><span>E-mail</span>
+          <input type="email" placeholder="например, макс.obrazcov@ ">
+        </label>
+        <div class="checkbox">
+          <input type="checkbox" checked id="chbxinp">
+          <label for="chbxinp">Я согласен(-на) на <a href="#">обработку персональных данных</a>
+          </label>
+        </div>
+        <button type="submit">Отправить</button>
       </form>
     </div>
   </div>
