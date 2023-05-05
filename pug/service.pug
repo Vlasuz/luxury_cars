@@ -84,6 +84,28 @@ block body
 
 			
 
+			section.slider-cars
+				.wrapper
+					h2 Вас может заинтересовать
+					.slider-cars__slider
+						.swiper-wrapper
+							+slider_cars('BMW 23')
+							+slider_cars('BMW 23')
+							+slider_cars('BMW 23')
+							+slider_cars('BMW 23')
+							+slider_cars('BMW 23')
+						button.swiper-button-prev
+							img(src="img/icons/arr-left-wh.svg" alt="")
+						button.swiper-button-next
+							img(src="img/icons/arr-right-wh.svg" alt="")
+
+			section.banner__bottom
+				a(href="catalog.html").goto-catalog
+					span Каталог
+					img(src="img/icons/arr-right-wh.svg" alt="")
+				a(href="#").link Читать блог о BMW
+				a(href="#").link Получать уведомления о новых поступлениях автомобилей
+
 			button.block-to-up
 				.arrs
 					svg(width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg")

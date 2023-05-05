@@ -27,15 +27,15 @@ block body
 				.wrapper.wrapper_mini
 					ul.single-blog__navigation
 						li
-							a(href="#block-1").btn Дизайн
-						li
-							a(href="#block-2").btn Технологические особенности
-						li
-							a(href="#block-3").btn Подключаемый гибрид
-						li
-							a(href="#block-4").btn Спецификации
-						li
-							a(href="#block-5").btn Цены и финансирование
+							a(href="#block-1").btn
+								img(src="img/icons/arr-left-wh.svg" alt="Ico")
+								span Назад
+					ol
+						li 1.1 Дизайн
+						li 2.1 Технологические особенности
+						li 3.1 Подключаемый гибрид
+						li 4.1 СПецификации
+						li 5.1 Цены и финансирование
 					.single-blog__navigation_mob
 						.select
 							.select__head
@@ -115,8 +115,32 @@ block body
 						.photo
 							img(src="img/single/photo-4.jpg" alt="")
 
+						a(href="#").btn Читать другие новости о BMW
 
 
+
+
+			section.slider-cars
+				.wrapper
+					h2 Вас может заинтересовать
+					.slider-cars__slider
+						.swiper-wrapper
+							+slider_cars('BMW 23')
+							+slider_cars('BMW 23')
+							+slider_cars('BMW 23')
+							+slider_cars('BMW 23')
+							+slider_cars('BMW 23')
+						button.swiper-button-prev
+							img(src="img/icons/arr-left-wh.svg" alt="")
+						button.swiper-button-next
+							img(src="img/icons/arr-right-wh.svg" alt="")
+
+			section.banner__bottom
+				a(href="catalog.html").goto-catalog
+					span Каталог
+					img(src="img/icons/arr-right-wh.svg" alt="")
+				a(href="#").link Читать блог о BMW
+				a(href="#").link Получать уведомления о новых поступлениях автомобилей
 
 			button.block-to-up
 				.arrs

@@ -89,7 +89,7 @@ document.querySelectorAll('.pagination__nums a').forEach(item => {
 	}
 })
 
-document.querySelectorAll('.footer__share .share__head').forEach(item => {
+document.querySelectorAll('.footer__share .share__head_open').forEach(item => {
 	item.onclick = function () {
 		this.closest('.footer__share').classList.toggle('footer__share_active')
 	}
@@ -279,12 +279,32 @@ new Swiper('.slider-cars__slider', {
 Zoom(".zoomable");
 
 
+if(document.querySelector('.single__params')) {
+	document.addEventListener('scroll', function(e) {
+		if(document.querySelector('.single__params').offsetTop < window.scrollY) {
+			document.querySelector('.scroll-block').classList.add('scroll-block_active')
+		} else {
+			document.querySelector('.scroll-block').classList.remove('scroll-block_active')
+		}
+	})
+}
+
 document.addEventListener('scroll', function(e) {
-	if(document.querySelector('.single__params').offsetTop < window.scrollY) {
-		document.querySelector('.scroll-block').classList.add('scroll-block_active')
+	if(window.scrollY > 100) {
+		document.querySelector('body').classList.add('header_scroll')
 	} else {
-		document.querySelector('.scroll-block').classList.remove('scroll-block_active')
+		document.querySelector('body').classList.remove('header_scroll')
 	}
 })
 
+document.querySelectorAll('.show-more').forEach(item => {
+	item.onclick = function () {
+		this.closest('.ul__hidden').classList.toggle('ul__hidden_disabled')
+		if(this.closest('.ul__hidden').classList.contains('ul__hidden_disabled')) {
+			item.querySelector('span').textContent = 'Показать меньше'
+		} else {
+			item.querySelector('span').textContent = 'Показать больше'
+		}
+	}
+})
 

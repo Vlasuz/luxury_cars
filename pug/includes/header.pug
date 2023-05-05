@@ -1,5 +1,6 @@
 <!-- ** HEADER ** -->
 
+include ../mixins.pug
 header
 	.wrapper
 		.header
@@ -42,19 +43,9 @@ header
 				.line
 				.line
 			.header__rht
-				ul.header__socials
-					li
-						a(href="#")
-							img(src="img/icons/whatsapp.svg" alt="ico")
-					li
-						a(href="#")
-							img(src="img/icons/messenger.svg" alt="ico")
-					li
-						a(href="#")
-							img(src="img/icons/telegram.svg" alt="ico")
-					li
-						a(href="#")
-							img(src="img/icons/viber.svg" alt="ico")
+				.header__switch
+					button#switch-sun
+						img(src="img/icons/sun.svg" alt="")
 
 				.header__recall
 					.recall__head

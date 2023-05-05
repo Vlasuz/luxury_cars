@@ -10,12 +10,11 @@ block body
 				.wrapper
 					.banner__text
 						h1 Автомашины премиального класса из Германии
-						p На нашем сайте вы сможете найти актуальную цену, подробное описание, комплектации автомобиля
-						a(href="catalog.html").banner__more.btn Подробнее
-					.banner__button
-						a(href="catalog.html").banner__catalog
-							span Каталог
-							img(src="img/icons/arr-right-wh.svg" alt="")
+						ul
+							li Гарантируем подлинность пробега
+							li Прозрачное ценообразование
+							li Растаможивание для ЕАЭС
+						a(href="catalog.html").banner__more.btn Сервис
 					p &nbsp;
 
 			section.slider
@@ -26,8 +25,9 @@ block body
 						.swiper-button-next
 							img(src="img/icons/arr-wh-slider-rht.svg" alt="Ico")
 						.swiper-wrapper
-							.swiper-slide
-								h2.slide__title BMW
+							a(href="single.html").swiper-slide
+								.slide__mark
+									img(src="img/cars-marks/bmw-logo.svg" alt="")
 								p Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее
 								.slide__photo
 									picture.slide__image
@@ -36,11 +36,11 @@ block body
 									picture.slide__image_back
 										source(srcset="img/main/car-1-2.webp" type="image/webp")
 										img(src="img/main/car-1-2.png" alt="")
-								a(href="single.html").btn Узнать больше
-								hr
-							.swiper-slide
-								h2.slide__title Porsche
-								p Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее
+								p.copyright ⓒBMW
+							a(href="single.html").swiper-slide
+								.slide__mark
+									img(src="img/cars-marks/porsche.svg" alt="")
+								p Сайт рыбатекст поможет
 								.slide__photo
 									picture.slide__image
 										source(srcset="img/main/car-2-1.webp" type="image/webp")
@@ -48,10 +48,10 @@ block body
 									picture.slide__image_back
 										source(srcset="img/main/car-2-2.webp" type="image/webp")
 										img(src="img/main/car-2-2.png" alt="")
-								a(href="single.html").btn Узнать больше
-								hr
-							.swiper-slide
-								h2.slide__title Range Rover
+								p.copyright ⓒPorshe
+							a(href="single.html").swiper-slide
+								.slide__mark
+									img(src="img/cars-marks/range-rover.svg" alt="")
 								p Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее
 								.slide__photo
 									picture.slide__image
@@ -60,10 +60,10 @@ block body
 									picture.slide__image_back
 										source(srcset="img/main/car-3-2.webp" type="image/webp")
 										img(src="img/main/car-3-2.png" alt="")
-								a(href="single.html").btn Узнать больше
-								hr
-							.swiper-slide
-								h2.slide__title Audi
+								p.copyright ⓒLandRover
+							a(href="single.html").swiper-slide
+								.slide__mark
+									img(src="img/cars-marks/audi.svg" alt="")
 								p Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее
 								.slide__photo
 									picture.slide__image
@@ -72,10 +72,10 @@ block body
 									picture.slide__image_back
 										source(srcset="img/main/car-4-2.webp" type="image/webp")
 										img(src="img/main/car-4-2.png" alt="")
-								a(href="single.html").btn Узнать больше
-								hr
-							.swiper-slide
-								h2.slide__title Mercedes-Benz
+								p.copyright ⓒAudi
+							a(href="single.html").swiper-slide
+								.slide__mark
+									img(src="img/cars-marks/mers.svg" alt="")
 								p Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее
 								.slide__photo
 									picture.slide__image
@@ -84,10 +84,10 @@ block body
 									picture.slide__image_back
 										source(srcset="img/main/car-5-2.webp" type="image/webp")
 										img(src="img/main/car-5-2.png" alt="")
-								a(href="single.html").btn Узнать больше
-								hr
-							.swiper-slide
-								h2.slide__title Range Rover
+								p.copyright ⓒMercedes Benz
+							a(href="single.html").swiper-slide
+								.slide__mark
+									img(src="img/cars-marks/range-rover.svg" alt="")
 								p Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее
 								.slide__photo
 									picture.slide__image
@@ -96,15 +96,14 @@ block body
 									picture.slide__image_back
 										source(srcset="img/main/car-3-2.webp" type="image/webp")
 										img(src="img/main/car-3-2.png" alt="")
-								a(href="single.html").btn Узнать больше
-								hr
+								p.copyright ⓒLandRover
 
-			section.banner__mob
-				.wrapper
-					.banner__button
-						a(href="#").banner__catalog
-							span Каталог
-							img(src="img/icons/arr-right-wh.svg" alt="")
+			section.banner__bottom
+				a(href="#").goto-catalog
+					span Каталог
+					img(src="img/icons/arr-right-wh.svg" alt="")
+				a(href="#").link Читать блог о BMW
+				a(href="#").link Получать уведомления о новых поступлениях автомобилей
 
 			button.block-to-up
 				.arrs

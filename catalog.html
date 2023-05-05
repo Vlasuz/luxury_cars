@@ -60,28 +60,11 @@
           <div class="line"></div>
         </div>
         <div class="header__rht">
-          <ul class="header__socials">
-            <li>
-              <a href="#">
-                <img src="img/icons/whatsapp.svg" alt="ico">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="img/icons/messenger.svg" alt="ico">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="img/icons/telegram.svg" alt="ico">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="img/icons/viber.svg" alt="ico">
-              </a>
-            </li>
-          </ul>
+          <div class="header__switch">
+            <button id="switch-sun">
+              <img src="img/icons/sun.svg" alt="">
+            </button>
+          </div>
           <div class="header__recall">
             <div class="recall__head">
               <div class="head__icon">
@@ -182,11 +165,15 @@
         </ul>
       </div>
     </section>
-    <section class="top">
+    <section class="top catalog__top">
       <div class="wrapper">
         <div class="top__text">
           <h1>Каталог автомашин </h1>
-          <p>Повседневная практика показывает, что дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации модели развития.</p>
+          <ul>
+            <li>Гарантируем подлинность пробега</li>
+            <li>Прозрачное ценообразование</li>
+            <li>Растаможивание для ЕАЭС</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -196,15 +183,30 @@
           <ul>
             <li class="li_active"><a class="btn" href="#">Все</a>
             </li>
-            <li><a class="btn" href="#">Mercedes Benz</a>
+            <li>
+              <a class="btn" href="#">
+                <img src="img/cars-marks/audi.svg" alt="">
+              </a>
             </li>
-            <li><a class="btn" href="#">BMW</a>
+            <li>
+              <a class="btn" href="#">
+                <img src="img/cars-marks/bmw-logo.svg" alt="">
+              </a>
             </li>
-            <li><a class="btn" href="#">Audi</a>
+            <li>
+              <a class="btn" href="#">
+                <img src="img/cars-marks/mers.svg" alt="">
+              </a>
             </li>
-            <li><a class="btn" href="#">Porsche</a>
+            <li>
+              <a class="btn" href="#">
+                <img src="img/cars-marks/porsche.svg" alt="">
+              </a>
             </li>
-            <li><a class="btn" href="#">Range Rover</a>
+            <li>
+              <a class="btn" href="#">
+                <img src="img/cars-marks/range-rover.svg" alt="">
+              </a>
             </li>
           </ul>
         </div>
@@ -217,15 +219,30 @@
             <div class="select__head"><span class="btn">Mercedes Benz</span>
             </div>
             <ul class="select__body">
-              <li><a class="select__item btn" href="#">Mercedes Benz</a>
+              <li>
+                <a class="btn" href="#">
+                  <img src="img/cars-marks/audi.svg" alt="">
+                </a>
               </li>
-              <li><a class="select__item btn" href="#">BMW</a>
+              <li>
+                <a class="btn" href="#">
+                  <img src="img/cars-marks/bmw-logo.svg" alt="">
+                </a>
               </li>
-              <li><a class="select__item btn" href="#">Audi</a>
+              <li>
+                <a class="btn" href="#">
+                  <img src="img/cars-marks/mers.svg" alt="">
+                </a>
               </li>
-              <li><a class="select__item btn" href="#">Porsche</a>
+              <li>
+                <a class="btn" href="#">
+                  <img src="img/cars-marks/porsche.svg" alt="">
+                </a>
               </li>
-              <li><a class="select__item btn" href="#">Range Rover</a>
+              <li>
+                <a class="btn" href="#">
+                  <img src="img/cars-marks/range-rover.svg" alt="">
+                </a>
               </li>
             </ul>
           </div>
@@ -246,1055 +263,1198 @@
     <section class="catalog">
       <div class="wrapper">
         <div class="catalog__inner">
-          <div class="catalog__item">
-            <div class="item__slider">
-              <button class="swiper-button-prev">
-                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.12012 6.47304L9.36894 0.224326C9.51347 0.0796843 9.7064 0 9.91212 0C10.1178 0 10.3108 0.0796843 10.4553 0.224326L10.9155 0.684394C11.2149 0.984181 11.2149 1.47142 10.9155 1.77075L5.66819 7.01804L10.9213 12.2712C11.0658 12.4158 11.1456 12.6086 11.1456 12.8142C11.1456 13.02 11.0658 13.2129 10.9213 13.3576L10.4611 13.8176C10.3165 13.9622 10.1237 14.0419 9.91794 14.0419C9.71223 14.0419 9.51929 13.9622 9.37477 13.8176L3.12012 7.56316C2.97525 7.41806 2.89568 7.22433 2.89613 7.01838C2.89568 6.81164 2.97525 6.61802 3.12012 6.47304Z"
-                  fill="white" />
-                </svg>
-              </button>
-              <button class="swiper-button-next">
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.55574 5.07078L3.6606 0.17573C3.54738 0.0624223 3.39625 0 3.23509 0C3.07394 0 2.9228 0.0624223 2.80958 0.17573L2.44909 0.536134C2.21451 0.770977 2.21451 1.15267 2.44909 1.38715L6.55966 5.49772L2.44453 9.61285C2.33131 9.72616 2.2688 9.8772 2.2688 10.0383C2.2688 10.1995 2.33131 10.3506 2.44453 10.464L2.80502 10.8243C2.91833 10.9376 3.06938 11 3.23053 11C3.39168 11 3.54282 10.9376 3.65604 10.8243L8.55574 5.92475C8.66923 5.81108 8.73156 5.65932 8.7312 5.49799C8.73156 5.33603 8.66923 5.18436 8.55574 5.07078Z"
-                  fill="white" />
-                </svg>
-              </button>
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <picture>
-                    <source srcset="img/catalog/car.webp" type="image/webp">
-                      <img src="img/catalog/car.webp" alt="">
-                  </picture>
+          <div class="catalog__mark">
+            <h3>BMW </h3>
+            <div class="catalog__grid">
+              <div class="catalog__item">
+                <div class="item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <picture>
+                        <source srcset="img/catalog/car.webp" type="image/webp">
+                          <img src="img/catalog/car.webp" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-slide">
-                  <picture>
-                    <source srcset="img/catalog/image.webp" type="image/webp">
-                      <img src="img/catalog/image.webp" alt="">
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture>
-                    <source srcset="img/catalog/dims_large.webp" type="image/webp">
-                      <img src="img/catalog/dims_large.webp" alt="">
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture>
-                    <source srcset="img/catalog/BMW_520d_M-Sportpaket__F10__–_Frontansicht__1___2._Juli_2011__Düsseldorf.webp" type="image/webp">
-                      <img src="img/catalog/BMW_520d_M-Sportpaket__F10__–_Frontansicht__1___2._Juli_2011__Düsseldorf.webp" alt="">
-                  </picture>
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-            <div class="item__bottom">
-              <h2 class="item__title">BMW X7 M60i xDrive</h2>
-              <div class="item__price">ab 66.402,00 €</div>
-              <div class="item__info">
-                <ul>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/calendar.svg" alt="">
-                    </div><span>28.09.2018</span>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/gearbox.svg" alt="">
-                    </div><span>Автоматика</span>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/fuel-pump.svg" alt="">
-                    </div><span>Топливо</span>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/speedometer.svg" alt="">
-                    </div><span>71.800 km</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="item__more-info">
-                <div class="more-info__head"><span>Дополнительная техническая информация</span>
-                  <div class="icon">
-                    <div class="line"></div>
-                    <div class="line"></div>
+                <div class="item__bottom">
+                  <h2 class="item__title">BMW 77</h2>
+                  <div class="item__text">M60i xDrive: SZH, Navi, Panorama, Kl...</div>
+                  <div class="item__place">
+                    <img src="img/icons/pin-white.svg" alt="ico"><span>Wielenbach, DE</span>
+                  </div>
+                  <div class="item__price"><span>Первичный взнос 50% в размере</span><b>66.402,00 €</b>
+                  </div>
+                  <div class="item__info">
+                    <ul>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/calendar.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/gearbox.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/fuel-pump.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div class="more-info__body">
-                  <ul>
-                    <li>
-                      <h3>Владелец</h3>
-                      <p>1 (BMW)</p>
-                    </li>
-                    <li>
-                      <h3>Мощник</h3>
-                      <p>338 kW / 460 PS</p>
-                    </li>
-                    <li>
-                      <h3>Расход комбинированный (NEFZ)</h3>
-                      <p>11,2 л / 100 км</p>
-                    </li>
-                    <li>
-                      <h3>Цвет кузова</h3>
-                      <p>Лунный свет голубой металик</p>
-                    </li>
-                    <li>
-                      <h3>Цвет салона & Материал</h3>
-                      <p>Гладкая кожа цвет антрацит</p>
-                    </li>
-                    <li>
-                      <h3>Коробка</h3>
-                      <p>Автоматическая</p>
-                    </li>
-                    <li>
-                      <h3>Максимальная скорость</h3>
-                      <p>270 км/ч</p>
-                    </li>
-                    <li>
-                      <h3>Ускорение 0-100 км/ч</h3>
-                      <p>4,8 с</p>
-                    </li>
-                    <li>
-                      <h3>Привод</h3>
-                      <p>Полный</p>
-                    </li>
-                    <li>
-                      <h3>Цилиндров</h3>
-                      <p>5</p>
-                    </li>
-                    <li>
-                      <h3>Обьем двигателя</h3>
-                      <p>3.996 см3 / 4,0 литра</p>
-                    </li>
-                    <li>
-                      <h3>Оснащение экстра</h3>
-                      <p>Панорамная крыша, парковочный ассистент, свет - LED...</p>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li>Доставка цена: 5 000 €</li>
-                    <li>Растаможка цена: 25 000 €</li>
-                  </ul>
+              </div>
+              <div class="catalog__item">
+                <div class="item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <picture>
+                        <source srcset="img/catalog/car.webp" type="image/webp">
+                          <img src="img/catalog/car.webp" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
                 </div>
-              </div><a class="item__button btn" href="description.html">Узнать больше</a>
+                <div class="item__bottom">
+                  <h2 class="item__title">BMW 77</h2>
+                  <div class="item__text">M60i xDrive: SZH, Navi, Panorama, Kl...</div>
+                  <div class="item__place">
+                    <img src="img/icons/pin-white.svg" alt="ico"><span>Wielenbach, DE</span>
+                  </div>
+                  <div class="item__price"><span>Первичный взнос 50% в размере</span><b>66.402,00 €</b>
+                  </div>
+                  <div class="item__info">
+                    <ul>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/calendar.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/gearbox.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/fuel-pump.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__item">
+                <div class="item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <picture>
+                        <source srcset="img/catalog/car.webp" type="image/webp">
+                          <img src="img/catalog/car.webp" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="item__bottom">
+                  <h2 class="item__title">BMW 77</h2>
+                  <div class="item__text">M60i xDrive: SZH, Navi, Panorama, Kl...</div>
+                  <div class="item__place">
+                    <img src="img/icons/pin-white.svg" alt="ico"><span>Wielenbach, DE</span>
+                  </div>
+                  <div class="item__price"><span>Первичный взнос 50% в размере</span><b>66.402,00 €</b>
+                  </div>
+                  <div class="item__info">
+                    <ul>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/calendar.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/gearbox.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/fuel-pump.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__item">
+                <div class="item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <picture>
+                        <source srcset="img/catalog/car.webp" type="image/webp">
+                          <img src="img/catalog/car.webp" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="item__bottom">
+                  <h2 class="item__title">BMW 77</h2>
+                  <div class="item__text">M60i xDrive: SZH, Navi, Panorama, Kl...</div>
+                  <div class="item__place">
+                    <img src="img/icons/pin-white.svg" alt="ico"><span>Wielenbach, DE</span>
+                  </div>
+                  <div class="item__price"><span>Первичный взнос 50% в размере</span><b>66.402,00 €</b>
+                  </div>
+                  <div class="item__info">
+                    <ul>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/calendar.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/gearbox.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/fuel-pump.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__item">
+                <div class="item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <picture>
+                        <source srcset="img/catalog/car.webp" type="image/webp">
+                          <img src="img/catalog/car.webp" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="item__bottom">
+                  <h2 class="item__title">BMW 77</h2>
+                  <div class="item__text">M60i xDrive: SZH, Navi, Panorama, Kl...</div>
+                  <div class="item__place">
+                    <img src="img/icons/pin-white.svg" alt="ico"><span>Wielenbach, DE</span>
+                  </div>
+                  <div class="item__price"><span>Первичный взнос 50% в размере</span><b>66.402,00 €</b>
+                  </div>
+                  <div class="item__info">
+                    <ul>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/calendar.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/gearbox.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/fuel-pump.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__item">
+                <div class="item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <picture>
+                        <source srcset="img/catalog/car.webp" type="image/webp">
+                          <img src="img/catalog/car.webp" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="item__bottom">
+                  <h2 class="item__title">BMW 77</h2>
+                  <div class="item__text">M60i xDrive: SZH, Navi, Panorama, Kl...</div>
+                  <div class="item__place">
+                    <img src="img/icons/pin-white.svg" alt="ico"><span>Wielenbach, DE</span>
+                  </div>
+                  <div class="item__price"><span>Первичный взнос 50% в размере</span><b>66.402,00 €</b>
+                  </div>
+                  <div class="item__info">
+                    <ul>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/calendar.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/gearbox.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/fuel-pump.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__item">
+                <div class="item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <picture>
+                        <source srcset="img/catalog/car.webp" type="image/webp">
+                          <img src="img/catalog/car.webp" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="item__bottom">
+                  <h2 class="item__title">BMW 77</h2>
+                  <div class="item__text">M60i xDrive: SZH, Navi, Panorama, Kl...</div>
+                  <div class="item__place">
+                    <img src="img/icons/pin-white.svg" alt="ico"><span>Wielenbach, DE</span>
+                  </div>
+                  <div class="item__price"><span>Первичный взнос 50% в размере</span><b>66.402,00 €</b>
+                  </div>
+                  <div class="item__info">
+                    <ul>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/calendar.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/gearbox.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/fuel-pump.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__item">
+                <div class="item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <picture>
+                        <source srcset="img/catalog/car.webp" type="image/webp">
+                          <img src="img/catalog/car.webp" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="item__bottom">
+                  <h2 class="item__title">BMW 77</h2>
+                  <div class="item__text">M60i xDrive: SZH, Navi, Panorama, Kl...</div>
+                  <div class="item__place">
+                    <img src="img/icons/pin-white.svg" alt="ico"><span>Wielenbach, DE</span>
+                  </div>
+                  <div class="item__price"><span>Первичный взнос 50% в размере</span><b>66.402,00 €</b>
+                  </div>
+                  <div class="item__info">
+                    <ul>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/calendar.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/gearbox.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/fuel-pump.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="catalog__item">
-            <div class="item__slider">
-              <button class="swiper-button-prev">
-                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.12012 6.47304L9.36894 0.224326C9.51347 0.0796843 9.7064 0 9.91212 0C10.1178 0 10.3108 0.0796843 10.4553 0.224326L10.9155 0.684394C11.2149 0.984181 11.2149 1.47142 10.9155 1.77075L5.66819 7.01804L10.9213 12.2712C11.0658 12.4158 11.1456 12.6086 11.1456 12.8142C11.1456 13.02 11.0658 13.2129 10.9213 13.3576L10.4611 13.8176C10.3165 13.9622 10.1237 14.0419 9.91794 14.0419C9.71223 14.0419 9.51929 13.9622 9.37477 13.8176L3.12012 7.56316C2.97525 7.41806 2.89568 7.22433 2.89613 7.01838C2.89568 6.81164 2.97525 6.61802 3.12012 6.47304Z"
-                  fill="white" />
-                </svg>
-              </button>
-              <button class="swiper-button-next">
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.55574 5.07078L3.6606 0.17573C3.54738 0.0624223 3.39625 0 3.23509 0C3.07394 0 2.9228 0.0624223 2.80958 0.17573L2.44909 0.536134C2.21451 0.770977 2.21451 1.15267 2.44909 1.38715L6.55966 5.49772L2.44453 9.61285C2.33131 9.72616 2.2688 9.8772 2.2688 10.0383C2.2688 10.1995 2.33131 10.3506 2.44453 10.464L2.80502 10.8243C2.91833 10.9376 3.06938 11 3.23053 11C3.39168 11 3.54282 10.9376 3.65604 10.8243L8.55574 5.92475C8.66923 5.81108 8.73156 5.65932 8.7312 5.49799C8.73156 5.33603 8.66923 5.18436 8.55574 5.07078Z"
-                  fill="white" />
-                </svg>
-              </button>
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <picture>
-                    <source srcset="img/catalog/car.webp" type="image/webp">
-                      <img src="img/catalog/car.webp" alt="">
-                  </picture>
+          <div class="catalog__mark">
+            <h3>Mercedes-Benz</h3>
+            <div class="catalog__grid">
+              <div class="catalog__item">
+                <div class="item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <picture>
+                        <source srcset="img/catalog/car.webp" type="image/webp">
+                          <img src="img/catalog/car.webp" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-slide">
-                  <picture>
-                    <source srcset="img/catalog/2022_bmw_ix.webp" type="image/webp">
-                      <img src="img/catalog/2022_bmw_ix.webp" alt="">
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture>
-                    <source srcset="img/catalog/car.webp" type="image/webp">
-                      <img src="img/catalog/car.webp" alt="">
-                  </picture>
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-            <div class="item__bottom">
-              <h2 class="item__title">BMW X7 M60i xDrive</h2>
-              <div class="item__price">ab 66.402,00 €</div>
-              <div class="item__info">
-                <ul>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/calendar.svg" alt="">
-                    </div><span>28.09.2018</span>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/gearbox.svg" alt="">
-                    </div><span>Автоматика</span>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/fuel-pump.svg" alt="">
-                    </div><span>Топливо</span>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/speedometer.svg" alt="">
-                    </div><span>71.800 km</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="item__more-info">
-                <div class="more-info__head"><span>Дополнительная техническая информация</span>
-                  <div class="icon">
-                    <div class="line"></div>
-                    <div class="line"></div>
+                <div class="item__bottom">
+                  <h2 class="item__title">BMW 77</h2>
+                  <div class="item__text">M60i xDrive: SZH, Navi, Panorama, Kl...</div>
+                  <div class="item__place">
+                    <img src="img/icons/pin-white.svg" alt="ico"><span>Wielenbach, DE</span>
+                  </div>
+                  <div class="item__price"><span>Первичный взнос 50% в размере</span><b>66.402,00 €</b>
+                  </div>
+                  <div class="item__info">
+                    <ul>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/calendar.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/gearbox.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/fuel-pump.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div class="more-info__body">
-                  <ul>
-                    <li>
-                      <h3>Владелец</h3>
-                      <p>1 (BMW)</p>
-                    </li>
-                    <li>
-                      <h3>Мощник</h3>
-                      <p>338 kW / 460 PS</p>
-                    </li>
-                    <li>
-                      <h3>Расход комбинированный (NEFZ)</h3>
-                      <p>11,2 л / 100 км</p>
-                    </li>
-                    <li>
-                      <h3>Цвет кузова</h3>
-                      <p>Лунный свет голубой металик</p>
-                    </li>
-                    <li>
-                      <h3>Цвет салона & Материал</h3>
-                      <p>Гладкая кожа цвет антрацит</p>
-                    </li>
-                    <li>
-                      <h3>Коробка</h3>
-                      <p>Автоматическая</p>
-                    </li>
-                    <li>
-                      <h3>Максимальная скорость</h3>
-                      <p>270 км/ч</p>
-                    </li>
-                    <li>
-                      <h3>Ускорение 0-100 км/ч</h3>
-                      <p>4,8 с</p>
-                    </li>
-                    <li>
-                      <h3>Привод</h3>
-                      <p>Полный</p>
-                    </li>
-                    <li>
-                      <h3>Цилиндров</h3>
-                      <p>5</p>
-                    </li>
-                    <li>
-                      <h3>Обьем двигателя</h3>
-                      <p>3.996 см3 / 4,0 литра</p>
-                    </li>
-                    <li>
-                      <h3>Оснащение экстра</h3>
-                      <p>Панорамная крыша, парковочный ассистент, свет - LED...</p>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li>Доставка цена: 5 000 €</li>
-                    <li>Растаможка цена: 25 000 €</li>
-                  </ul>
-                </div>
-              </div><a class="item__button btn" href="description.html">Узнать больше</a>
-            </div>
-          </div>
-          <div class="catalog__item">
-            <div class="item__slider">
-              <button class="swiper-button-prev">
-                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.12012 6.47304L9.36894 0.224326C9.51347 0.0796843 9.7064 0 9.91212 0C10.1178 0 10.3108 0.0796843 10.4553 0.224326L10.9155 0.684394C11.2149 0.984181 11.2149 1.47142 10.9155 1.77075L5.66819 7.01804L10.9213 12.2712C11.0658 12.4158 11.1456 12.6086 11.1456 12.8142C11.1456 13.02 11.0658 13.2129 10.9213 13.3576L10.4611 13.8176C10.3165 13.9622 10.1237 14.0419 9.91794 14.0419C9.71223 14.0419 9.51929 13.9622 9.37477 13.8176L3.12012 7.56316C2.97525 7.41806 2.89568 7.22433 2.89613 7.01838C2.89568 6.81164 2.97525 6.61802 3.12012 6.47304Z"
-                  fill="white" />
-                </svg>
-              </button>
-              <button class="swiper-button-next">
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.55574 5.07078L3.6606 0.17573C3.54738 0.0624223 3.39625 0 3.23509 0C3.07394 0 2.9228 0.0624223 2.80958 0.17573L2.44909 0.536134C2.21451 0.770977 2.21451 1.15267 2.44909 1.38715L6.55966 5.49772L2.44453 9.61285C2.33131 9.72616 2.2688 9.8772 2.2688 10.0383C2.2688 10.1995 2.33131 10.3506 2.44453 10.464L2.80502 10.8243C2.91833 10.9376 3.06938 11 3.23053 11C3.39168 11 3.54282 10.9376 3.65604 10.8243L8.55574 5.92475C8.66923 5.81108 8.73156 5.65932 8.7312 5.49799C8.73156 5.33603 8.66923 5.18436 8.55574 5.07078Z"
-                  fill="white" />
-                </svg>
-              </button>
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <picture>
-                    <source srcset="img/catalog/car.webp" type="image/webp">
-                      <img src="img/catalog/car.webp" alt="">
-                  </picture>
-                </div>
               </div>
-              <div class="swiper-pagination"></div>
-            </div>
-            <div class="item__bottom">
-              <h2 class="item__title">BMW X7 M60i xDrive</h2>
-              <div class="item__price">ab 66.402,00 €</div>
-              <div class="item__info">
-                <ul>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/calendar.svg" alt="">
-                    </div><span>28.09.2018</span>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/gearbox.svg" alt="">
-                    </div><span>Автоматика</span>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/fuel-pump.svg" alt="">
-                    </div><span>Топливо</span>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/speedometer.svg" alt="">
-                    </div><span>71.800 km</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="item__more-info">
-                <div class="more-info__head"><span>Дополнительная техническая информация</span>
-                  <div class="icon">
-                    <div class="line"></div>
-                    <div class="line"></div>
+              <div class="catalog__item">
+                <div class="item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <picture>
+                        <source srcset="img/catalog/car.webp" type="image/webp">
+                          <img src="img/catalog/car.webp" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="item__bottom">
+                  <h2 class="item__title">BMW 77</h2>
+                  <div class="item__text">M60i xDrive: SZH, Navi, Panorama, Kl...</div>
+                  <div class="item__place">
+                    <img src="img/icons/pin-white.svg" alt="ico"><span>Wielenbach, DE</span>
+                  </div>
+                  <div class="item__price"><span>Первичный взнос 50% в размере</span><b>66.402,00 €</b>
+                  </div>
+                  <div class="item__info">
+                    <ul>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/calendar.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/gearbox.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/fuel-pump.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div class="more-info__body">
-                  <ul>
-                    <li>
-                      <h3>Владелец</h3>
-                      <p>1 (BMW)</p>
-                    </li>
-                    <li>
-                      <h3>Цилиндров</h3>
-                      <p>5</p>
-                    </li>
-                    <li>
-                      <h3>Обьем двигателя</h3>
-                      <p>3.996 см3 / 4,0 литра</p>
-                    </li>
-                    <li>
-                      <h3>Оснащение экстра</h3>
-                      <p>Панорамная крыша, парковочный ассистент, свет - LED...</p>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li>Доставка цена: 5 000 €</li>
-                    <li>Растаможка цена: 25 000 €</li>
-                  </ul>
-                </div>
-              </div><a class="item__button btn" href="description.html">Узнать больше</a>
-            </div>
-          </div>
-          <div class="catalog__item">
-            <div class="item__slider">
-              <button class="swiper-button-prev">
-                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.12012 6.47304L9.36894 0.224326C9.51347 0.0796843 9.7064 0 9.91212 0C10.1178 0 10.3108 0.0796843 10.4553 0.224326L10.9155 0.684394C11.2149 0.984181 11.2149 1.47142 10.9155 1.77075L5.66819 7.01804L10.9213 12.2712C11.0658 12.4158 11.1456 12.6086 11.1456 12.8142C11.1456 13.02 11.0658 13.2129 10.9213 13.3576L10.4611 13.8176C10.3165 13.9622 10.1237 14.0419 9.91794 14.0419C9.71223 14.0419 9.51929 13.9622 9.37477 13.8176L3.12012 7.56316C2.97525 7.41806 2.89568 7.22433 2.89613 7.01838C2.89568 6.81164 2.97525 6.61802 3.12012 6.47304Z"
-                  fill="white" />
-                </svg>
-              </button>
-              <button class="swiper-button-next">
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.55574 5.07078L3.6606 0.17573C3.54738 0.0624223 3.39625 0 3.23509 0C3.07394 0 2.9228 0.0624223 2.80958 0.17573L2.44909 0.536134C2.21451 0.770977 2.21451 1.15267 2.44909 1.38715L6.55966 5.49772L2.44453 9.61285C2.33131 9.72616 2.2688 9.8772 2.2688 10.0383C2.2688 10.1995 2.33131 10.3506 2.44453 10.464L2.80502 10.8243C2.91833 10.9376 3.06938 11 3.23053 11C3.39168 11 3.54282 10.9376 3.65604 10.8243L8.55574 5.92475C8.66923 5.81108 8.73156 5.65932 8.7312 5.49799C8.73156 5.33603 8.66923 5.18436 8.55574 5.07078Z"
-                  fill="white" />
-                </svg>
-              </button>
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <picture>
-                    <source srcset="img/catalog/car.webp" type="image/webp">
-                      <img src="img/catalog/car.webp" alt="">
-                  </picture>
-                </div>
               </div>
-              <div class="swiper-pagination"></div>
-            </div>
-            <div class="item__bottom">
-              <h2 class="item__title">BMW X7 M60i xDrive</h2>
-              <div class="item__price">ab 66.402,00 €</div>
-              <div class="item__info">
-                <ul>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/calendar.svg" alt="">
-                    </div><span>28.09.2018</span>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/gearbox.svg" alt="">
-                    </div><span>Автоматика</span>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/fuel-pump.svg" alt="">
-                    </div><span>Топливо</span>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/speedometer.svg" alt="">
-                    </div><span>71.800 km</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="item__more-info">
-                <div class="more-info__head"><span>Дополнительная техническая информация</span>
-                  <div class="icon">
-                    <div class="line"></div>
-                    <div class="line"></div>
+              <div class="catalog__item">
+                <div class="item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <picture>
+                        <source srcset="img/catalog/car.webp" type="image/webp">
+                          <img src="img/catalog/car.webp" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="item__bottom">
+                  <h2 class="item__title">BMW 77</h2>
+                  <div class="item__text">M60i xDrive: SZH, Navi, Panorama, Kl...</div>
+                  <div class="item__place">
+                    <img src="img/icons/pin-white.svg" alt="ico"><span>Wielenbach, DE</span>
+                  </div>
+                  <div class="item__price"><span>Первичный взнос 50% в размере</span><b>66.402,00 €</b>
+                  </div>
+                  <div class="item__info">
+                    <ul>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/calendar.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/gearbox.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/fuel-pump.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div class="more-info__body">
-                  <ul>
-                    <li>
-                      <h3>Владелец</h3>
-                      <p>1 (BMW)</p>
-                    </li>
-                    <li>
-                      <h3>Мощник</h3>
-                      <p>338 kW / 460 PS</p>
-                    </li>
-                    <li>
-                      <h3>Расход комбинированный (NEFZ)</h3>
-                      <p>11,2 л / 100 км</p>
-                    </li>
-                    <li>
-                      <h3>Цвет кузова</h3>
-                      <p>Лунный свет голубой металик</p>
-                    </li>
-                    <li>
-                      <h3>Цвет салона & Материал</h3>
-                      <p>Гладкая кожа цвет антрацит</p>
-                    </li>
-                    <li>
-                      <h3>Коробка</h3>
-                      <p>Автоматическая</p>
-                    </li>
-                    <li>
-                      <h3>Максимальная скорость</h3>
-                      <p>270 км/ч</p>
-                    </li>
-                    <li>
-                      <h3>Ускорение 0-100 км/ч</h3>
-                      <p>4,8 с</p>
-                    </li>
-                    <li>
-                      <h3>Привод</h3>
-                      <p>Полный</p>
-                    </li>
-                    <li>
-                      <h3>Цилиндров</h3>
-                      <p>5</p>
-                    </li>
-                    <li>
-                      <h3>Обьем двигателя</h3>
-                      <p>3.996 см3 / 4,0 литра</p>
-                    </li>
-                    <li>
-                      <h3>Оснащение экстра</h3>
-                      <p>Панорамная крыша, парковочный ассистент, свет - LED...</p>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li>Доставка цена: 5 000 €</li>
-                    <li>Растаможка цена: 25 000 €</li>
-                  </ul>
-                </div>
-              </div><a class="item__button btn" href="description.html">Узнать больше</a>
-            </div>
-          </div>
-          <div class="catalog__item">
-            <div class="item__slider">
-              <button class="swiper-button-prev">
-                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.12012 6.47304L9.36894 0.224326C9.51347 0.0796843 9.7064 0 9.91212 0C10.1178 0 10.3108 0.0796843 10.4553 0.224326L10.9155 0.684394C11.2149 0.984181 11.2149 1.47142 10.9155 1.77075L5.66819 7.01804L10.9213 12.2712C11.0658 12.4158 11.1456 12.6086 11.1456 12.8142C11.1456 13.02 11.0658 13.2129 10.9213 13.3576L10.4611 13.8176C10.3165 13.9622 10.1237 14.0419 9.91794 14.0419C9.71223 14.0419 9.51929 13.9622 9.37477 13.8176L3.12012 7.56316C2.97525 7.41806 2.89568 7.22433 2.89613 7.01838C2.89568 6.81164 2.97525 6.61802 3.12012 6.47304Z"
-                  fill="white" />
-                </svg>
-              </button>
-              <button class="swiper-button-next">
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.55574 5.07078L3.6606 0.17573C3.54738 0.0624223 3.39625 0 3.23509 0C3.07394 0 2.9228 0.0624223 2.80958 0.17573L2.44909 0.536134C2.21451 0.770977 2.21451 1.15267 2.44909 1.38715L6.55966 5.49772L2.44453 9.61285C2.33131 9.72616 2.2688 9.8772 2.2688 10.0383C2.2688 10.1995 2.33131 10.3506 2.44453 10.464L2.80502 10.8243C2.91833 10.9376 3.06938 11 3.23053 11C3.39168 11 3.54282 10.9376 3.65604 10.8243L8.55574 5.92475C8.66923 5.81108 8.73156 5.65932 8.7312 5.49799C8.73156 5.33603 8.66923 5.18436 8.55574 5.07078Z"
-                  fill="white" />
-                </svg>
-              </button>
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <picture>
-                    <source srcset="img/catalog/car.webp" type="image/webp">
-                      <img src="img/catalog/car.webp" alt="">
-                  </picture>
-                </div>
               </div>
-              <div class="swiper-pagination"></div>
-            </div>
-            <div class="item__bottom">
-              <h2 class="item__title">BMW X7 M60i xDrive</h2>
-              <div class="item__price">ab 66.402,00 €</div>
-              <div class="item__info">
-                <ul>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/calendar.svg" alt="">
-                    </div><span>28.09.2018</span>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/gearbox.svg" alt="">
-                    </div><span>Автоматика</span>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/fuel-pump.svg" alt="">
-                    </div><span>Топливо</span>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/speedometer.svg" alt="">
-                    </div><span>71.800 km</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="item__more-info">
-                <div class="more-info__head"><span>Дополнительная техническая информация</span>
-                  <div class="icon">
-                    <div class="line"></div>
-                    <div class="line"></div>
+              <div class="catalog__item">
+                <div class="item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <picture>
+                        <source srcset="img/catalog/car.webp" type="image/webp">
+                          <img src="img/catalog/car.webp" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="item__bottom">
+                  <h2 class="item__title">BMW 77</h2>
+                  <div class="item__text">M60i xDrive: SZH, Navi, Panorama, Kl...</div>
+                  <div class="item__place">
+                    <img src="img/icons/pin-white.svg" alt="ico"><span>Wielenbach, DE</span>
+                  </div>
+                  <div class="item__price"><span>Первичный взнос 50% в размере</span><b>66.402,00 €</b>
+                  </div>
+                  <div class="item__info">
+                    <ul>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/calendar.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/gearbox.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/fuel-pump.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div class="more-info__body">
-                  <ul>
-                    <li>
-                      <h3>Владелец</h3>
-                      <p>1 (BMW)</p>
-                    </li>
-                    <li>
-                      <h3>Мощник</h3>
-                      <p>338 kW / 460 PS</p>
-                    </li>
-                    <li>
-                      <h3>Расход комбинированный (NEFZ)</h3>
-                      <p>11,2 л / 100 км</p>
-                    </li>
-                    <li>
-                      <h3>Цвет кузова</h3>
-                      <p>Лунный свет голубой металик</p>
-                    </li>
-                    <li>
-                      <h3>Цвет салона & Материал</h3>
-                      <p>Гладкая кожа цвет антрацит</p>
-                    </li>
-                    <li>
-                      <h3>Коробка</h3>
-                      <p>Автоматическая</p>
-                    </li>
-                    <li>
-                      <h3>Максимальная скорость</h3>
-                      <p>270 км/ч</p>
-                    </li>
-                    <li>
-                      <h3>Ускорение 0-100 км/ч</h3>
-                      <p>4,8 с</p>
-                    </li>
-                    <li>
-                      <h3>Привод</h3>
-                      <p>Полный</p>
-                    </li>
-                    <li>
-                      <h3>Цилиндров</h3>
-                      <p>5</p>
-                    </li>
-                    <li>
-                      <h3>Обьем двигателя</h3>
-                      <p>3.996 см3 / 4,0 литра</p>
-                    </li>
-                    <li>
-                      <h3>Оснащение экстра</h3>
-                      <p>Панорамная крыша, парковочный ассистент, свет - LED...</p>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li>Доставка цена: 5 000 €</li>
-                    <li>Растаможка цена: 25 000 €</li>
-                  </ul>
-                </div>
-              </div><a class="item__button btn" href="description.html">Узнать больше</a>
-            </div>
-          </div>
-          <div class="catalog__item">
-            <div class="item__slider">
-              <button class="swiper-button-prev">
-                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.12012 6.47304L9.36894 0.224326C9.51347 0.0796843 9.7064 0 9.91212 0C10.1178 0 10.3108 0.0796843 10.4553 0.224326L10.9155 0.684394C11.2149 0.984181 11.2149 1.47142 10.9155 1.77075L5.66819 7.01804L10.9213 12.2712C11.0658 12.4158 11.1456 12.6086 11.1456 12.8142C11.1456 13.02 11.0658 13.2129 10.9213 13.3576L10.4611 13.8176C10.3165 13.9622 10.1237 14.0419 9.91794 14.0419C9.71223 14.0419 9.51929 13.9622 9.37477 13.8176L3.12012 7.56316C2.97525 7.41806 2.89568 7.22433 2.89613 7.01838C2.89568 6.81164 2.97525 6.61802 3.12012 6.47304Z"
-                  fill="white" />
-                </svg>
-              </button>
-              <button class="swiper-button-next">
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.55574 5.07078L3.6606 0.17573C3.54738 0.0624223 3.39625 0 3.23509 0C3.07394 0 2.9228 0.0624223 2.80958 0.17573L2.44909 0.536134C2.21451 0.770977 2.21451 1.15267 2.44909 1.38715L6.55966 5.49772L2.44453 9.61285C2.33131 9.72616 2.2688 9.8772 2.2688 10.0383C2.2688 10.1995 2.33131 10.3506 2.44453 10.464L2.80502 10.8243C2.91833 10.9376 3.06938 11 3.23053 11C3.39168 11 3.54282 10.9376 3.65604 10.8243L8.55574 5.92475C8.66923 5.81108 8.73156 5.65932 8.7312 5.49799C8.73156 5.33603 8.66923 5.18436 8.55574 5.07078Z"
-                  fill="white" />
-                </svg>
-              </button>
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <picture>
-                    <source srcset="img/catalog/car.webp" type="image/webp">
-                      <img src="img/catalog/car.webp" alt="">
-                  </picture>
-                </div>
               </div>
-              <div class="swiper-pagination"></div>
-            </div>
-            <div class="item__bottom">
-              <h2 class="item__title">BMW X7 M60i xDrive</h2>
-              <div class="item__price">ab 66.402,00 €</div>
-              <div class="item__info">
-                <ul>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/calendar.svg" alt="">
-                    </div><span>28.09.2018</span>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/gearbox.svg" alt="">
-                    </div><span>Автоматика</span>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/fuel-pump.svg" alt="">
-                    </div><span>Топливо</span>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/speedometer.svg" alt="">
-                    </div><span>71.800 km</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="item__more-info">
-                <div class="more-info__head"><span>Дополнительная техническая информация</span>
-                  <div class="icon">
-                    <div class="line"></div>
-                    <div class="line"></div>
+              <div class="catalog__item">
+                <div class="item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <picture>
+                        <source srcset="img/catalog/car.webp" type="image/webp">
+                          <img src="img/catalog/car.webp" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="item__bottom">
+                  <h2 class="item__title">BMW 77</h2>
+                  <div class="item__text">M60i xDrive: SZH, Navi, Panorama, Kl...</div>
+                  <div class="item__place">
+                    <img src="img/icons/pin-white.svg" alt="ico"><span>Wielenbach, DE</span>
+                  </div>
+                  <div class="item__price"><span>Первичный взнос 50% в размере</span><b>66.402,00 €</b>
+                  </div>
+                  <div class="item__info">
+                    <ul>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/calendar.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/gearbox.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/fuel-pump.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div class="more-info__body">
-                  <ul>
-                    <li>
-                      <h3>Владелец</h3>
-                      <p>1 (BMW)</p>
-                    </li>
-                    <li>
-                      <h3>Мощник</h3>
-                      <p>338 kW / 460 PS</p>
-                    </li>
-                    <li>
-                      <h3>Расход комбинированный (NEFZ)</h3>
-                      <p>11,2 л / 100 км</p>
-                    </li>
-                    <li>
-                      <h3>Цвет кузова</h3>
-                      <p>Лунный свет голубой металик</p>
-                    </li>
-                    <li>
-                      <h3>Цвет салона & Материал</h3>
-                      <p>Гладкая кожа цвет антрацит</p>
-                    </li>
-                    <li>
-                      <h3>Коробка</h3>
-                      <p>Автоматическая</p>
-                    </li>
-                    <li>
-                      <h3>Максимальная скорость</h3>
-                      <p>270 км/ч</p>
-                    </li>
-                    <li>
-                      <h3>Ускорение 0-100 км/ч</h3>
-                      <p>4,8 с</p>
-                    </li>
-                    <li>
-                      <h3>Привод</h3>
-                      <p>Полный</p>
-                    </li>
-                    <li>
-                      <h3>Цилиндров</h3>
-                      <p>5</p>
-                    </li>
-                    <li>
-                      <h3>Обьем двигателя</h3>
-                      <p>3.996 см3 / 4,0 литра</p>
-                    </li>
-                    <li>
-                      <h3>Оснащение экстра</h3>
-                      <p>Панорамная крыша, парковочный ассистент, свет - LED...</p>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li>Доставка цена: 5 000 €</li>
-                    <li>Растаможка цена: 25 000 €</li>
-                  </ul>
-                </div>
-              </div><a class="item__button btn" href="description.html">Узнать больше</a>
-            </div>
-          </div>
-          <div class="catalog__item">
-            <div class="item__slider">
-              <button class="swiper-button-prev">
-                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.12012 6.47304L9.36894 0.224326C9.51347 0.0796843 9.7064 0 9.91212 0C10.1178 0 10.3108 0.0796843 10.4553 0.224326L10.9155 0.684394C11.2149 0.984181 11.2149 1.47142 10.9155 1.77075L5.66819 7.01804L10.9213 12.2712C11.0658 12.4158 11.1456 12.6086 11.1456 12.8142C11.1456 13.02 11.0658 13.2129 10.9213 13.3576L10.4611 13.8176C10.3165 13.9622 10.1237 14.0419 9.91794 14.0419C9.71223 14.0419 9.51929 13.9622 9.37477 13.8176L3.12012 7.56316C2.97525 7.41806 2.89568 7.22433 2.89613 7.01838C2.89568 6.81164 2.97525 6.61802 3.12012 6.47304Z"
-                  fill="white" />
-                </svg>
-              </button>
-              <button class="swiper-button-next">
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.55574 5.07078L3.6606 0.17573C3.54738 0.0624223 3.39625 0 3.23509 0C3.07394 0 2.9228 0.0624223 2.80958 0.17573L2.44909 0.536134C2.21451 0.770977 2.21451 1.15267 2.44909 1.38715L6.55966 5.49772L2.44453 9.61285C2.33131 9.72616 2.2688 9.8772 2.2688 10.0383C2.2688 10.1995 2.33131 10.3506 2.44453 10.464L2.80502 10.8243C2.91833 10.9376 3.06938 11 3.23053 11C3.39168 11 3.54282 10.9376 3.65604 10.8243L8.55574 5.92475C8.66923 5.81108 8.73156 5.65932 8.7312 5.49799C8.73156 5.33603 8.66923 5.18436 8.55574 5.07078Z"
-                  fill="white" />
-                </svg>
-              </button>
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <picture>
-                    <source srcset="img/catalog/car.webp" type="image/webp">
-                      <img src="img/catalog/car.webp" alt="">
-                  </picture>
-                </div>
               </div>
-              <div class="swiper-pagination"></div>
-            </div>
-            <div class="item__bottom">
-              <h2 class="item__title">BMW X7 M60i xDrive</h2>
-              <div class="item__price">ab 66.402,00 €</div>
-              <div class="item__info">
-                <ul>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/calendar.svg" alt="">
-                    </div><span>28.09.2018</span>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/gearbox.svg" alt="">
-                    </div><span>Автоматика</span>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/fuel-pump.svg" alt="">
-                    </div><span>Топливо</span>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/speedometer.svg" alt="">
-                    </div><span>71.800 km</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="item__more-info">
-                <div class="more-info__head"><span>Дополнительная техническая информация</span>
-                  <div class="icon">
-                    <div class="line"></div>
-                    <div class="line"></div>
+              <div class="catalog__item">
+                <div class="item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <picture>
+                        <source srcset="img/catalog/car.webp" type="image/webp">
+                          <img src="img/catalog/car.webp" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="item__bottom">
+                  <h2 class="item__title">BMW 77</h2>
+                  <div class="item__text">M60i xDrive: SZH, Navi, Panorama, Kl...</div>
+                  <div class="item__place">
+                    <img src="img/icons/pin-white.svg" alt="ico"><span>Wielenbach, DE</span>
+                  </div>
+                  <div class="item__price"><span>Первичный взнос 50% в размере</span><b>66.402,00 €</b>
+                  </div>
+                  <div class="item__info">
+                    <ul>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/calendar.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/gearbox.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/fuel-pump.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div class="more-info__body">
-                  <ul>
-                    <li>
-                      <h3>Владелец</h3>
-                      <p>1 (BMW)</p>
-                    </li>
-                    <li>
-                      <h3>Мощник</h3>
-                      <p>338 kW / 460 PS</p>
-                    </li>
-                    <li>
-                      <h3>Расход комбинированный (NEFZ)</h3>
-                      <p>11,2 л / 100 км</p>
-                    </li>
-                    <li>
-                      <h3>Цвет кузова</h3>
-                      <p>Лунный свет голубой металик</p>
-                    </li>
-                    <li>
-                      <h3>Цвет салона & Материал</h3>
-                      <p>Гладкая кожа цвет антрацит</p>
-                    </li>
-                    <li>
-                      <h3>Коробка</h3>
-                      <p>Автоматическая</p>
-                    </li>
-                    <li>
-                      <h3>Максимальная скорость</h3>
-                      <p>270 км/ч</p>
-                    </li>
-                    <li>
-                      <h3>Ускорение 0-100 км/ч</h3>
-                      <p>4,8 с</p>
-                    </li>
-                    <li>
-                      <h3>Привод</h3>
-                      <p>Полный</p>
-                    </li>
-                    <li>
-                      <h3>Цилиндров</h3>
-                      <p>5</p>
-                    </li>
-                    <li>
-                      <h3>Обьем двигателя</h3>
-                      <p>3.996 см3 / 4,0 литра</p>
-                    </li>
-                    <li>
-                      <h3>Оснащение экстра</h3>
-                      <p>Панорамная крыша, парковочный ассистент, свет - LED...</p>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li>Доставка цена: 5 000 €</li>
-                    <li>Растаможка цена: 25 000 €</li>
-                  </ul>
-                </div>
-              </div><a class="item__button btn" href="description.html">Узнать больше</a>
-            </div>
-          </div>
-          <div class="catalog__item">
-            <div class="item__slider">
-              <button class="swiper-button-prev">
-                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.12012 6.47304L9.36894 0.224326C9.51347 0.0796843 9.7064 0 9.91212 0C10.1178 0 10.3108 0.0796843 10.4553 0.224326L10.9155 0.684394C11.2149 0.984181 11.2149 1.47142 10.9155 1.77075L5.66819 7.01804L10.9213 12.2712C11.0658 12.4158 11.1456 12.6086 11.1456 12.8142C11.1456 13.02 11.0658 13.2129 10.9213 13.3576L10.4611 13.8176C10.3165 13.9622 10.1237 14.0419 9.91794 14.0419C9.71223 14.0419 9.51929 13.9622 9.37477 13.8176L3.12012 7.56316C2.97525 7.41806 2.89568 7.22433 2.89613 7.01838C2.89568 6.81164 2.97525 6.61802 3.12012 6.47304Z"
-                  fill="white" />
-                </svg>
-              </button>
-              <button class="swiper-button-next">
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.55574 5.07078L3.6606 0.17573C3.54738 0.0624223 3.39625 0 3.23509 0C3.07394 0 2.9228 0.0624223 2.80958 0.17573L2.44909 0.536134C2.21451 0.770977 2.21451 1.15267 2.44909 1.38715L6.55966 5.49772L2.44453 9.61285C2.33131 9.72616 2.2688 9.8772 2.2688 10.0383C2.2688 10.1995 2.33131 10.3506 2.44453 10.464L2.80502 10.8243C2.91833 10.9376 3.06938 11 3.23053 11C3.39168 11 3.54282 10.9376 3.65604 10.8243L8.55574 5.92475C8.66923 5.81108 8.73156 5.65932 8.7312 5.49799C8.73156 5.33603 8.66923 5.18436 8.55574 5.07078Z"
-                  fill="white" />
-                </svg>
-              </button>
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <picture>
-                    <source srcset="img/catalog/car.webp" type="image/webp">
-                      <img src="img/catalog/car.webp" alt="">
-                  </picture>
-                </div>
               </div>
-              <div class="swiper-pagination"></div>
-            </div>
-            <div class="item__bottom">
-              <h2 class="item__title">BMW X7 M60i xDrive</h2>
-              <div class="item__price">ab 66.402,00 €</div>
-              <div class="item__info">
-                <ul>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/calendar.svg" alt="">
-                    </div><span>28.09.2018</span>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/gearbox.svg" alt="">
-                    </div><span>Автоматика</span>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/fuel-pump.svg" alt="">
-                    </div><span>Топливо</span>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/speedometer.svg" alt="">
-                    </div><span>71.800 km</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="item__more-info">
-                <div class="more-info__head"><span>Дополнительная техническая информация</span>
-                  <div class="icon">
-                    <div class="line"></div>
-                    <div class="line"></div>
+              <div class="catalog__item">
+                <div class="item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <picture>
+                        <source srcset="img/catalog/car.webp" type="image/webp">
+                          <img src="img/catalog/car.webp" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="item__bottom">
+                  <h2 class="item__title">BMW 77</h2>
+                  <div class="item__text">M60i xDrive: SZH, Navi, Panorama, Kl...</div>
+                  <div class="item__place">
+                    <img src="img/icons/pin-white.svg" alt="ico"><span>Wielenbach, DE</span>
+                  </div>
+                  <div class="item__price"><span>Первичный взнос 50% в размере</span><b>66.402,00 €</b>
+                  </div>
+                  <div class="item__info">
+                    <ul>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/calendar.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/gearbox.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/fuel-pump.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div class="more-info__body">
-                  <ul>
-                    <li>
-                      <h3>Владелец</h3>
-                      <p>1 (BMW)</p>
-                    </li>
-                    <li>
-                      <h3>Мощник</h3>
-                      <p>338 kW / 460 PS</p>
-                    </li>
-                    <li>
-                      <h3>Расход комбинированный (NEFZ)</h3>
-                      <p>11,2 л / 100 км</p>
-                    </li>
-                    <li>
-                      <h3>Цвет кузова</h3>
-                      <p>Лунный свет голубой металик</p>
-                    </li>
-                    <li>
-                      <h3>Цвет салона & Материал</h3>
-                      <p>Гладкая кожа цвет антрацит</p>
-                    </li>
-                    <li>
-                      <h3>Коробка</h3>
-                      <p>Автоматическая</p>
-                    </li>
-                    <li>
-                      <h3>Максимальная скорость</h3>
-                      <p>270 км/ч</p>
-                    </li>
-                    <li>
-                      <h3>Ускорение 0-100 км/ч</h3>
-                      <p>4,8 с</p>
-                    </li>
-                    <li>
-                      <h3>Привод</h3>
-                      <p>Полный</p>
-                    </li>
-                    <li>
-                      <h3>Цилиндров</h3>
-                      <p>5</p>
-                    </li>
-                    <li>
-                      <h3>Обьем двигателя</h3>
-                      <p>3.996 см3 / 4,0 литра</p>
-                    </li>
-                    <li>
-                      <h3>Оснащение экстра</h3>
-                      <p>Панорамная крыша, парковочный ассистент, свет - LED...</p>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li>Доставка цена: 5 000 €</li>
-                    <li>Растаможка цена: 25 000 €</li>
-                  </ul>
-                </div>
-              </div><a class="item__button btn" href="description.html">Узнать больше</a>
-            </div>
-          </div>
-          <div class="catalog__item">
-            <div class="item__slider">
-              <button class="swiper-button-prev">
-                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.12012 6.47304L9.36894 0.224326C9.51347 0.0796843 9.7064 0 9.91212 0C10.1178 0 10.3108 0.0796843 10.4553 0.224326L10.9155 0.684394C11.2149 0.984181 11.2149 1.47142 10.9155 1.77075L5.66819 7.01804L10.9213 12.2712C11.0658 12.4158 11.1456 12.6086 11.1456 12.8142C11.1456 13.02 11.0658 13.2129 10.9213 13.3576L10.4611 13.8176C10.3165 13.9622 10.1237 14.0419 9.91794 14.0419C9.71223 14.0419 9.51929 13.9622 9.37477 13.8176L3.12012 7.56316C2.97525 7.41806 2.89568 7.22433 2.89613 7.01838C2.89568 6.81164 2.97525 6.61802 3.12012 6.47304Z"
-                  fill="white" />
-                </svg>
-              </button>
-              <button class="swiper-button-next">
-                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.55574 5.07078L3.6606 0.17573C3.54738 0.0624223 3.39625 0 3.23509 0C3.07394 0 2.9228 0.0624223 2.80958 0.17573L2.44909 0.536134C2.21451 0.770977 2.21451 1.15267 2.44909 1.38715L6.55966 5.49772L2.44453 9.61285C2.33131 9.72616 2.2688 9.8772 2.2688 10.0383C2.2688 10.1995 2.33131 10.3506 2.44453 10.464L2.80502 10.8243C2.91833 10.9376 3.06938 11 3.23053 11C3.39168 11 3.54282 10.9376 3.65604 10.8243L8.55574 5.92475C8.66923 5.81108 8.73156 5.65932 8.7312 5.49799C8.73156 5.33603 8.66923 5.18436 8.55574 5.07078Z"
-                  fill="white" />
-                </svg>
-              </button>
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <picture>
-                    <source srcset="img/catalog/car.webp" type="image/webp">
-                      <img src="img/catalog/car.webp" alt="">
-                  </picture>
-                </div>
               </div>
-              <div class="swiper-pagination"></div>
-            </div>
-            <div class="item__bottom">
-              <h2 class="item__title">BMW X7 M60i xDrive</h2>
-              <div class="item__price">ab 66.402,00 €</div>
-              <div class="item__info">
-                <ul>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/calendar.svg" alt="">
-                    </div><span>28.09.2018</span>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/gearbox.svg" alt="">
-                    </div><span>Автоматика</span>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/fuel-pump.svg" alt="">
-                    </div><span>Топливо</span>
-                  </li>
-                  <li>
-                    <div class="icon">
-                      <img src="img/icons/speedometer.svg" alt="">
-                    </div><span>71.800 km</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="item__more-info">
-                <div class="more-info__head"><span>Дополнительная техническая информация</span>
-                  <div class="icon">
-                    <div class="line"></div>
-                    <div class="line"></div>
+              <div class="catalog__item">
+                <div class="item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <picture>
+                        <source srcset="img/catalog/car.webp" type="image/webp">
+                          <img src="img/catalog/car.webp" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="item__bottom">
+                  <h2 class="item__title">BMW 77</h2>
+                  <div class="item__text">M60i xDrive: SZH, Navi, Panorama, Kl...</div>
+                  <div class="item__place">
+                    <img src="img/icons/pin-white.svg" alt="ico"><span>Wielenbach, DE</span>
+                  </div>
+                  <div class="item__price"><span>Первичный взнос 50% в размере</span><b>66.402,00 €</b>
+                  </div>
+                  <div class="item__info">
+                    <ul>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/calendar.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/gearbox.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/fuel-pump.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon">
+                          <img src="img/icons/speedometer.svg" alt="">
+                        </div>
+                        <div class="text">
+                          <p>Пробег</p><span>28.09.2018</span>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-                <div class="more-info__body">
-                  <ul>
-                    <li>
-                      <h3>Владелец</h3>
-                      <p>1 (BMW)</p>
-                    </li>
-                    <li>
-                      <h3>Мощник</h3>
-                      <p>338 kW / 460 PS</p>
-                    </li>
-                    <li>
-                      <h3>Расход комбинированный (NEFZ)</h3>
-                      <p>11,2 л / 100 км</p>
-                    </li>
-                    <li>
-                      <h3>Цвет кузова</h3>
-                      <p>Лунный свет голубой металик</p>
-                    </li>
-                    <li>
-                      <h3>Цвет салона & Материал</h3>
-                      <p>Гладкая кожа цвет антрацит</p>
-                    </li>
-                    <li>
-                      <h3>Коробка</h3>
-                      <p>Автоматическая</p>
-                    </li>
-                    <li>
-                      <h3>Максимальная скорость</h3>
-                      <p>270 км/ч</p>
-                    </li>
-                    <li>
-                      <h3>Ускорение 0-100 км/ч</h3>
-                      <p>4,8 с</p>
-                    </li>
-                    <li>
-                      <h3>Привод</h3>
-                      <p>Полный</p>
-                    </li>
-                    <li>
-                      <h3>Цилиндров</h3>
-                      <p>5</p>
-                    </li>
-                    <li>
-                      <h3>Обьем двигателя</h3>
-                      <p>3.996 см3 / 4,0 литра</p>
-                    </li>
-                    <li>
-                      <h3>Оснащение экстра</h3>
-                      <p>Панорамная крыша, парковочный ассистент, свет - LED...</p>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li>Доставка цена: 5 000 €</li>
-                    <li>Растаможка цена: 25 000 €</li>
-                  </ul>
-                </div>
-              </div><a class="item__button btn" href="description.html">Узнать больше</a>
+              </div>
             </div>
           </div>
         </div>
@@ -1315,6 +1475,8 @@
           </a>
         </div>
       </div>
+    </section>
+    <section class="banner__bottom"><a class="goto-catalog" href="catalog.html"><span>Каталог</span><img src="img/icons/arr-right-wh.svg" alt=""></a><a class="link" href="#">Читать блог о BMW</a><a class="link" href="#">Получать уведомления о новых поступлениях автомобилей</a>
     </section>
     <button class="block-to-up">
       <div class="arrs">
@@ -1371,7 +1533,7 @@
     <ul>
       <li>
         <button class="li__head">
-          <img src="img/icons/share-blue.svg" alt="">
+          <img src="img/icons/share.svg" alt="">
         </button>
         <div class="li__body">
           <ul class="ul__socials">
@@ -1400,7 +1562,7 @@
       </li>
       <li>
         <button class="li__head">
-          <img src="img/icons/chat-blue.svg" alt="">
+          <img src="img/icons/chat-white.svg" alt="">
         </button>
         <div class="li__body">
           <ul class="ul__socials">
@@ -1419,7 +1581,7 @@
       </li>
       <li>
         <button class="li__head">
-          <img src="img/icons/phone-blue.svg" alt="">
+          <img src="img/icons/call.svg" alt="">
         </button>
         <div class="li__body">
           <ul>
@@ -1432,7 +1594,7 @@
       </li>
     </ul>
   </div>
-  <footer>
+  <footer class="footer">
     <div class="wrapper">
       <div class="footer__top"><a class="footer__logo" href="index.html"><span>Luxury Cars</span></a>
         <div class="footer__block">
@@ -1489,7 +1651,81 @@
             </li>
           </ul>
           <div class="footer__share">
-            <button class="share__head">
+            <button class="share__head"><span>Поделиться</span>
+              <img src="img/icons/share.svg" alt="">
+            </button>
+            <div class="share__body">
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="img/icons/facebook-bd.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="img/icons/instagram-bd.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__share">
+            <button class="share__head open-popup" data-popup="popup-email"><span>Подписаться</span>
+              <img src="img/icons/star.svg" alt="">
+            </button>
+          </div>
+        </div>
+        <div class="footer__block">
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="tel:+497451735249">KZ +49 (745) 173-52-49</a>
+            </li>
+            <li><a href="tel:+497451735249">GER +49 176 1777 1010</a>
+            </li>
+          </ul>
+          <div class="block__socials">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="img/icons/socials/whatsapp.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/icons/socials/whatsapp.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/icons/socials/whatsapp.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/icons/socials/whatsapp.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/icons/socials/whatsapp.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/icons/socials/whatsapp.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/icons/socials/whatsapp.svg" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__mob">
+          <div class="footer__share">
+            <button class="share__head share__head_open">
               <img src="img/icons/share.svg" alt=""><span>Поделиться</span>
             </button>
             <div class="share__body">
@@ -1507,61 +1743,55 @@
               </ul>
             </div>
           </div>
-        </div>
-        <div class="footer__block">
-          <h4>Контакты</h4>
-          <ul>
-            <li><a href="tel:+497451735249">+49 (745) 173-52-49</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__mob">
           <div class="footer__share">
-            <button class="share__head">
-              <img src="img/icons/share.svg" alt=""><span>Поделиться</span>
+            <button class="share__head open-popup" data-popup="popup-email">
+              <img src="img/icons/star.svg" alt=""><span>Подписаться</span>
             </button>
-            <div class="share__body">
-              <ul>
-                <li>
-                  <a href="#">
-                    <img src="img/icons/facebook-bd.svg" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="img/icons/instagram-bd.svg" alt="">
-                  </a>
-                </li>
-              </ul>
-            </div>
+          </div>
+          <div class="block__socials">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="img/icons/socials/whatsapp.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/icons/socials/whatsapp.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/icons/socials/whatsapp.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/icons/socials/whatsapp.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/icons/socials/whatsapp.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/icons/socials/whatsapp.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/icons/socials/whatsapp.svg" alt="">
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
       <div class="footer__bottom">
         <p>Luxury Cars 2023</p>
         <p class="copyright">ⓒ Все права защищены</p>
-        <ul class="footer__socials">
-          <li>
-            <a href="#">
-              <img src="img/icons/whatsapp.svg" alt="ico">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/icons/messenger.svg" alt="ico">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/icons/telegram.svg" alt="ico">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/icons/viber.svg" alt="ico">
-            </a>
-          </li>
-        </ul>
       </div>
     </div>
   </footer>

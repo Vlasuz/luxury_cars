@@ -102,8 +102,27 @@ block body
 							//- 	p Техническая поддержка рассмотрит ваше обращение <span>в течение 24 часов</span>. Вы получите ответ на почту.
 							//- 	button(type="submit").btn Отправить
 
-			
+			section.slider-cars
+				.wrapper
+					h2 Вас может заинтересовать
+					.slider-cars__slider
+						.swiper-wrapper
+							+slider_cars('BMW 23')
+							+slider_cars('BMW 23')
+							+slider_cars('BMW 23')
+							+slider_cars('BMW 23')
+							+slider_cars('BMW 23')
+						button.swiper-button-prev
+							img(src="img/icons/arr-left-wh.svg" alt="")
+						button.swiper-button-next
+							img(src="img/icons/arr-right-wh.svg" alt="")
 
+			section.banner__bottom
+				a(href="catalog.html").goto-catalog
+					span Каталог
+					img(src="img/icons/arr-right-wh.svg" alt="")
+				a(href="#").link Читать блог о BMW
+				a(href="#").link Получать уведомления о новых поступлениях автомобилей
 
 			button.block-to-up
 				.arrs

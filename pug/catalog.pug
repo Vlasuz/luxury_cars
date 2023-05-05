@@ -14,11 +14,14 @@ block body
 						li
 							span Каталог автомашин
 
-			section.top
+			section.top.catalog__top
 				.wrapper
 					.top__text
 						h1 Каталог автомашин 
-						p Повседневная практика показывает, что дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации модели развития.
+						ul
+							li Гарантируем подлинность пробега
+							li Прозрачное ценообразование
+							li Растаможивание для ЕАЭС
 
 			section.filter
 				.wrapper
@@ -27,15 +30,20 @@ block body
 							li.li_active
 								a(href="#").btn Все
 							li
-								a(href="#").btn Mercedes Benz
+								a(href="#").btn
+									img(src="img/cars-marks/audi.svg" alt="")
 							li
-								a(href="#").btn BMW
+								a(href="#").btn
+									img(src="img/cars-marks/bmw-logo.svg" alt="")
 							li
-								a(href="#").btn Audi
+								a(href="#").btn
+									img(src="img/cars-marks/mers.svg" alt="")
 							li
-								a(href="#").btn Porsche
+								a(href="#").btn
+									img(src="img/cars-marks/porsche.svg" alt="")
 							li
-								a(href="#").btn Range Rover
+								a(href="#").btn
+									img(src="img/cars-marks/range-rover.svg" alt="")
 					.filter__type_mob
 						ul.type__all
 							li
@@ -45,15 +53,20 @@ block body
 								span.btn Mercedes Benz
 							ul.select__body
 								li
-									a(href="#").select__item.btn Mercedes Benz
+									a(href="#").btn
+										img(src="img/cars-marks/audi.svg" alt="")
 								li
-									a(href="#").select__item.btn BMW
+									a(href="#").btn
+										img(src="img/cars-marks/bmw-logo.svg" alt="")
 								li
-									a(href="#").select__item.btn Audi
+									a(href="#").btn
+										img(src="img/cars-marks/mers.svg" alt="")
 								li
-									a(href="#").select__item.btn Porsche
+									a(href="#").btn
+										img(src="img/cars-marks/porsche.svg" alt="")
 								li
-									a(href="#").select__item.btn Range Rover
+									a(href="#").btn
+										img(src="img/cars-marks/range-rover.svg" alt="")
 
 
 					.filter__sort
@@ -68,749 +81,28 @@ block body
 			section.catalog
 				.wrapper
 					.catalog__inner
-						.catalog__item
-							.item__slider
-								button.swiper-button-prev
-									<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.12012 6.47304L9.36894 0.224326C9.51347 0.0796843 9.7064 0 9.91212 0C10.1178 0 10.3108 0.0796843 10.4553 0.224326L10.9155 0.684394C11.2149 0.984181 11.2149 1.47142 10.9155 1.77075L5.66819 7.01804L10.9213 12.2712C11.0658 12.4158 11.1456 12.6086 11.1456 12.8142C11.1456 13.02 11.0658 13.2129 10.9213 13.3576L10.4611 13.8176C10.3165 13.9622 10.1237 14.0419 9.91794 14.0419C9.71223 14.0419 9.51929 13.9622 9.37477 13.8176L3.12012 7.56316C2.97525 7.41806 2.89568 7.22433 2.89613 7.01838C2.89568 6.81164 2.97525 6.61802 3.12012 6.47304Z" fill="white"/></svg>
-								button.swiper-button-next
-									<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.55574 5.07078L3.6606 0.17573C3.54738 0.0624223 3.39625 0 3.23509 0C3.07394 0 2.9228 0.0624223 2.80958 0.17573L2.44909 0.536134C2.21451 0.770977 2.21451 1.15267 2.44909 1.38715L6.55966 5.49772L2.44453 9.61285C2.33131 9.72616 2.2688 9.8772 2.2688 10.0383C2.2688 10.1995 2.33131 10.3506 2.44453 10.464L2.80502 10.8243C2.91833 10.9376 3.06938 11 3.23053 11C3.39168 11 3.54282 10.9376 3.65604 10.8243L8.55574 5.92475C8.66923 5.81108 8.73156 5.65932 8.7312 5.49799C8.73156 5.33603 8.66923 5.18436 8.55574 5.07078Z" fill="white"/></svg>
-								.swiper-wrapper
-									.swiper-slide
-										picture
-											source(srcset="img/catalog/car.webp" type="image/webp")
-											img(src="img/catalog/car.webp" alt="")
-									.swiper-slide
-										picture
-											source(srcset="img/catalog/image.webp" type="image/webp")
-											img(src="img/catalog/image.webp" alt="")
-									.swiper-slide
-										picture
-											source(srcset="img/catalog/dims_large.webp" type="image/webp")
-											img(src="img/catalog/dims_large.webp" alt="")
-									.swiper-slide
-										picture
-											source(srcset="img/catalog/BMW_520d_M-Sportpaket__F10__–_Frontansicht__1___2._Juli_2011__Düsseldorf.webp" type="image/webp")
-											img(src="img/catalog/BMW_520d_M-Sportpaket__F10__–_Frontansicht__1___2._Juli_2011__Düsseldorf.webp" alt="")
-
-								.swiper-pagination
-							.item__bottom
-								h2.item__title BMW X7 M60i xDrive
-								.item__price ab 66.402,00 €
-								.item__info
-									ul
-										li
-											.icon
-												img(src="img/icons/calendar.svg" alt="")
-											span 28.09.2018
-										li
-											.icon
-												img(src="img/icons/gearbox.svg" alt="")
-											span Автоматика
-										li
-											.icon
-												img(src="img/icons/fuel-pump.svg" alt="")
-											span Топливо
-										li
-											.icon
-												img(src="img/icons/speedometer.svg" alt="")
-											span 71.800 km
-								.item__more-info
-									.more-info__head
-										span Дополнительная техническая информация
-										.icon
-											.line
-											.line
-									.more-info__body
-										ul
-											li
-												h3 Владелец
-												p 1 (BMW)
-											li
-												h3 Мощник
-												p 338 kW / 460 PS
-											li
-												h3 Расход комбинированный (NEFZ)
-												p 11,2 л / 100 км
-											li
-												h3 Цвет кузова
-												p Лунный свет голубой металик
-											li
-												h3 Цвет салона & Материал
-												p Гладкая кожа цвет антрацит
-											li
-												h3 Коробка
-												p Автоматическая
-											li
-												h3 Максимальная скорость
-												p 270 км/ч
-											li
-												h3 Ускорение 0-100 км/ч
-												p 4,8 с
-											li
-												h3 Привод
-												p Полный
-											li
-												h3 Цилиндров
-												p 5
-											li
-												h3 Обьем двигателя
-												p 3.996 см3 / 4,0 литра
-											li
-												h3 Оснащение экстра
-												p Панорамная крыша, парковочный ассистент, свет - LED...
-										ul
-											li Доставка цена: 5 000 €
-											li Растаможка цена: 25 000 € 
-
-								a(href="description.html").item__button.btn Узнать больше
-						.catalog__item
-							.item__slider
-								button.swiper-button-prev
-									<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.12012 6.47304L9.36894 0.224326C9.51347 0.0796843 9.7064 0 9.91212 0C10.1178 0 10.3108 0.0796843 10.4553 0.224326L10.9155 0.684394C11.2149 0.984181 11.2149 1.47142 10.9155 1.77075L5.66819 7.01804L10.9213 12.2712C11.0658 12.4158 11.1456 12.6086 11.1456 12.8142C11.1456 13.02 11.0658 13.2129 10.9213 13.3576L10.4611 13.8176C10.3165 13.9622 10.1237 14.0419 9.91794 14.0419C9.71223 14.0419 9.51929 13.9622 9.37477 13.8176L3.12012 7.56316C2.97525 7.41806 2.89568 7.22433 2.89613 7.01838C2.89568 6.81164 2.97525 6.61802 3.12012 6.47304Z" fill="white"/></svg>
-								button.swiper-button-next
-									<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.55574 5.07078L3.6606 0.17573C3.54738 0.0624223 3.39625 0 3.23509 0C3.07394 0 2.9228 0.0624223 2.80958 0.17573L2.44909 0.536134C2.21451 0.770977 2.21451 1.15267 2.44909 1.38715L6.55966 5.49772L2.44453 9.61285C2.33131 9.72616 2.2688 9.8772 2.2688 10.0383C2.2688 10.1995 2.33131 10.3506 2.44453 10.464L2.80502 10.8243C2.91833 10.9376 3.06938 11 3.23053 11C3.39168 11 3.54282 10.9376 3.65604 10.8243L8.55574 5.92475C8.66923 5.81108 8.73156 5.65932 8.7312 5.49799C8.73156 5.33603 8.66923 5.18436 8.55574 5.07078Z" fill="white"/></svg>
-								.swiper-wrapper
-									.swiper-slide
-										picture
-											source(srcset="img/catalog/car.webp" type="image/webp")
-											img(src="img/catalog/car.webp" alt="")
-									.swiper-slide
-										picture
-											source(srcset="img/catalog/2022_bmw_ix.webp" type="image/webp")
-											img(src="img/catalog/2022_bmw_ix.webp" alt="")
-									.swiper-slide
-										picture
-											source(srcset="img/catalog/car.webp" type="image/webp")
-											img(src="img/catalog/car.webp" alt="")
-
-								.swiper-pagination
-							.item__bottom
-								h2.item__title BMW X7 M60i xDrive
-								.item__price ab 66.402,00 €
-								.item__info
-									ul
-										li
-											.icon
-												img(src="img/icons/calendar.svg" alt="")
-											span 28.09.2018
-										li
-											.icon
-												img(src="img/icons/gearbox.svg" alt="")
-											span Автоматика
-										li
-											.icon
-												img(src="img/icons/fuel-pump.svg" alt="")
-											span Топливо
-										li
-											.icon
-												img(src="img/icons/speedometer.svg" alt="")
-											span 71.800 km
-								.item__more-info
-									.more-info__head
-										span Дополнительная техническая информация
-										.icon
-											.line
-											.line
-									.more-info__body
-										ul
-											li
-												h3 Владелец
-												p 1 (BMW)
-											li
-												h3 Мощник
-												p 338 kW / 460 PS
-											li
-												h3 Расход комбинированный (NEFZ)
-												p 11,2 л / 100 км
-											li
-												h3 Цвет кузова
-												p Лунный свет голубой металик
-											li
-												h3 Цвет салона & Материал
-												p Гладкая кожа цвет антрацит
-											li
-												h3 Коробка
-												p Автоматическая
-											li
-												h3 Максимальная скорость
-												p 270 км/ч
-											li
-												h3 Ускорение 0-100 км/ч
-												p 4,8 с
-											li
-												h3 Привод
-												p Полный
-											li
-												h3 Цилиндров
-												p 5
-											li
-												h3 Обьем двигателя
-												p 3.996 см3 / 4,0 литра
-											li
-												h3 Оснащение экстра
-												p Панорамная крыша, парковочный ассистент, свет - LED...
-										ul
-											li Доставка цена: 5 000 €
-											li Растаможка цена: 25 000 € 
-
-								a(href="description.html").item__button.btn Узнать больше
-						.catalog__item
-							.item__slider
-								button.swiper-button-prev
-									<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.12012 6.47304L9.36894 0.224326C9.51347 0.0796843 9.7064 0 9.91212 0C10.1178 0 10.3108 0.0796843 10.4553 0.224326L10.9155 0.684394C11.2149 0.984181 11.2149 1.47142 10.9155 1.77075L5.66819 7.01804L10.9213 12.2712C11.0658 12.4158 11.1456 12.6086 11.1456 12.8142C11.1456 13.02 11.0658 13.2129 10.9213 13.3576L10.4611 13.8176C10.3165 13.9622 10.1237 14.0419 9.91794 14.0419C9.71223 14.0419 9.51929 13.9622 9.37477 13.8176L3.12012 7.56316C2.97525 7.41806 2.89568 7.22433 2.89613 7.01838C2.89568 6.81164 2.97525 6.61802 3.12012 6.47304Z" fill="white"/></svg>
-								button.swiper-button-next
-									<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.55574 5.07078L3.6606 0.17573C3.54738 0.0624223 3.39625 0 3.23509 0C3.07394 0 2.9228 0.0624223 2.80958 0.17573L2.44909 0.536134C2.21451 0.770977 2.21451 1.15267 2.44909 1.38715L6.55966 5.49772L2.44453 9.61285C2.33131 9.72616 2.2688 9.8772 2.2688 10.0383C2.2688 10.1995 2.33131 10.3506 2.44453 10.464L2.80502 10.8243C2.91833 10.9376 3.06938 11 3.23053 11C3.39168 11 3.54282 10.9376 3.65604 10.8243L8.55574 5.92475C8.66923 5.81108 8.73156 5.65932 8.7312 5.49799C8.73156 5.33603 8.66923 5.18436 8.55574 5.07078Z" fill="white"/></svg>
-								.swiper-wrapper
-									.swiper-slide
-										picture
-											source(srcset="img/catalog/car.webp" type="image/webp")
-											img(src="img/catalog/car.webp" alt="")
-
-								.swiper-pagination
-							.item__bottom
-								h2.item__title BMW X7 M60i xDrive
-								.item__price ab 66.402,00 €
-								.item__info
-									ul
-										li
-											.icon
-												img(src="img/icons/calendar.svg" alt="")
-											span 28.09.2018
-										li
-											.icon
-												img(src="img/icons/gearbox.svg" alt="")
-											span Автоматика
-										li
-											.icon
-												img(src="img/icons/fuel-pump.svg" alt="")
-											span Топливо
-										li
-											.icon
-												img(src="img/icons/speedometer.svg" alt="")
-											span 71.800 km
-								.item__more-info
-									.more-info__head
-										span Дополнительная техническая информация
-										.icon
-											.line
-											.line
-									.more-info__body
-										ul
-											li
-												h3 Владелец
-												p 1 (BMW)
-											li
-												h3 Цилиндров
-												p 5
-											li
-												h3 Обьем двигателя
-												p 3.996 см3 / 4,0 литра
-											li
-												h3 Оснащение экстра
-												p Панорамная крыша, парковочный ассистент, свет - LED...
-										ul
-											li Доставка цена: 5 000 €
-											li Растаможка цена: 25 000 € 
-
-								a(href="description.html").item__button.btn Узнать больше
-						.catalog__item
-							.item__slider
-								button.swiper-button-prev
-									<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.12012 6.47304L9.36894 0.224326C9.51347 0.0796843 9.7064 0 9.91212 0C10.1178 0 10.3108 0.0796843 10.4553 0.224326L10.9155 0.684394C11.2149 0.984181 11.2149 1.47142 10.9155 1.77075L5.66819 7.01804L10.9213 12.2712C11.0658 12.4158 11.1456 12.6086 11.1456 12.8142C11.1456 13.02 11.0658 13.2129 10.9213 13.3576L10.4611 13.8176C10.3165 13.9622 10.1237 14.0419 9.91794 14.0419C9.71223 14.0419 9.51929 13.9622 9.37477 13.8176L3.12012 7.56316C2.97525 7.41806 2.89568 7.22433 2.89613 7.01838C2.89568 6.81164 2.97525 6.61802 3.12012 6.47304Z" fill="white"/></svg>
-								button.swiper-button-next
-									<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.55574 5.07078L3.6606 0.17573C3.54738 0.0624223 3.39625 0 3.23509 0C3.07394 0 2.9228 0.0624223 2.80958 0.17573L2.44909 0.536134C2.21451 0.770977 2.21451 1.15267 2.44909 1.38715L6.55966 5.49772L2.44453 9.61285C2.33131 9.72616 2.2688 9.8772 2.2688 10.0383C2.2688 10.1995 2.33131 10.3506 2.44453 10.464L2.80502 10.8243C2.91833 10.9376 3.06938 11 3.23053 11C3.39168 11 3.54282 10.9376 3.65604 10.8243L8.55574 5.92475C8.66923 5.81108 8.73156 5.65932 8.7312 5.49799C8.73156 5.33603 8.66923 5.18436 8.55574 5.07078Z" fill="white"/></svg>
-								.swiper-wrapper
-									.swiper-slide
-										picture
-											source(srcset="img/catalog/car.webp" type="image/webp")
-											img(src="img/catalog/car.webp" alt="")
-
-								.swiper-pagination
-							.item__bottom
-								h2.item__title BMW X7 M60i xDrive
-								.item__price ab 66.402,00 €
-								.item__info
-									ul
-										li
-											.icon
-												img(src="img/icons/calendar.svg" alt="")
-											span 28.09.2018
-										li
-											.icon
-												img(src="img/icons/gearbox.svg" alt="")
-											span Автоматика
-										li
-											.icon
-												img(src="img/icons/fuel-pump.svg" alt="")
-											span Топливо
-										li
-											.icon
-												img(src="img/icons/speedometer.svg" alt="")
-											span 71.800 km
-								.item__more-info
-									.more-info__head
-										span Дополнительная техническая информация
-										.icon
-											.line
-											.line
-									.more-info__body
-										ul
-											li
-												h3 Владелец
-												p 1 (BMW)
-											li
-												h3 Мощник
-												p 338 kW / 460 PS
-											li
-												h3 Расход комбинированный (NEFZ)
-												p 11,2 л / 100 км
-											li
-												h3 Цвет кузова
-												p Лунный свет голубой металик
-											li
-												h3 Цвет салона & Материал
-												p Гладкая кожа цвет антрацит
-											li
-												h3 Коробка
-												p Автоматическая
-											li
-												h3 Максимальная скорость
-												p 270 км/ч
-											li
-												h3 Ускорение 0-100 км/ч
-												p 4,8 с
-											li
-												h3 Привод
-												p Полный
-											li
-												h3 Цилиндров
-												p 5
-											li
-												h3 Обьем двигателя
-												p 3.996 см3 / 4,0 литра
-											li
-												h3 Оснащение экстра
-												p Панорамная крыша, парковочный ассистент, свет - LED...
-										ul
-											li Доставка цена: 5 000 €
-											li Растаможка цена: 25 000 € 
-
-								a(href="description.html").item__button.btn Узнать больше
-						.catalog__item
-							.item__slider
-								button.swiper-button-prev
-									<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.12012 6.47304L9.36894 0.224326C9.51347 0.0796843 9.7064 0 9.91212 0C10.1178 0 10.3108 0.0796843 10.4553 0.224326L10.9155 0.684394C11.2149 0.984181 11.2149 1.47142 10.9155 1.77075L5.66819 7.01804L10.9213 12.2712C11.0658 12.4158 11.1456 12.6086 11.1456 12.8142C11.1456 13.02 11.0658 13.2129 10.9213 13.3576L10.4611 13.8176C10.3165 13.9622 10.1237 14.0419 9.91794 14.0419C9.71223 14.0419 9.51929 13.9622 9.37477 13.8176L3.12012 7.56316C2.97525 7.41806 2.89568 7.22433 2.89613 7.01838C2.89568 6.81164 2.97525 6.61802 3.12012 6.47304Z" fill="white"/></svg>
-								button.swiper-button-next
-									<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.55574 5.07078L3.6606 0.17573C3.54738 0.0624223 3.39625 0 3.23509 0C3.07394 0 2.9228 0.0624223 2.80958 0.17573L2.44909 0.536134C2.21451 0.770977 2.21451 1.15267 2.44909 1.38715L6.55966 5.49772L2.44453 9.61285C2.33131 9.72616 2.2688 9.8772 2.2688 10.0383C2.2688 10.1995 2.33131 10.3506 2.44453 10.464L2.80502 10.8243C2.91833 10.9376 3.06938 11 3.23053 11C3.39168 11 3.54282 10.9376 3.65604 10.8243L8.55574 5.92475C8.66923 5.81108 8.73156 5.65932 8.7312 5.49799C8.73156 5.33603 8.66923 5.18436 8.55574 5.07078Z" fill="white"/></svg>
-								.swiper-wrapper
-									.swiper-slide
-										picture
-											source(srcset="img/catalog/car.webp" type="image/webp")
-											img(src="img/catalog/car.webp" alt="")
-
-								.swiper-pagination
-							.item__bottom
-								h2.item__title BMW X7 M60i xDrive
-								.item__price ab 66.402,00 €
-								.item__info
-									ul
-										li
-											.icon
-												img(src="img/icons/calendar.svg" alt="")
-											span 28.09.2018
-										li
-											.icon
-												img(src="img/icons/gearbox.svg" alt="")
-											span Автоматика
-										li
-											.icon
-												img(src="img/icons/fuel-pump.svg" alt="")
-											span Топливо
-										li
-											.icon
-												img(src="img/icons/speedometer.svg" alt="")
-											span 71.800 km
-								.item__more-info
-									.more-info__head
-										span Дополнительная техническая информация
-										.icon
-											.line
-											.line
-									.more-info__body
-										ul
-											li
-												h3 Владелец
-												p 1 (BMW)
-											li
-												h3 Мощник
-												p 338 kW / 460 PS
-											li
-												h3 Расход комбинированный (NEFZ)
-												p 11,2 л / 100 км
-											li
-												h3 Цвет кузова
-												p Лунный свет голубой металик
-											li
-												h3 Цвет салона & Материал
-												p Гладкая кожа цвет антрацит
-											li
-												h3 Коробка
-												p Автоматическая
-											li
-												h3 Максимальная скорость
-												p 270 км/ч
-											li
-												h3 Ускорение 0-100 км/ч
-												p 4,8 с
-											li
-												h3 Привод
-												p Полный
-											li
-												h3 Цилиндров
-												p 5
-											li
-												h3 Обьем двигателя
-												p 3.996 см3 / 4,0 литра
-											li
-												h3 Оснащение экстра
-												p Панорамная крыша, парковочный ассистент, свет - LED...
-										ul
-											li Доставка цена: 5 000 €
-											li Растаможка цена: 25 000 € 
-
-								a(href="description.html").item__button.btn Узнать больше
-						.catalog__item
-							.item__slider
-								button.swiper-button-prev
-									<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.12012 6.47304L9.36894 0.224326C9.51347 0.0796843 9.7064 0 9.91212 0C10.1178 0 10.3108 0.0796843 10.4553 0.224326L10.9155 0.684394C11.2149 0.984181 11.2149 1.47142 10.9155 1.77075L5.66819 7.01804L10.9213 12.2712C11.0658 12.4158 11.1456 12.6086 11.1456 12.8142C11.1456 13.02 11.0658 13.2129 10.9213 13.3576L10.4611 13.8176C10.3165 13.9622 10.1237 14.0419 9.91794 14.0419C9.71223 14.0419 9.51929 13.9622 9.37477 13.8176L3.12012 7.56316C2.97525 7.41806 2.89568 7.22433 2.89613 7.01838C2.89568 6.81164 2.97525 6.61802 3.12012 6.47304Z" fill="white"/></svg>
-								button.swiper-button-next
-									<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.55574 5.07078L3.6606 0.17573C3.54738 0.0624223 3.39625 0 3.23509 0C3.07394 0 2.9228 0.0624223 2.80958 0.17573L2.44909 0.536134C2.21451 0.770977 2.21451 1.15267 2.44909 1.38715L6.55966 5.49772L2.44453 9.61285C2.33131 9.72616 2.2688 9.8772 2.2688 10.0383C2.2688 10.1995 2.33131 10.3506 2.44453 10.464L2.80502 10.8243C2.91833 10.9376 3.06938 11 3.23053 11C3.39168 11 3.54282 10.9376 3.65604 10.8243L8.55574 5.92475C8.66923 5.81108 8.73156 5.65932 8.7312 5.49799C8.73156 5.33603 8.66923 5.18436 8.55574 5.07078Z" fill="white"/></svg>
-								.swiper-wrapper
-									.swiper-slide
-										picture
-											source(srcset="img/catalog/car.webp" type="image/webp")
-											img(src="img/catalog/car.webp" alt="")
-
-								.swiper-pagination
-							.item__bottom
-								h2.item__title BMW X7 M60i xDrive
-								.item__price ab 66.402,00 €
-								.item__info
-									ul
-										li
-											.icon
-												img(src="img/icons/calendar.svg" alt="")
-											span 28.09.2018
-										li
-											.icon
-												img(src="img/icons/gearbox.svg" alt="")
-											span Автоматика
-										li
-											.icon
-												img(src="img/icons/fuel-pump.svg" alt="")
-											span Топливо
-										li
-											.icon
-												img(src="img/icons/speedometer.svg" alt="")
-											span 71.800 km
-								.item__more-info
-									.more-info__head
-										span Дополнительная техническая информация
-										.icon
-											.line
-											.line
-									.more-info__body
-										ul
-											li
-												h3 Владелец
-												p 1 (BMW)
-											li
-												h3 Мощник
-												p 338 kW / 460 PS
-											li
-												h3 Расход комбинированный (NEFZ)
-												p 11,2 л / 100 км
-											li
-												h3 Цвет кузова
-												p Лунный свет голубой металик
-											li
-												h3 Цвет салона & Материал
-												p Гладкая кожа цвет антрацит
-											li
-												h3 Коробка
-												p Автоматическая
-											li
-												h3 Максимальная скорость
-												p 270 км/ч
-											li
-												h3 Ускорение 0-100 км/ч
-												p 4,8 с
-											li
-												h3 Привод
-												p Полный
-											li
-												h3 Цилиндров
-												p 5
-											li
-												h3 Обьем двигателя
-												p 3.996 см3 / 4,0 литра
-											li
-												h3 Оснащение экстра
-												p Панорамная крыша, парковочный ассистент, свет - LED...
-										ul
-											li Доставка цена: 5 000 €
-											li Растаможка цена: 25 000 € 
-
-								a(href="description.html").item__button.btn Узнать больше
-						.catalog__item
-							.item__slider
-								button.swiper-button-prev
-									<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.12012 6.47304L9.36894 0.224326C9.51347 0.0796843 9.7064 0 9.91212 0C10.1178 0 10.3108 0.0796843 10.4553 0.224326L10.9155 0.684394C11.2149 0.984181 11.2149 1.47142 10.9155 1.77075L5.66819 7.01804L10.9213 12.2712C11.0658 12.4158 11.1456 12.6086 11.1456 12.8142C11.1456 13.02 11.0658 13.2129 10.9213 13.3576L10.4611 13.8176C10.3165 13.9622 10.1237 14.0419 9.91794 14.0419C9.71223 14.0419 9.51929 13.9622 9.37477 13.8176L3.12012 7.56316C2.97525 7.41806 2.89568 7.22433 2.89613 7.01838C2.89568 6.81164 2.97525 6.61802 3.12012 6.47304Z" fill="white"/></svg>
-								button.swiper-button-next
-									<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.55574 5.07078L3.6606 0.17573C3.54738 0.0624223 3.39625 0 3.23509 0C3.07394 0 2.9228 0.0624223 2.80958 0.17573L2.44909 0.536134C2.21451 0.770977 2.21451 1.15267 2.44909 1.38715L6.55966 5.49772L2.44453 9.61285C2.33131 9.72616 2.2688 9.8772 2.2688 10.0383C2.2688 10.1995 2.33131 10.3506 2.44453 10.464L2.80502 10.8243C2.91833 10.9376 3.06938 11 3.23053 11C3.39168 11 3.54282 10.9376 3.65604 10.8243L8.55574 5.92475C8.66923 5.81108 8.73156 5.65932 8.7312 5.49799C8.73156 5.33603 8.66923 5.18436 8.55574 5.07078Z" fill="white"/></svg>
-								.swiper-wrapper
-									.swiper-slide
-										picture
-											source(srcset="img/catalog/car.webp" type="image/webp")
-											img(src="img/catalog/car.webp" alt="")
-
-								.swiper-pagination
-							.item__bottom
-								h2.item__title BMW X7 M60i xDrive
-								.item__price ab 66.402,00 €
-								.item__info
-									ul
-										li
-											.icon
-												img(src="img/icons/calendar.svg" alt="")
-											span 28.09.2018
-										li
-											.icon
-												img(src="img/icons/gearbox.svg" alt="")
-											span Автоматика
-										li
-											.icon
-												img(src="img/icons/fuel-pump.svg" alt="")
-											span Топливо
-										li
-											.icon
-												img(src="img/icons/speedometer.svg" alt="")
-											span 71.800 km
-								.item__more-info
-									.more-info__head
-										span Дополнительная техническая информация
-										.icon
-											.line
-											.line
-									.more-info__body
-										ul
-											li
-												h3 Владелец
-												p 1 (BMW)
-											li
-												h3 Мощник
-												p 338 kW / 460 PS
-											li
-												h3 Расход комбинированный (NEFZ)
-												p 11,2 л / 100 км
-											li
-												h3 Цвет кузова
-												p Лунный свет голубой металик
-											li
-												h3 Цвет салона & Материал
-												p Гладкая кожа цвет антрацит
-											li
-												h3 Коробка
-												p Автоматическая
-											li
-												h3 Максимальная скорость
-												p 270 км/ч
-											li
-												h3 Ускорение 0-100 км/ч
-												p 4,8 с
-											li
-												h3 Привод
-												p Полный
-											li
-												h3 Цилиндров
-												p 5
-											li
-												h3 Обьем двигателя
-												p 3.996 см3 / 4,0 литра
-											li
-												h3 Оснащение экстра
-												p Панорамная крыша, парковочный ассистент, свет - LED...
-										ul
-											li Доставка цена: 5 000 €
-											li Растаможка цена: 25 000 € 
-
-								a(href="description.html").item__button.btn Узнать больше
-						.catalog__item
-							.item__slider
-								button.swiper-button-prev
-									<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.12012 6.47304L9.36894 0.224326C9.51347 0.0796843 9.7064 0 9.91212 0C10.1178 0 10.3108 0.0796843 10.4553 0.224326L10.9155 0.684394C11.2149 0.984181 11.2149 1.47142 10.9155 1.77075L5.66819 7.01804L10.9213 12.2712C11.0658 12.4158 11.1456 12.6086 11.1456 12.8142C11.1456 13.02 11.0658 13.2129 10.9213 13.3576L10.4611 13.8176C10.3165 13.9622 10.1237 14.0419 9.91794 14.0419C9.71223 14.0419 9.51929 13.9622 9.37477 13.8176L3.12012 7.56316C2.97525 7.41806 2.89568 7.22433 2.89613 7.01838C2.89568 6.81164 2.97525 6.61802 3.12012 6.47304Z" fill="white"/></svg>
-								button.swiper-button-next
-									<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.55574 5.07078L3.6606 0.17573C3.54738 0.0624223 3.39625 0 3.23509 0C3.07394 0 2.9228 0.0624223 2.80958 0.17573L2.44909 0.536134C2.21451 0.770977 2.21451 1.15267 2.44909 1.38715L6.55966 5.49772L2.44453 9.61285C2.33131 9.72616 2.2688 9.8772 2.2688 10.0383C2.2688 10.1995 2.33131 10.3506 2.44453 10.464L2.80502 10.8243C2.91833 10.9376 3.06938 11 3.23053 11C3.39168 11 3.54282 10.9376 3.65604 10.8243L8.55574 5.92475C8.66923 5.81108 8.73156 5.65932 8.7312 5.49799C8.73156 5.33603 8.66923 5.18436 8.55574 5.07078Z" fill="white"/></svg>
-								.swiper-wrapper
-									.swiper-slide
-										picture
-											source(srcset="img/catalog/car.webp" type="image/webp")
-											img(src="img/catalog/car.webp" alt="")
-
-								.swiper-pagination
-							.item__bottom
-								h2.item__title BMW X7 M60i xDrive
-								.item__price ab 66.402,00 €
-								.item__info
-									ul
-										li
-											.icon
-												img(src="img/icons/calendar.svg" alt="")
-											span 28.09.2018
-										li
-											.icon
-												img(src="img/icons/gearbox.svg" alt="")
-											span Автоматика
-										li
-											.icon
-												img(src="img/icons/fuel-pump.svg" alt="")
-											span Топливо
-										li
-											.icon
-												img(src="img/icons/speedometer.svg" alt="")
-											span 71.800 km
-								.item__more-info
-									.more-info__head
-										span Дополнительная техническая информация
-										.icon
-											.line
-											.line
-									.more-info__body
-										ul
-											li
-												h3 Владелец
-												p 1 (BMW)
-											li
-												h3 Мощник
-												p 338 kW / 460 PS
-											li
-												h3 Расход комбинированный (NEFZ)
-												p 11,2 л / 100 км
-											li
-												h3 Цвет кузова
-												p Лунный свет голубой металик
-											li
-												h3 Цвет салона & Материал
-												p Гладкая кожа цвет антрацит
-											li
-												h3 Коробка
-												p Автоматическая
-											li
-												h3 Максимальная скорость
-												p 270 км/ч
-											li
-												h3 Ускорение 0-100 км/ч
-												p 4,8 с
-											li
-												h3 Привод
-												p Полный
-											li
-												h3 Цилиндров
-												p 5
-											li
-												h3 Обьем двигателя
-												p 3.996 см3 / 4,0 литра
-											li
-												h3 Оснащение экстра
-												p Панорамная крыша, парковочный ассистент, свет - LED...
-										ul
-											li Доставка цена: 5 000 €
-											li Растаможка цена: 25 000 € 
-
-								a(href="description.html").item__button.btn Узнать больше
-						.catalog__item
-							.item__slider
-								button.swiper-button-prev
-									<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.12012 6.47304L9.36894 0.224326C9.51347 0.0796843 9.7064 0 9.91212 0C10.1178 0 10.3108 0.0796843 10.4553 0.224326L10.9155 0.684394C11.2149 0.984181 11.2149 1.47142 10.9155 1.77075L5.66819 7.01804L10.9213 12.2712C11.0658 12.4158 11.1456 12.6086 11.1456 12.8142C11.1456 13.02 11.0658 13.2129 10.9213 13.3576L10.4611 13.8176C10.3165 13.9622 10.1237 14.0419 9.91794 14.0419C9.71223 14.0419 9.51929 13.9622 9.37477 13.8176L3.12012 7.56316C2.97525 7.41806 2.89568 7.22433 2.89613 7.01838C2.89568 6.81164 2.97525 6.61802 3.12012 6.47304Z" fill="white"/></svg>
-								button.swiper-button-next
-									<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.55574 5.07078L3.6606 0.17573C3.54738 0.0624223 3.39625 0 3.23509 0C3.07394 0 2.9228 0.0624223 2.80958 0.17573L2.44909 0.536134C2.21451 0.770977 2.21451 1.15267 2.44909 1.38715L6.55966 5.49772L2.44453 9.61285C2.33131 9.72616 2.2688 9.8772 2.2688 10.0383C2.2688 10.1995 2.33131 10.3506 2.44453 10.464L2.80502 10.8243C2.91833 10.9376 3.06938 11 3.23053 11C3.39168 11 3.54282 10.9376 3.65604 10.8243L8.55574 5.92475C8.66923 5.81108 8.73156 5.65932 8.7312 5.49799C8.73156 5.33603 8.66923 5.18436 8.55574 5.07078Z" fill="white"/></svg>
-								.swiper-wrapper
-									.swiper-slide
-										picture
-											source(srcset="img/catalog/car.webp" type="image/webp")
-											img(src="img/catalog/car.webp" alt="")
-
-								.swiper-pagination
-							.item__bottom
-								h2.item__title BMW X7 M60i xDrive
-								.item__price ab 66.402,00 €
-								.item__info
-									ul
-										li
-											.icon
-												img(src="img/icons/calendar.svg" alt="")
-											span 28.09.2018
-										li
-											.icon
-												img(src="img/icons/gearbox.svg" alt="")
-											span Автоматика
-										li
-											.icon
-												img(src="img/icons/fuel-pump.svg" alt="")
-											span Топливо
-										li
-											.icon
-												img(src="img/icons/speedometer.svg" alt="")
-											span 71.800 km
-								.item__more-info
-									.more-info__head
-										span Дополнительная техническая информация
-										.icon
-											.line
-											.line
-									.more-info__body
-										ul
-											li
-												h3 Владелец
-												p 1 (BMW)
-											li
-												h3 Мощник
-												p 338 kW / 460 PS
-											li
-												h3 Расход комбинированный (NEFZ)
-												p 11,2 л / 100 км
-											li
-												h3 Цвет кузова
-												p Лунный свет голубой металик
-											li
-												h3 Цвет салона & Материал
-												p Гладкая кожа цвет антрацит
-											li
-												h3 Коробка
-												p Автоматическая
-											li
-												h3 Максимальная скорость
-												p 270 км/ч
-											li
-												h3 Ускорение 0-100 км/ч
-												p 4,8 с
-											li
-												h3 Привод
-												p Полный
-											li
-												h3 Цилиндров
-												p 5
-											li
-												h3 Обьем двигателя
-												p 3.996 см3 / 4,0 литра
-											li
-												h3 Оснащение экстра
-												p Панорамная крыша, парковочный ассистент, свет - LED...
-										ul
-											li Доставка цена: 5 000 €
-											li Растаможка цена: 25 000 € 
-
-								a(href="description.html").item__button.btn Узнать больше
+						.catalog__mark
+							h3 BMW 
+							.catalog__grid
+								+catalog_item('BMW 77')
+								+catalog_item('BMW 77')
+								+catalog_item('BMW 77')
+								+catalog_item('BMW 77')
+								+catalog_item('BMW 77')
+								+catalog_item('BMW 77')
+								+catalog_item('BMW 77')
+								+catalog_item('BMW 77')
+						.catalog__mark
+							h3 Mercedes-Benz
+							.catalog__grid
+								+catalog_item('BMW 77')
+								+catalog_item('BMW 77')
+								+catalog_item('BMW 77')
+								+catalog_item('BMW 77')
+								+catalog_item('BMW 77')
+								+catalog_item('BMW 77')
+								+catalog_item('BMW 77')
+								+catalog_item('BMW 77')
 					.catalog__pagination
 						a(href="#").pagination__arr.pagination__arr_prev
 							<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.55574 5.07078L3.6606 0.17573C3.54738 0.0624223 3.39625 0 3.23509 0C3.07394 0 2.9228 0.0624223 2.80958 0.17573L2.44909 0.536134C2.21451 0.770977 2.21451 1.15267 2.44909 1.38715L6.55966 5.49772L2.44453 9.61285C2.33131 9.72616 2.2688 9.8772 2.2688 10.0383C2.2688 10.1995 2.33131 10.3506 2.44453 10.464L2.80502 10.8243C2.91833 10.9376 3.06938 11 3.23053 11C3.39168 11 3.54282 10.9376 3.65604 10.8243L8.55574 5.92475C8.66923 5.81108 8.73156 5.65932 8.7312 5.49799C8.73156 5.33603 8.66923 5.18436 8.55574 5.07078Z" fill="white"/></svg>
@@ -822,6 +114,13 @@ block body
 							a(href="#") 12
 						a(href="#").pagination__arr.pagination__arr_next
 							<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.12012 6.47304L9.36894 0.224326C9.51347 0.0796843 9.7064 0 9.91212 0C10.1178 0 10.3108 0.0796843 10.4553 0.224326L10.9155 0.684394C11.2149 0.984181 11.2149 1.47142 10.9155 1.77075L5.66819 7.01804L10.9213 12.2712C11.0658 12.4158 11.1456 12.6086 11.1456 12.8142C11.1456 13.02 11.0658 13.2129 10.9213 13.3576L10.4611 13.8176C10.3165 13.9622 10.1237 14.0419 9.91794 14.0419C9.71223 14.0419 9.51929 13.9622 9.37477 13.8176L3.12012 7.56316C2.97525 7.41806 2.89568 7.22433 2.89613 7.01838C2.89568 6.81164 2.97525 6.61802 3.12012 6.47304Z" fill="white"/></svg>
+
+			section.banner__bottom
+				a(href="catalog.html").goto-catalog
+					span Каталог
+					img(src="img/icons/arr-right-wh.svg" alt="")
+				a(href="#").link Читать блог о BMW
+				a(href="#").link Получать уведомления о новых поступлениях автомобилей
 
 			button.block-to-up
 				.arrs

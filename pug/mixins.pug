@@ -1,0 +1,106 @@
+mixin catalog_item(title)
+	.catalog__item
+		.item__slider
+			.swiper-wrapper
+				.swiper-slide
+					picture
+						source(srcset="img/catalog/car.webp" type="image/webp")
+						img(src="img/catalog/car.webp" alt="")
+			.swiper-pagination
+		.item__bottom
+			h2.item__title= title
+			.item__text M60i xDrive: SZH, Navi, Panorama, Kl...
+			.item__place
+				img(src="img/icons/pin-white.svg" alt="ico")
+				span Wielenbach, DE
+			.item__price
+				span Первичный взнос 50% в размере
+				b 66.402,00 €
+
+			.item__info
+				ul
+					li
+						.icon
+							img(src="img/icons/calendar.svg" alt="")
+						.text
+							p Пробег
+							span 28.09.2018
+					li
+						.icon
+							img(src="img/icons/gearbox.svg" alt="")
+						.text
+							p Пробег
+							span 28.09.2018
+					li
+						.icon
+							img(src="img/icons/fuel-pump.svg" alt="")
+						.text
+							p Пробег
+							span 28.09.2018
+					li
+						.icon
+							img(src="img/icons/speedometer.svg" alt="")
+						.text
+							p Пробег
+							span 28.09.2018
+					li
+						.icon
+							img(src="img/icons/speedometer.svg" alt="")
+						.text
+							p Пробег
+							span 28.09.2018
+					li
+						.icon
+							img(src="img/icons/speedometer.svg" alt="")
+						.text
+							p Пробег
+							span 28.09.2018
+
+mixin slider_cars(title)
+	.swiper-slide
+		.slide__photo
+			img(src="img/single/slider-photo.jpg" alt="")
+		.slide__text
+			h4= title
+			p.slide__p M60i xDrive: SZH, Navi, Panorama, Kl...
+			.slide__location
+				img(src="img/single/pin_icon.svg" alt="")
+				span Wielenbach, DE
+			.slide__price 66.402,00 €
+			ul.slide__info
+				li
+					.li__icon
+						img(src="img/icons/speedometer.svg" alt="")
+					.li__text
+						span Пробег
+						p 71.800 km
+				li
+					.li__icon
+						img(src="img/icons/speedometer.svg" alt="")
+					.li__text
+						span Пробег
+						p 71.800 km
+				li
+					.li__icon
+						img(src="img/icons/speedometer.svg" alt="")
+					.li__text
+						span Пробег
+						p 71.800 km
+				li
+					.li__icon
+						img(src="img/icons/speedometer.svg" alt="")
+					.li__text
+						span Пробег
+						p 71.800 km
+				li
+					.li__icon
+						img(src="img/icons/speedometer.svg" alt="")
+					.li__text
+						span Пробег
+						p 71.800 km
+				li
+					.li__icon
+						img(src="img/icons/speedometer.svg" alt="")
+					.li__text
+						span Пробег
+						p 71.800 km

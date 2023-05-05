@@ -111,6 +111,28 @@ block body
 							<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.12012 6.47304L9.36894 0.224326C9.51347 0.0796843 9.7064 0 9.91212 0C10.1178 0 10.3108 0.0796843 10.4553 0.224326L10.9155 0.684394C11.2149 0.984181 11.2149 1.47142 10.9155 1.77075L5.66819 7.01804L10.9213 12.2712C11.0658 12.4158 11.1456 12.6086 11.1456 12.8142C11.1456 13.02 11.0658 13.2129 10.9213 13.3576L10.4611 13.8176C10.3165 13.9622 10.1237 14.0419 9.91794 14.0419C9.71223 14.0419 9.51929 13.9622 9.37477 13.8176L3.12012 7.56316C2.97525 7.41806 2.89568 7.22433 2.89613 7.01838C2.89568 6.81164 2.97525 6.61802 3.12012 6.47304Z" fill="white"/></svg>
 
 
+			section.slider-cars
+				.wrapper
+					h2 Вас может заинтересовать
+					.slider-cars__slider
+						.swiper-wrapper
+							+slider_cars('BMW 23')
+							+slider_cars('BMW 23')
+							+slider_cars('BMW 23')
+							+slider_cars('BMW 23')
+							+slider_cars('BMW 23')
+						button.swiper-button-prev
+							img(src="img/icons/arr-left-wh.svg" alt="")
+						button.swiper-button-next
+							img(src="img/icons/arr-right-wh.svg" alt="")
+
+			section.banner__bottom
+				a(href="catalog.html").goto-catalog
+					span Каталог
+					img(src="img/icons/arr-right-wh.svg" alt="")
+				a(href="#").link Читать блог о BMW
+				a(href="#").link Получать уведомления о новых поступлениях автомобилей
+
 			button.block-to-up
 				.arrs
 					svg(width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg")

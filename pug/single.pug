@@ -14,7 +14,7 @@ block body
 		main.single
 			.wrapper
 
-				section.scroll-block.scroll-block_active
+				section.scroll-block
 					.scroll-block__lft
 						.scroll-block__image
 							img(src="img/single/car-blue.png" alt="Photo")
@@ -222,7 +222,7 @@ block body
 						.params__item
 							img(src="img/single/params_ico-1.svg" alt="")
 							span Особая комплектация
-						.params__item
+						.params__item.ul__hidden
 							ul
 								li
 									span Трансмиссия / Колеса
@@ -239,6 +239,9 @@ block body
 								li
 									span Разное
 									p --- <br>--- <br>---
+							button.show-more
+								span Показать больше
+								img(src="img/icons/arr-down-blue.svg" alt="")
 					.params__block
 						.params__item
 							img(src="img/single/params_ico-1.svg" alt="")
@@ -278,11 +281,32 @@ block body
 					.params__block.params__block_comment
 						.params__item
 							img(src="img/single/params_ico-1.svg" alt="")
-							span Примечания
+							span Дополнительная информация
 						.params__item
 							ul
 								li
 									p Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности играет важную роль в формировании дальнейших направлений развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки новых предложений. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки модели развития.
+
+				section.single__main.single__main_mob
+					.info__bottom
+						button(data-popup="popup-email").open-popup Отправить E-mail
+						.select
+							.select__head
+								span Связаться
+								img()
+							.select__body
+								a(href="#")
+									.icon
+										img(src="img/icons/whatsapp.svg")
+									span WhatsApp
+								a(href="#")
+									.icon
+										img(src="img/icons/viber.svg")
+									span Viber
+								a(href="#")
+									.icon
+										img(src="img/icons/telegram.svg")
+									span Telegram
 
 				section.contacts
 					.contacts__inner
@@ -375,342 +399,18 @@ block body
 					h2 Похожие автомобили
 					.slider-cars__slider
 						.swiper-wrapper
-							.swiper-slide
-								.slide__photo
-									img(src="img/single/slider-photo.jpg" alt="")
-								.slide__text
-									h4 BMW X7
-									p.slide__p M60i xDrive: SZH, Navi, Panorama, Kl...
-									.slide__location
-										img(src="img/single/pin_icon.svg" alt="")
-										span Wielenbach, DE
-									.slide__price 66.402,00 €
-									ul.slide__info
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-							.swiper-slide
-								.slide__photo
-									img(src="img/single/slider-photo.jpg" alt="")
-								.slide__text
-									h4 BMW X7
-									p.slide__p M60i xDrive: SZH, Navi, Panorama, Kl...
-									.slide__location
-										img(src="img/single/pin_icon.svg" alt="")
-										span Wielenbach, DE
-									.slide__price 66.402,00 €
-									ul.slide__info
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-							.swiper-slide
-								.slide__photo
-									img(src="img/single/slider-photo.jpg" alt="")
-								.slide__text
-									h4 BMW X7
-									p.slide__p M60i xDrive: SZH, Navi, Panorama, Kl...
-									.slide__location
-										img(src="img/single/pin_icon.svg" alt="")
-										span Wielenbach, DE
-									.slide__price 66.402,00 €
-									ul.slide__info
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-							.swiper-slide
-								.slide__photo
-									img(src="img/single/slider-photo.jpg" alt="")
-								.slide__text
-									h4 BMW X7
-									p.slide__p M60i xDrive: SZH, Navi, Panorama, Kl...
-									.slide__location
-										img(src="img/single/pin_icon.svg" alt="")
-										span Wielenbach, DE
-									.slide__price 66.402,00 €
-									ul.slide__info
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-							.swiper-slide
-								.slide__photo
-									img(src="img/single/slider-photo.jpg" alt="")
-								.slide__text
-									h4 BMW X7
-									p.slide__p M60i xDrive: SZH, Navi, Panorama, Kl...
-									.slide__location
-										img(src="img/single/pin_icon.svg" alt="")
-										span Wielenbach, DE
-									.slide__price 66.402,00 €
-									ul.slide__info
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-							.swiper-slide
-								.slide__photo
-									img(src="img/single/slider-photo.jpg" alt="")
-								.slide__text
-									h4 BMW X7
-									p.slide__p M60i xDrive: SZH, Navi, Panorama, Kl...
-									.slide__location
-										img(src="img/single/pin_icon.svg" alt="")
-										span Wielenbach, DE
-									.slide__price 66.402,00 €
-									ul.slide__info
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-							.swiper-slide
-								.slide__photo
-									img(src="img/single/slider-photo.jpg" alt="")
-								.slide__text
-									h4 BMW X7
-									p.slide__p M60i xDrive: SZH, Navi, Panorama, Kl...
-									.slide__location
-										img(src="img/single/pin_icon.svg" alt="")
-										span Wielenbach, DE
-									.slide__price 66.402,00 €
-									ul.slide__info
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
-										li
-											.li__icon
-												img(src="img/icons/speedometer.svg" alt="")
-											.li__text
-												span Пробег
-												p 71.800 km
+							+slider_cars('BMW 23')
+							+slider_cars('BMW 23')
+							+slider_cars('BMW 23')
+							+slider_cars('BMW 23')
+							+slider_cars('BMW 23')
 						button.swiper-button-prev
 							img(src="img/icons/arr-left-wh.svg" alt="")
 						button.swiper-button-next
 							img(src="img/icons/arr-right-wh.svg" alt="")
 
 				section.single__bottom
-					a(href="#").goto-catalog
+					a(href="catalog.html").goto-catalog
 						span Каталог
 						img(src="img/icons/arr-right-wh.svg" alt="")
 					a(href="#").link Читать блог о BMW

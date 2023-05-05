@@ -32,6 +32,19 @@
 
   body{
   	background: var(--c-000);
+  	&.header_scroll{
+  		padding-top: 100px;
+  		header{
+  			position: fixed;
+  			top: 0;
+  			left: 0;
+  			width: 100%;
+  			background: #000000;
+  			box-shadow: 0px 10px 10px #000000;
+  			z-index: 30;
+  			border: 1px solid #FFFFFF;
+  		}
+  	}
   }
   html{
   	scroll-behavior: smooth;
@@ -58,11 +71,11 @@
 
   .btn{
   	font-family: 'Mazzard';
-  	background: var(--b-gr);
+  	background: linear-gradient(180deg, #0F0F0F -22.5%, #4F7DF6 133.36%, #4F7DF6 292.5%);
   	font-weight: 400;
   	font-size: 18px;
   	line-height: 18px;
-  	border: 1px solid var(--c-fff);
+  	border: 1px solid #FFFFFF;
   	padding: 21px 41px;
   	display: block;
 	// transition: all .3s ease;
@@ -163,6 +176,8 @@
 
 header{
 	padding: 20px 0;
+	transition: all .3s ease;
+	top: -100px;
 	@media screen and (max-width: 576px) {
 		&{
 			padding: 0;
@@ -202,6 +217,7 @@ header{
 	&__rht{
 		display: flex;
 		align-items: center;
+		margin-left: auto;
 	}
 	&__socials{
 		display: flex;
@@ -233,7 +249,7 @@ header{
 			margin-top: 25px;
 			padding: 4px 0;
 			background: #262626;
-			box-shadow: 0px 10px 25px var(--c-000);
+			box-shadow: 0px 10px 25px #000000;
 
 			opacity: 0;
 			visibility: hidden;
@@ -259,9 +275,11 @@ header{
 			transition: all .3s ease;
 		}
 		.head__icon{
-			background: radial-gradient(62.39% 62.39% at 50% 50%, #030B21 0%, #04102D 9.9%, #04102D 18.75%, #04102D 28.65%, #04102D 36.97%, #04102D 45.83%, #051235 52.6%, #0A1D4F 63%, #0B1C4A 63.01%, #203A7D 77.08%, #2E4B97 88.54%, #3252A7 93.75%, #4369CC 99.99%, #5181FF 100%);
+			background: radial-gradient(62.39% 62.39% at 50% 50%, #030B21 0%, #04102D 2.6%, #04102D 7.29%, #04102D 18.23%, #0B1C4A 30.21%, #0A1D4F 34.9%, #203A7D 50.52%, #2E4B97 62.5%, #3252A7 70.83%, #5382FF 88.54%, #5181FF 95.83%);
+			border: 1px solid #FFFFFF;
+			box-shadow: 0px 6px 30px #4F7DF6;
 			backdrop-filter: blur(5px);
-			border-radius: 150px;
+			border-radius: 50%;
 			width: 60px;
 			height: 60px;
 			display: flex;
@@ -281,6 +299,7 @@ header{
 		}
 	}
 	&__menu{
+		margin-left: 10vw;
 		.have-child{
 			position: relative;
 			&:after{
@@ -312,8 +331,8 @@ header{
 			}
 			ul{
 				position: absolute;
-				background: #262626;
-				box-shadow: 0px 10px 25px #000000;
+				background: #131519;
+				box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.7);
 				border-radius: 2px;
 				padding: 12px 15px;
 				margin-top: 12px;
@@ -408,6 +427,9 @@ header{
 		}
 		&__rht{
 			display: none;
+		}
+		&__menu{
+			margin-left: 0;
 		}
 		&__socials{
 			padding-right: 0;
@@ -600,22 +622,39 @@ footer{
 			color: #FFFFFF;
 		}
 	}
-	&__socials{
-		display: flex;
-		align-items: center;
-		li{
-			margin: 0 6px;
+	// &__socials{
+	// 	display: flex;
+	// 	align-items: center;
+	// 	li{
+	// 		margin: 0 6px;
+	// 	}
+	// 	a{
+	// 		background: #262626;
+	// 		width: 39px;
+	// 		height: 39px;
+	// 		display: flex;
+	// 		align-items: center;
+	// 		justify-content: center;
+	// 		&:hover{
+	// 			background: #4F7DF6;
+	// 		}
+	// 	}
+	// }
+	.block__socials{
+		margin-top: 54px;
+		ul{
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: 15px;
 		}
 		a{
-			background: #262626;
-			width: 39px;
-			height: 39px;
+			width: 28px;
+			height: 28px;
+			background: #fff;
+			grid-gap: 15px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			&:hover{
-				background: #4F7DF6;
-			}
 		}
 	}
 	&__logo{
@@ -651,10 +690,13 @@ footer{
 			border-radius: 1px;
 			display: flex;
 			align-items: center;
+			justify-content: space-between;
 			padding: 7px 12px;
-			margin-top: 4px;
+			margin-top: 10px;
 			transition: all .3s ease;
 			position: relative;
+			min-width: 131px;
+			width: 100%;
 			z-index: 2;
 			&:hover{
 				background: #4F7DF6;
@@ -713,7 +755,7 @@ footer{
 			}
 		}
 		span{
-			margin-left: 10px;
+			margin-right: 10px;
 			font-weight: 300;
 			font-size: 16px;
 			line-height: 16px;
@@ -748,8 +790,22 @@ footer{
 		}
 	}
 	@media screen and (max-width: 576px) {
+		.block__socials{
+			padding-top: 20px;
+			margin-top: 30px;
+			border-top: 1px solid rgba(255, 255, 255, 0.4);
+			ul{
+				max-width: 138px;
+			}
+		}
+		.block__socials {
+			display: none;
+		}
 		&__mob{
 			display: block;
+			.block__socials{
+				display: block;
+			}
 			.footer__share{
 				display: flex;
 				width: 100%;
@@ -814,8 +870,9 @@ footer{
 			margin: 0;
 			padding: 9px 0;
 			border-top: 1px solid #292929;
-			&:last-child{
+			&:nth-last-child(2){
 				border-bottom: 1px solid #292929;
+				margin-bottom: 10px;
 			}
 			h4{
 				display: flex;
@@ -1137,6 +1194,9 @@ footer{
 
 .slider-cars{
 	position: relative;
+	.slider-cars__slider{
+		position: relative;
+	}
 	h2{
 		font-family: 'Oswald';
 		font-weight: 300;
@@ -1144,6 +1204,29 @@ footer{
 		line-height: 41px;
 		color: #FFFFFF;
 		margin-bottom: 40px;
+	}
+	.swiper-button-next{
+		margin-right: -25px;
+	}
+	.swiper-button-prev{
+		margin-left: -25px;
+	}
+	.swiper-button-next,
+	.swiper-button-prev{
+		width: 35px;
+		height: 35px;
+		background: rgba(255, 255, 255, 0.15);
+		backdrop-filter: blur(5px);
+		border-radius: 2px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		img{
+			width: 18px;
+		}
+		&:after{
+			display: none;
+		}
 	}
 	.swiper-button-prev,
 	.swiper-button-next{
