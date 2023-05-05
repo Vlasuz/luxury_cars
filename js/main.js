@@ -102,12 +102,33 @@ document.querySelectorAll('.banner__socials .li__head').forEach(item => {
 })
 
 document.querySelectorAll('.filter__type li').forEach(item => {
-	item.onclick = function () {
+	console.log('mark')
+	item.onclick = function (e) {
+		e.preventDefault();
 		document.querySelector('.filter__type li.li_active').classList.remove('li_active')
 		this.classList.toggle('li_active')
+
+		const mark = item.getAttribute('data-filter')
+
+		if(mark === 'all') {
+			document.querySelectorAll(`.catalog__mark`).forEach(item => {
+				item.classList.add('catalog__mark_active')
+			})
+		} else {
+			console.log(mark)
+			if(document.querySelector(`.catalog__mark_active`))
+				document.querySelectorAll(`.catalog__mark_active`).forEach(item => item.classList.remove('catalog__mark_active'))
+			if(document.querySelector(`.catalog__mark[data-mark="${mark}"]`))
+				document.querySelector(`.catalog__mark[data-mark="${mark}"]`).classList.add('catalog__mark_active')
+		}
+
+
 	}
 })
 
+document.querySelectorAll(`.catalog__mark`).forEach(item => {
+	item.classList.add('catalog__mark_active')
+})
 
 
 
@@ -307,4 +328,31 @@ document.querySelectorAll('.show-more').forEach(item => {
 		}
 	}
 })
+
+
+
+const toggleBtn = document.querySelector("#switch-sun");
+toggleBtn.addEventListener("click", function() {
+    if(document.documentElement.getAttribute("theme") === 'dark'){
+        document.documentElement.setAttribute("theme", "light");
+        localStorage.setItem('siteTheme', document.documentElement.getAttribute("theme"));
+    }
+    else{
+        document.documentElement.setAttribute("theme", "dark");
+        localStorage.setItem('siteTheme', document.documentElement.getAttribute("theme"));
+    }
+});
+
+document.documentElement.setAttribute("theme", localStorage.getItem('siteTheme'));
+
+
+
+
+
+
+
+
+
+
+
 

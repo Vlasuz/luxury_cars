@@ -27,7 +27,7 @@
 		margin-top: 85px;
 		margin-bottom: 40px;
 		button{
-			background: radial-gradient(62.39% 62.39% at 50% 50%, #030B21 0%, #04102D 9.9%, #04102D 18.75%, #04102D 28.65%, #04102D 36.97%, #04102D 45.83%, #051235 52.6%, #0A1D4F 63%, #0B1C4A 63.01%, #203A7D 77.08%, #2E4B97 88.54%, #3252A7 93.75%, #4369CC 99.99%, #5181FF 100%);
+			background: var(--button-bgd-radial);
 			border: 1px solid #FFFFFF;
 			backdrop-filter: blur(5px);
 			width: 122px;
@@ -42,14 +42,14 @@
 				background: #4F7DF6;
 			}
 			&:active{
-				background: radial-gradient(62.39% 62.39% at 50% 50%, #030B21 0%, #04102D 9.9%, #04102D 18.75%, #04102D 28.65%, #04102D 36.97%, #04102D 45.83%, #051235 52.6%, #0A1D4F 63%, #0B1C4A 63.01%, #203A7D 77.08%, #2E4B97 88.54%, #3252A7 93.75%, #4369CC 99.99%, #5181FF 100%);
+				background: var(--button-bgd-radial);
 			}
 		}
 		&__item{
 			&:nth-child(2n + 2){
 				button{
 					margin-left: 0;
-					transform: rotate(180deg);
+					transform: scaleX(-1);
 				}
 			}
 		}

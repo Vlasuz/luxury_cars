@@ -5,7 +5,7 @@
 		font-size: 65px;
 		line-height: 75px;
 		margin-bottom: 42px;
-		color: #FFFFFF;
+		color: var(--c-fff);
 	}
 	&__info{
 		padding-right: 38px;
@@ -31,12 +31,12 @@
 				font-weight: 400;
 				font-size: 18px;
 				line-height: 28px;
-				color: #FFFFFF;
+				color: var(--c-fff);
 			}
 			p{
 				font-size: 14px;
 				line-height: 28px;
-				color: #FFFFFF;
+				color: var(--c-fff);
 			}
 		}
 		h2{
@@ -64,7 +64,7 @@
 				font-weight: 400;
 				font-size: 18px;
 				line-height: 28px;
-				color: #FFFFFF;
+				color: var(--c-fff);
 				transition: all .3s ease;
 			}
 			&:hover{
@@ -82,7 +82,7 @@
 			font-size: 18px;
 			line-height: 18px;
 			text-align: center;
-			color: #FFFFFF;
+			color: var(--c-fff);
 			position: relative;
 			width: fit-content;
 			&:after{
@@ -111,7 +111,7 @@
 		font-weight: 500;
 		font-size: 25px;
 		line-height: 20px;
-		color: #FFFFFF;
+		color: var(--c-fff);
 	}
 	&__inner{
 		display: grid;
@@ -121,8 +121,8 @@
 	}
 	button{
 		margin: 0 auto;
-		background: radial-gradient(62.39% 62.39% at 50% 50%, #030B21 0%, #04102D 2.6%, #04102D 7.29%, #04102D 18.23%, #0B1C4A 30.21%, #0A1D4F 34.9%, #203A7D 50.52%, #2E4B97 62.5%, #3252A7 70.83%, #5382FF 88.54%, #5181FF 95.83%);
-		border: 1px solid #FFFFFF;
+		background: var(--button-bgd-radial);
+		border: 1px solid var(--c-fff);
 		box-shadow: 0px 6px 30px #4F7DF6;
 		backdrop-filter: blur(5px);
 		border-radius: 50%;
@@ -131,7 +131,7 @@
 		font-size: 15px;
 		line-height: 20px;
 		text-align: center;
-		color: #FFFFFF;
+		color: #fff;
 		margin-bottom: 19px;
 		display: block;
 	}
@@ -156,25 +156,25 @@
 			font-weight: 400;
 			font-size: 14px;
 			line-height: 18px;
-			color: #FFFFFF;
+			color: var(--c-fff);
 			&:before{
 				content: '';
 				min-width: 21px;
 				width: 21px;
 				height: 21px;
-				background: #121418;
+				background: var(--c-121418);
 				border: 1px solid #414447;
 				border-radius: 2px;
 				margin-right: 11px;
 			}
 		}
 		input:checked + label:before{
-			background: #121418 url('../img/icons/check.svg') no-repeat;
+			background: var(--c-121418) url('../img/icons/check.svg') no-repeat;
 			background-position: center;
 		}
 	}
 	&__form{
-		background: var(--card);
+		background: var(--catalog-card);
 		padding: 30px 40px 20px;
 		max-width: 885px;
 		width: 100%;
@@ -183,7 +183,7 @@
 			font-weight: 300;
 			font-size: 40px;
 			line-height: 41px;
-			color: #FFFFFF;
+			color: var(--c-fff);
 			margin-bottom: 18px;
 		}
 		.inputs{
@@ -202,14 +202,14 @@
 				font-weight: 400;
 				font-size: 18px;
 				line-height: 20px;
-				color: #FFFFFF;
+				color: var(--c-fff);
 				margin-bottom: 10px;
 				display: block;
 			}
 		}
 		textarea,
 		input{
-			background: #121418;
+			background: var(--c-121418);
 			border: 1px solid rgba(255, 255, 255, 0.4);
 			border-radius: 3px;
 			margin-bottom: 15px;
@@ -219,14 +219,14 @@
 			font-weight: 400;
 			font-size: 18px;
 			line-height: 20px;
-			color: #fff;
+			color: var(--c-fff);
 			outline: none;
 			font-weight: 400;
 			font-size: 16px;
 			line-height: 20px;
-			color: rgba(255, 255, 255, 0.8);
 			&::placeholder{
-				color: rgba(255, 255, 255, 0.37);
+				color: var(--c-afafaf);
+				// color: rgba(255, 255, 255, 0.37);
 			}
 		}
 		button{
@@ -245,7 +245,7 @@
 				font-weight: 400;
 				font-size: 18px;
 				line-height: 28px;
-				color: #FFFFFF;
+				color: var(--c-fff);
 				max-width: 564px;
 			}
 			span{

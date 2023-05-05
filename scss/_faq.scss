@@ -9,8 +9,8 @@
 		li{
 			max-width: 733px;
 			padding: 20px 0;
-			border-top: 1px solid rgba(255, 255, 255, 0.5);
-			border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+			border-top: 1px solid var(--lines-on-faq);
+			border-bottom: 1px solid var(--lines-on-faq);
 			margin-bottom: 30px;
 			cursor: pointer;
 			&:last-child{
@@ -24,7 +24,7 @@
 				font-weight: 300;
 				font-size: 14px;
 				line-height: 22px;
-				color: #D7D7D7;
+				color: var(--c-D7D7D7);
 			}
 		}
 		.icon{
@@ -34,7 +34,7 @@
 			.line{
 				width: 17px;
 				height: 2px;
-				background: #FFFFFF;
+				background: var(--c-fff);
 				transition: all .3s ease;
 				&:nth-child(2){
 					position: absolute;
@@ -50,7 +50,7 @@
 				font-weight: 400;
 				font-size: 20px;
 				line-height: 24px;
-				color: #D7D7D7;
+				color: var(--c-D7D7D7);
 				margin-right: 15px;
 			}
 		}
@@ -69,7 +69,7 @@
 		}
 	}
 	&__form{
-		background: #16191F;
+		background: var(--catalog-card);
 		padding: 36px;
 		max-width: 885px;
 		width: 100%;
@@ -78,19 +78,19 @@
 			font-weight: 300;
 			font-size: 35px;
 			line-height: 35px;
-			color: #FFFFFF;
+			color: var(--c-fff);
 			margin-bottom: 16px;
 		}
 		p{
 			font-weight: 400;
 			font-size: 20px;
 			line-height: 24px;
-			color: #D7D7D7;
+			color: var(--c-D7D7D7);
 			margin-bottom: 30px;
 		}
 		textarea,
 		input{
-			background: #121418;
+			background: var(--c-121418);
 			border: 1px solid #414447;
 			border-radius: 3px;
 			margin-bottom: 15px;
@@ -100,10 +100,10 @@
 			font-weight: 400;
 			font-size: 18px;
 			line-height: 20px;
-			color: #fff;
+			color: var(--c-fff);
 			outline: none;
 			&::placeholder{
-				color: rgba(255, 255, 255, 0.37);
+				color: var(--c-afafaf);
 			}
 		}
 		button{
