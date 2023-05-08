@@ -216,6 +216,26 @@ const swiper_nav = new Swiper('.slider__nav', {
 	slidesPerView: 4,
 	spaceBetween: 11
 })
+new Swiper('.slider-photos', {
+	slidesPerView: 1.07,
+	spaceBetween: 6,
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	breakpoints: {
+		576: {
+			slidesPerView: 2,
+		},
+		768: {
+			slidesPerView: 3,
+		},
+		1024: {
+			slidesPerView: 3,
+			spaceBetween: 6,
+		}
+	}
+})
 const swiper_poster = new Swiper('.slider__poster', {
 	slidesPerView: 1,
 	navigation: {
@@ -331,19 +351,32 @@ document.querySelectorAll('.show-more').forEach(item => {
 
 
 
-const toggleBtn = document.querySelector("#switch-sun");
-toggleBtn.addEventListener("click", function() {
-    if(document.documentElement.getAttribute("theme") === 'dark'){
-        document.documentElement.setAttribute("theme", "light");
-        localStorage.setItem('siteTheme', document.documentElement.getAttribute("theme"));
-    }
-    else{
-        document.documentElement.setAttribute("theme", "dark");
-        localStorage.setItem('siteTheme', document.documentElement.getAttribute("theme"));
-    }
-});
+const toggleBtn = document.querySelectorAll(".theme__button");
+toggleBtn.forEach(item => {
+	item.addEventListener("click", function() {
+		if(document.documentElement.getAttribute("theme") === 'dark'){
+			item.classList.remove('theme-light')
+			document.documentElement.setAttribute("theme", "light");
+			localStorage.setItem('siteTheme', document.documentElement.getAttribute("theme"));
+		}
+		else{
+			item.classList.add('theme-light')
+			document.documentElement.setAttribute("theme", "dark");
+			localStorage.setItem('siteTheme', document.documentElement.getAttribute("theme"));
+		}
+	});
+})
 
-document.documentElement.setAttribute("theme", localStorage.getItem('siteTheme'));
+if(localStorage.getItem('siteTheme') !== 'dark'){
+	document.documentElement.setAttribute("theme", "light");
+	toggleBtn.forEach(item => item.classList.remove('theme-light'))
+	localStorage.setItem('siteTheme', document.documentElement.getAttribute("theme"));
+}
+else{
+	document.documentElement.setAttribute("theme", "dark");
+	toggleBtn.forEach(item => item.classList.add('theme-light'))
+	localStorage.setItem('siteTheme', document.documentElement.getAttribute("theme"));
+}
 
 
 

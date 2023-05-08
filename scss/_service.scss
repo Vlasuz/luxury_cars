@@ -63,8 +63,14 @@
 		.payments{
 			display: flex;
 			align-items: center;
+			.img-dark{
+				display: var(--display-dark-block)
+			}
+			.img-light{
+				display: var(--display-dark-none)
+			}
 			li{
-				background: #181818;
+				background: var(--c-181818);
 				width: 72px;
 				height: 34px;
 				display: flex;
@@ -89,7 +95,7 @@
 				display: flex;
 				&:before{
 					content: counter(olList);
-					background: linear-gradient(180deg, #0F0F0F -22.5%, #4F7DF6 292.5%);
+					background: var(--filter-button);
 					border: 1px solid rgba(255, 255, 255, 0.2);
 					display: flex;
 					align-items: center;

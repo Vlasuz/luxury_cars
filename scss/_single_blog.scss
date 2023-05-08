@@ -1,3 +1,10 @@
+.blog-page {
+	.top p,
+	.top h1{
+		color: #fff;
+	}
+}
+
 .single-blog{
 	margin-top: 99px;
 	margin-bottom: 50px;
@@ -7,7 +14,7 @@
 			font-weight: 400;
 			font-size: 18px;
 			line-height: 40px;
-			color: #FFFFFF;
+			color: var(--c-fff);
 		}
 	}
 	.photo{
@@ -22,13 +29,25 @@
 		width: fit-content;
 		margin-left: auto;
 		margin-right: auto;
+		background: var(--c-181818);
+		color: var(--c-fff);
+		transition: all .3s ease;
+		&:hover{
+			transform: scale(1.05);
+		}
+		&:active{
+			transform: scale(1);
+		}
+		path{
+			fill: var(--c-fff);
+		}
 	}
 	h2{
 		font-family: 'Oswald';
 		font-weight: 300;
 		font-size: 45px;
 		line-height: 75px;
-		color: #FFFFFF;
+		color: var(--c-fff);
 		margin-bottom: 30px;
 	}
 	.block{
@@ -43,7 +62,7 @@
 				font-size: 128px;
 				line-height: 28px;
 				text-transform: uppercase;
-				color: rgba(255, 255, 255, 0.28);
+				color: var(--lines-on-faq);
 				position: absolute;
 				right: 0;
 			}
@@ -61,14 +80,14 @@
 				font-weight: 500;
 				font-size: 36px;
 				line-height: 36px;
-				color: #FFFFFF;
+				color: var(--c-fff);
 				margin-bottom: 20px;
 			}
 			li{
 				margin-bottom: 10px;
 				margin-left: 10px;
 				&:before{
-					background: #fff;
+					background: var(--c-fff);
 					border-radius: 50%;
 					min-width: 5px;
 					width: 5px;
@@ -89,14 +108,14 @@
 				font-weight: 500;
 				font-size: 24px;
 				line-height: 36px;
-				color: #FFFFFF;
+				color: var(--c-fff);
 				margin-bottom: 10px;
 			}
 			p{
 				font-weight: 300;
 				font-size: 20px;
 				line-height: 30px;
-				color: #FFFFFF;
+				color: var(--c-fff);
 			}
 			.item__photo{
 				width: 100%;
@@ -115,19 +134,19 @@
 		font-size: 20px;
 		line-height: 30px;
 		margin: 20px 0px;
-		color: #FFFFFF;
+		color: var(--c-fff);
 	}
 	b{
 		font-size: 24px;
 		line-height: 36px;
-		color: #FFFFFF;
+		color: var(--c-fff);
 	}
 	ul{
 		li{
 			font-weight: 300;
 			font-size: 20px;
 			line-height: 30px;
-			color: #FFFFFF;
+			color: var(--c-fff);
 			display: flex;
 			margin-bottom: 20px;
 			&:last-child{
@@ -160,7 +179,7 @@
 				display: flex;
 				align-items: center;
 				background: #000000;
-				border: 1px solid #fff;
+				border: 1px solid var(--c-fff);
 				border-bottom: 3px solid #4F7DF6;
 				padding: 20px 30px;
 				span{
@@ -201,7 +220,7 @@
 					&__head{
 						width: 100%;
 						background: #000000;
-						border: 1px solid #FFFFFF;
+						border: 1px solid var(--c-fff);
 						border-bottom: 2px solid #4F7DF6;
 						padding: 13px 16px;
 						display: flex;
@@ -219,7 +238,7 @@
 							font-weight: 400;
 							font-size: 16px;
 							line-height: 18px;
-							color: #FFFFFF;
+							color: var(--c-fff);
 						}
 					}
 					&__body{

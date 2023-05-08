@@ -5,6 +5,12 @@
 		justify-content: space-between;
 	}
 	&__type{
+		.dark-photo{
+			display: var(--display-dark-block);
+		}
+		.light-photo{
+			display: var(--display-dark-none);
+		}
 		&_mob{
 			display: none;
 		}
@@ -26,6 +32,7 @@
 			align-items: center;
 			img{
 				height: 43px;
+				max-width: 75px;
 				object-fit: contain;
 			}
 		}
@@ -278,6 +285,10 @@
 		background: var(--catalog-card);
 		padding: 3px;
 		overflow: hidden;
+		transition: all .3s ease;
+		&:hover{
+			transform: scale(1.05);
+		}
 		&_active{
 			z-index: 4;
 			position: relative;
@@ -360,9 +371,13 @@
 		.item__place{
 			display: flex;
 			align-items: center;
+			svg,
 			img{
 				width: 11px;
 				margin-right: 5px;
+			}
+			path{
+				fill: var(--c-fff);
 			}
 			span{
 				font-weight: 300;
@@ -410,7 +425,7 @@
 			}
 			.icon{
 				margin-right: 10px;
-				background: #131519;
+				background: var(--body-bgd);
 				border-radius: 2px;
 				width: 30px;
 				height: 30px;
@@ -418,6 +433,9 @@
 				align-items: center;
 				justify-content: center;
 				margin-top: -10px;
+			}
+			path{
+				stroke: var(--c-fff);
 			}
 			span{
 				font-weight: 400;
@@ -527,7 +545,8 @@
 		align-items: center;
 		justify-content: center;
 		.pagination__nums{
-			border: 1px solid var(--c-fff);
+			border: 1px solid #fff;
+			background: var(--pagination-nums-bgd);
 			span,
 			a{
 				font-weight: 400;
@@ -551,6 +570,7 @@
 					margin-left: -1px;
 					margin-right: -1px;
 					z-index: 2;
+					color: var(--pagination-active-num-color);
 					&:first-child{
 						margin-left: 0;
 						margin-right: -2px;
@@ -563,7 +583,7 @@
 			}
 		}
 		.pagination__arr{
-			border: 1px solid var(--c-fff);
+			border: 1px solid var(--pagination-arr-border-color);
 			transform: matrix(-1, 0, 0, 1, 0, 0);
 			margin: 0 20px;
 			display: flex;
@@ -571,10 +591,11 @@
 			justify-content: center;
 			width: 66px;
 			height: 66px;
-			box-shadow: 0 2px 4px 0px #4274FA;
+			box-shadow: var(--pagination-arr-shadow);
+			background: var(--pagination-arr-bgd);
 			transition: all .3s ease;
 			path{
-				fill: var(--c-fff);
+				fill: #fff;
 			}
 			&:hover{
 				background: #4F7DF6;

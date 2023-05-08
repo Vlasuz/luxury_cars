@@ -78,7 +78,6 @@
 			}
 		}
 		.open-map{
-			
 			font-size: 18px;
 			line-height: 18px;
 			text-align: center;
@@ -94,6 +93,7 @@
 				height: 1px;
 				bottom: -7px;
 				z-index: 2;
+				transition: all .3s ease;
 			}
 			&:before{
 				content: '';
@@ -104,6 +104,23 @@
 				width: 100%;
 				z-index: 1;
 				position: absolute;
+				transition: all .3s ease;
+			}
+			&:hover{
+				&:before{
+					bottom: -3px;
+				}
+				&:after{
+					bottom: -3px;
+				}
+			}
+			&:active{
+				&:before{
+					bottom: -6px;
+				}
+				&:after{
+					bottom: -6px;
+				}
 			}
 		}
 	}
@@ -169,7 +186,7 @@
 			}
 		}
 		input:checked + label:before{
-			background: var(--c-121418) url('../img/icons/check.svg') no-repeat;
+			background: var(--form-checkbox);
 			background-position: center;
 		}
 	}
@@ -231,6 +248,13 @@
 		}
 		button{
 			margin-left: auto;
+			transition: all .3s ease;
+			&:hover{
+				transform: scale(1.1);
+			}
+			&:active{
+				transform: scale(1);
+			}
 		}
 		textarea{
 			height: 162px;
