@@ -10,6 +10,7 @@
 	margin-bottom: 50px;
 	ol{
 		list-style-type: none;
+		margin-bottom: 20px;
 		li{
 			font-weight: 400;
 			font-size: 18px;
@@ -212,7 +213,10 @@
 	}
 	@media screen and (max-width: 768px) {
 		&__navigation{
-			display: none;
+			// display: none;
+			.btn{
+				padding: 10px 20px;
+			}
 			&_mob{
 				display: block;
 				.select{

@@ -226,38 +226,83 @@
           </ul>
         </div>
         <div class="filter__type_mob">
-          <ul class="type__all">
+          <ul class="type__all type__all_active">
             <li><a class="btn" href="#">Все</a>
             </li>
           </ul>
           <div class="select">
-            <div class="select__head"><span class="btn">Mercedes Benz</span>
+            <div class="select__head">
+              <div class="btn">
+                <div class="icon-switching">
+                  <div class="light">
+                    <img src="img/cars-marks/audi-light.png" alt="">
+                  </div>
+                  <div class="dark">
+                    <img src="img/cars-marks/audi.svg" alt="">
+                  </div>
+                </div><span>Mercedes Benz</span>
+              </div>
             </div>
             <ul class="select__body">
               <li data-filter="audi">
-                <a class="btn" href="#">
-                  <img src="img/cars-marks/audi.svg" alt="">
-                </a>
+                <div class="btn">
+                  <div class="icon-switching">
+                    <div class="light">
+                      <img src="img/cars-marks/audi-light.png" alt="">
+                    </div>
+                    <div class="dark">
+                      <img src="img/cars-marks/audi.svg" alt="">
+                    </div>
+                  </div><span>Audi</span>
+                </div>
               </li>
               <li data-filter="bmw">
-                <a class="btn" href="#">
-                  <img src="img/cars-marks/bmw-logo.svg" alt="">
-                </a>
+                <div class="btn">
+                  <div class="icon-switching">
+                    <div class="light">
+                      <img src="img/cars-marks/bmw-light.svg" alt="">
+                    </div>
+                    <div class="dark">
+                      <img src="img/cars-marks/bmw-logo.svg" alt="">
+                    </div>
+                  </div><span>BMW</span>
+                </div>
               </li>
               <li data-filter="mercedes">
-                <a class="btn" href="#">
-                  <img src="img/cars-marks/mers.svg" alt="">
-                </a>
+                <div class="btn">
+                  <div class="icon-switching">
+                    <div class="light">
+                      <img src="img/cars-marks/mers-light.svg" alt="">
+                    </div>
+                    <div class="dark">
+                      <img src="img/cars-marks/mers.svg" alt="">
+                    </div>
+                  </div><span>Mercedes Benz</span>
+                </div>
               </li>
               <li data-filter="porsche">
-                <a class="btn" href="#">
-                  <img src="img/cars-marks/porsche.svg" alt="">
-                </a>
+                <div class="btn">
+                  <div class="icon-switching">
+                    <div class="light">
+                      <img src="img/cars-marks/porsche-light.svg" alt="">
+                    </div>
+                    <div class="dark">
+                      <img src="img/cars-marks/porsche.svg" alt="">
+                    </div>
+                  </div><span>Porsche</span>
+                </div>
               </li>
               <li data-filter="range_rover">
-                <a class="btn" href="#">
-                  <img src="img/cars-marks/range-rover.svg" alt="">
-                </a>
+                <div class="btn">
+                  <div class="icon-switching">
+                    <div class="light">
+                      <img src="img/cars-marks/range-rover-light.svg" alt="">
+                    </div>
+                    <div class="dark">
+                      <img src="img/cars-marks/range-rover.svg" alt="">
+                    </div>
+                  </div><span>Land rover</span>
+                </div>
               </li>
             </ul>
           </div>
@@ -6753,11 +6798,37 @@
           <path d="M5.99274 2.88834L0.207681 8.6735C0.0737717 8.80731 -5.82426e-08 8.98592 -4.99176e-08 9.17638C-4.15926e-08 9.36683 0.0737717 9.54545 0.207681 9.67925L0.633613 10.1053C0.911155 10.3825 1.36224 10.3825 1.63936 10.1053L6.4973 5.24734L11.3606 10.1107C11.4945 10.2445 11.6731 10.3184 11.8634 10.3184C12.054 10.3184 12.2325 10.2445 12.3665 10.1107L12.7923 9.68464C12.9262 9.55073 13 9.37222 13 9.18177C13 8.99131 12.9262 8.8127 12.7923 8.67889L7.00197 2.88834C6.86764 2.75422 6.68829 2.68055 6.49762 2.68097C6.30622 2.68055 6.12697 2.75422 5.99274 2.88834Z"
           fill="white"></path>
         </svg>
-      </div><span>Вверх</span>
+      </div>
     </button>
   </main>
+  <script>
+    if(document.location.href.includes('?filter=')) {
+      	const domainHref  = document.location.href
+      	const indexFIlter = domainHref.indexOf('?filter') + 8
+      	const filterValue = domainHref.slice(indexFIlter, indexFIlter + 20)
+      	const currentSelect = document.querySelector(`.select li[data-filter="${filterValue}"]`).innerHTML
+      
+      	document.querySelector('.type__all').classList.remove('type__all_active')
+      	document.querySelector('.select').classList.add('select_current')
+      	document.querySelector('.select .select__head').innerHTML = currentSelect;
+      
+      
+      	document.querySelector(`.filter__type .li_active`).classList.remove('li_active')
+      	document.querySelector(`.filter__type li[data-filter=${filterValue}]`).classList.add('li_active')
+      
+      	document.querySelectorAll(`.catalog__mark_active`).forEach(item => item.classList.remove('catalog__mark_active'))
+      	document.querySelector(`.catalog__mark[data-mark="${filterValue}"]`).classList.add('catalog__mark_active')
+      
+      	
+      } else {
+      	document.querySelectorAll(`.catalog__mark`).forEach(item => {
+      		item.classList.add('catalog__mark_active')
+      	})
+      }
+  </script>
   <!-- ** FOOTER ** -->
   <!-- ** POPUP ** -->
+  <!-- HTML -->
   <div class="popup popup-form">
     <div class="popup__bgd"></div>
     <div class="popup__content">
@@ -6881,17 +6952,36 @@
           </ul>
         </div>
         <div class="footer__block">
-          <h4>Покупка</h4>
+          <h4>Сервис</h4>
           <ul>
-            <li><a href="service.html">Выбор</a>
+            <li><a href="service.html">О компании</a>
             </li>
-            <li><a href="service.html">Осмотр</a>
+            <li><a href="service.html">Заказ автомобиля</a>
             </li>
-            <li><a href="service.html">Оплата</a>
+            <li><a href="service.html">Видео-осмотр автомобиля </a>
             </li>
-            <li><a href="service.html">Доставка</a>
+            <li><a href="service.html">Договор</a>
             </li>
-            <li><a href="service.html">Растаможивание</a>
+            <li><a href="service.html">Покупка авто</a>
+            </li>
+            <li><a href="service.html">Погрузка</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__block footer__block_dop">
+          <h4>&nbsp;</h4>
+          <ul>
+            <li><a href="single.html">Транспортировка</a>
+            </li>
+            <li><a href="single.html">Отслеживание</a>
+            </li>
+            <li><a href="single.html">Кнопка ГЛОНАСС и сертификация </a>
+            </li>
+            <li><a href="single.html">Растаможивание</a>
+            </li>
+            <li><a href="single.html">Передача автомобиля</a>
+            </li>
+            <li><a href="single.html">Запчасти и Аксессуары</a>
             </li>
           </ul>
         </div>
@@ -6916,6 +7006,8 @@
             <li><a href="faq.html">Консультация</a>
             </li>
             <li><a href="contacts.html">Контакты</a>
+            </li>
+            <li><a href="contacts.html">Сотрудничество</a>
             </li>
           </ul>
           <div class="footer__share">
@@ -7029,37 +7121,37 @@
             <ul>
               <li>
                 <a href="#">
-                  <img src="img/icons/socials/whatsapp.svg" alt="">
+                  <img src="img/icons/socials/social-1.svg" alt="">
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="img/icons/socials/whatsapp.svg" alt="">
+                  <img src="img/icons/socials/social-2.svg" alt="">
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="img/icons/socials/whatsapp.svg" alt="">
+                  <img src="img/icons/socials/social-3.svg" alt="">
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="img/icons/socials/whatsapp.svg" alt="">
+                  <img src="img/icons/socials/social-4.svg" alt="">
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="img/icons/socials/whatsapp.svg" alt="">
+                  <img src="img/icons/socials/social-5.svg" alt="">
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="img/icons/socials/whatsapp.svg" alt="">
+                  <img src="img/icons/socials/social-6.svg" alt="">
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="img/icons/socials/whatsapp.svg" alt="">
+                  <img src="img/icons/socials/social-7.svg" alt="">
                 </a>
               </li>
             </ul>

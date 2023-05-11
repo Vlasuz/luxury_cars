@@ -1,4 +1,3 @@
-// if(document.querySelector('.wow')) new WOW().init();
 
 document.querySelector('.header__recall .recall__head').onclick = function() {
 	this.closest('.header__recall').classList.toggle('header__recall_active')
@@ -102,7 +101,6 @@ document.querySelectorAll('.banner__socials .li__head').forEach(item => {
 })
 
 document.querySelectorAll('.filter__type li').forEach(item => {
-	console.log('mark')
 	item.onclick = function (e) {
 		e.preventDefault();
 		document.querySelector('.filter__type li.li_active').classList.remove('li_active')
@@ -115,7 +113,6 @@ document.querySelectorAll('.filter__type li').forEach(item => {
 				item.classList.add('catalog__mark_active')
 			})
 		} else {
-			console.log(mark)
 			if(document.querySelector(`.catalog__mark_active`))
 				document.querySelectorAll(`.catalog__mark_active`).forEach(item => item.classList.remove('catalog__mark_active'))
 			if(document.querySelector(`.catalog__mark[data-mark="${mark}"]`))
@@ -126,9 +123,37 @@ document.querySelectorAll('.filter__type li').forEach(item => {
 	}
 })
 
-document.querySelectorAll(`.catalog__mark`).forEach(item => {
-	item.classList.add('catalog__mark_active')
-})
+if(document.querySelector('.filter__type_mob li')) {
+
+	document.querySelectorAll('.filter__type_mob li').forEach(item => {
+		item.onclick = function () {
+			const attr = this.getAttribute('data-filter')
+			const html = this.innerHTML
+			const selectClass = this.closest('.select')
+
+			selectClass.querySelector('.select__head').innerHTML = html
+			selectClass.classList.remove('select_active')
+
+			document.querySelector('.filter__type_mob .type__all').classList.remove('type__all_active')
+			selectClass.classList.add('select_current')
+
+			if(document.querySelector(`.catalog__mark_active`))
+				document.querySelectorAll(`.catalog__mark_active`).forEach(item => item.classList.remove('catalog__mark_active'))
+			if(document.querySelector(`.catalog__mark[data-mark="${attr}"]`))
+				document.querySelector(`.catalog__mark[data-mark="${attr}"]`).classList.add('catalog__mark_active')
+		}
+	})
+
+	document.querySelector('.filter__type_mob .type__all').onclick = function () {
+		this.classList.add('type__all_active')
+		document.querySelector('.filter__type_mob .select').classList.remove('select_current')
+
+		document.querySelectorAll(`.catalog__mark`).forEach(item => {
+			item.classList.add('catalog__mark_active')
+		})
+	}
+
+}
 
 
 
@@ -188,6 +213,7 @@ new Swiper('.slider__inner', {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},
+	initialSlide: 4,
 	// autoplay: {
 	// 	delay: 0,
 	// },
@@ -199,14 +225,17 @@ new Swiper('.slider__inner', {
 		500: {
 			slidesPerView: 2,
 			centeredSlides: true,
+			initialSlide: 0,
 		},
 		768: {
 			slidesPerView: 3,
 			centeredSlides: true,
+			initialSlide: 0,
 		},
 		1024: {
 			slidesPerView: 4,
 			centeredSlides: true,
+			initialSlide: 0,
 		}
 	}
 
@@ -320,9 +349,9 @@ new Swiper('.slider-cars__slider', {
 Zoom(".zoomable");
 
 
-if(document.querySelector('.single__params')) {
+if(document.querySelector('.info__price')) {
 	document.addEventListener('scroll', function(e) {
-		if(document.querySelector('.single__params').offsetTop < window.scrollY) {
+		if(document.querySelector('.info__price').offsetTop < window.scrollY) {
 			document.querySelector('.scroll-block').classList.add('scroll-block_active')
 		} else {
 			document.querySelector('.scroll-block').classList.remove('scroll-block_active')

@@ -50,28 +50,59 @@ block body
 									img(src="img/cars-marks/range-rover.svg" alt="").dark-photo
 									img(src="img/cars-marks/range-rover-light.svg" alt="").light-photo
 					.filter__type_mob
-						ul.type__all
+						ul.type__all.type__all_active
 							li
 								a(href="#").btn Все
 						.select
 							.select__head
-								span.btn Mercedes Benz
+								.btn
+									.icon-switching
+										.light
+											img(src="img/cars-marks/audi-light.png" alt="")
+										.dark
+											img(src="img/cars-marks/audi.svg" alt="")
+									span Mercedes Benz
 							ul.select__body
 								li(data-filter="audi")
-									a(href="#").btn
-										img(src="img/cars-marks/audi.svg" alt="")
+									.btn
+										.icon-switching
+											.light
+												img(src="img/cars-marks/audi-light.png" alt="")
+											.dark
+												img(src="img/cars-marks/audi.svg" alt="")
+										span Audi
 								li(data-filter="bmw")
-									a(href="#").btn
-										img(src="img/cars-marks/bmw-logo.svg" alt="")
+									.btn
+										.icon-switching
+											.light
+												img(src="img/cars-marks/bmw-light.svg" alt="")
+											.dark
+												img(src="img/cars-marks/bmw-logo.svg" alt="")
+										span BMW
 								li(data-filter="mercedes")
-									a(href="#").btn
-										img(src="img/cars-marks/mers.svg" alt="")
+									.btn
+										.icon-switching
+											.light
+												img(src="img/cars-marks/mers-light.svg" alt="")
+											.dark
+												img(src="img/cars-marks/mers.svg" alt="")
+										span Mercedes Benz
 								li(data-filter="porsche")
-									a(href="#").btn
-										img(src="img/cars-marks/porsche.svg" alt="")
+									.btn
+										.icon-switching
+											.light
+												img(src="img/cars-marks/porsche-light.svg" alt="")
+											.dark
+												img(src="img/cars-marks/porsche.svg" alt="")
+										span Porsche
 								li(data-filter="range_rover")
-									a(href="#").btn
-										img(src="img/cars-marks/range-rover.svg" alt="")
+									.btn
+										.icon-switching
+											.light
+												img(src="img/cars-marks/range-rover-light.svg" alt="")
+											.dark
+												img(src="img/cars-marks/range-rover.svg" alt="")
+										span Land rover
 
 
 					//- .filter__sort
@@ -144,7 +175,33 @@ block body
 						path(d="M5.99274 2.88834L0.207681 8.6735C0.0737717 8.80731 -5.82426e-08 8.98592 -4.99176e-08 9.17638C-4.15926e-08 9.36683 0.0737717 9.54545 0.207681 9.67925L0.633613 10.1053C0.911155 10.3825 1.36224 10.3825 1.63936 10.1053L6.4973 5.24734L11.3606 10.1107C11.4945 10.2445 11.6731 10.3184 11.8634 10.3184C12.054 10.3184 12.2325 10.2445 12.3665 10.1107L12.7923 9.68464C12.9262 9.55073 13 9.37222 13 9.18177C13 8.99131 12.9262 8.8127 12.7923 8.67889L7.00197 2.88834C6.86764 2.75422 6.68829 2.68055 6.49762 2.68097C6.30622 2.68055 6.12697 2.75422 5.99274 2.88834Z" fill="white")
 					svg(width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg")
 						path(d="M5.99274 2.88834L0.207681 8.6735C0.0737717 8.80731 -5.82426e-08 8.98592 -4.99176e-08 9.17638C-4.15926e-08 9.36683 0.0737717 9.54545 0.207681 9.67925L0.633613 10.1053C0.911155 10.3825 1.36224 10.3825 1.63936 10.1053L6.4973 5.24734L11.3606 10.1107C11.4945 10.2445 11.6731 10.3184 11.8634 10.3184C12.054 10.3184 12.2325 10.2445 12.3665 10.1107L12.7923 9.68464C12.9262 9.55073 13 9.37222 13 9.18177C13 8.99131 12.9262 8.8127 12.7923 8.67889L7.00197 2.88834C6.86764 2.75422 6.68829 2.68055 6.49762 2.68097C6.30622 2.68055 6.12697 2.75422 5.99274 2.88834Z" fill="white")
-				span Вверх
+				
+
+		script.
+			if(document.location.href.includes('?filter=')) {
+				const domainHref  = document.location.href
+				const indexFIlter = domainHref.indexOf('?filter') + 8
+				const filterValue = domainHref.slice(indexFIlter, indexFIlter + 20)
+				const currentSelect = document.querySelector(`.select li[data-filter="${filterValue}"]`).innerHTML
+
+				document.querySelector('.type__all').classList.remove('type__all_active')
+				document.querySelector('.select').classList.add('select_current')
+				document.querySelector('.select .select__head').innerHTML = currentSelect;
+
+
+				document.querySelector(`.filter__type .li_active`).classList.remove('li_active')
+				document.querySelector(`.filter__type li[data-filter=${filterValue}]`).classList.add('li_active')
+
+				document.querySelectorAll(`.catalog__mark_active`).forEach(item => item.classList.remove('catalog__mark_active'))
+				document.querySelector(`.catalog__mark[data-mark="${filterValue}"]`).classList.add('catalog__mark_active')
+
+				
+			} else {
+				document.querySelectorAll(`.catalog__mark`).forEach(item => {
+					item.classList.add('catalog__mark_active')
+				})
+			}
+
 
 		include includes/footer.pug
 		include includes/scripts.pug

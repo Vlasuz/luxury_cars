@@ -5,6 +5,11 @@
 		align-items: center;
 		justify-content: space-between;
 	}
+	.btn{
+		width: 100%;
+		max-width: 175px;
+		text-align: center;
+	}
 	&__bottom{
 		margin-top: 50px;
 		.goto-catalog{
@@ -257,6 +262,11 @@
 		&{
 			margin-top: 24px;
 		}
+		ul li {
+			font-size: 16px;
+			line-height: 24px;
+			margin: 7px 0;
+		}
 		p{
 			font-size: 14px;
 			line-height: 21px;
@@ -423,7 +433,7 @@
 	.slide__mark{
 		margin-bottom: 30px;
 		img{
-			width: 64px;
+			width: 120px;
 			height: 64px;
 			object-fit: contain;
 			display: block;
@@ -525,10 +535,18 @@
 			margin-bottom: 28px;
 		}
 		.swiper-button-prev{
-			left: 30px;
+			left: 20px;
 		}
 		.swiper-button-next{
-			right: 30px;
+			right: 20px;
+		}
+		.arr-mob{
+			display: none;
+			img{
+				filter: var(--brightness-1);
+				width: 18px;
+				margin: 0 auto;
+			}
 		}
 
 		.swiper-slide{
@@ -543,6 +561,18 @@
 			font-size: 13px;
 			line-height: 19px;
 			margin-bottom: 16px;
+		}
+	}
+
+	@media screen and (max-width: 576px) {
+		.swiper-button-prev,
+		.swiper-button-next{
+			& > img{
+				display: none;
+			}
+		}
+		.arr-mob{
+			display: block;
 		}
 	}
 }
