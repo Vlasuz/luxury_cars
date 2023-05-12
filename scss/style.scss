@@ -78,7 +78,7 @@ h1{
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 18px;
-	border: 1px solid var(--c-fff);
+	border: var(--button-border);
 	padding: 21px 41px;
 	color: #fff;
 	display: block;
@@ -303,8 +303,8 @@ header{
 			transition: all .3s ease;
 		}
 		.head__icon{
-			background: var(--button-bgd-radial);
-			border: 1px solid var(--c-fff);
+			background: var(--button-bgd-radial-another);
+			border: var(--button-border);
 			box-shadow: var(--header-button-shadow);
 			backdrop-filter: blur(5px);
 			border-radius: 50%;
@@ -717,6 +717,9 @@ footer{
 	&__block{
 		display: flex;
 		flex-direction: column;
+		.title-mob{
+			display: none;
+		}
 		h4{
 			font-weight: 500;
 			font-size: 18px;
@@ -963,6 +966,24 @@ footer{
 				ul{
 					display: block;
 				}	
+			}
+			&_contacts {
+				padding: 5px 0;
+				ul,
+				h4 {
+					display: none;
+					a{
+						font-weight: 500;
+						width: 100%;
+						display: block;
+					}
+					&:after{
+						display: none !important;
+					}
+				}
+			}
+			.title-mob {
+				display: block;
 			}
 		}
 	}

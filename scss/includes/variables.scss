@@ -31,8 +31,10 @@
  --header-bgd-scroll: #000;
  --header-bgd-scroll-shadow: 0px 10px 10px #000000;
 
+ --button-border: 1px solid #fff;
  --button-bgd: linear-gradient(180deg, #0F0F0F -22.5%, #4F7DF6 133.36%, #4F7DF6 292.5%);
  --button-bgd-radial: radial-gradient(62.39% 62.39% at 50% 50%, #030B21 0%, #04102D 2.6%, #04102D 7.29%, #04102D 18.23%, #0B1C4A 30.21%, #0A1D4F 34.9%, #203A7D 50.52%, #2E4B97 62.5%, #3252A7 70.83%, #5382FF 88.54%, #5181FF 95.83%);
+ --button-bgd-radial-another: radial-gradient(62.39% 62.39% at 50% 50%, #030B21 0%, #04102D 2.6%, #04102D 7.29%, #04102D 18.23%, #0B1C4A 30.21%, #0A1D4F 34.9%, #203A7D 50.52%, #2E4B97 62.5%, #3252A7 70.83%, #5382FF 88.54%, #5181FF 95.83%);
 
  --main-slider-card-bgd: linear-gradient(180deg, #0F1115 0%, #181A20 54.54%, #0F1115 102.67%);
 
@@ -101,8 +103,10 @@
  --header-bgd-scroll: #F2EDE7;
  --header-bgd-scroll-shadow: none;
 
+ --button-border: none;
  --button-bgd: linear-gradient(155.87deg, #4F7DF6 8.49%, #1B41A6 92.59%);
  --button-bgd-radial: linear-gradient(155.87deg, #4F7DF6 8.49%, #1B41A6 92.59%);
+ --button-bgd-radial-another: #4F7DF6;
 
  --main-slider-card-bgd: #F2EDE7;
 

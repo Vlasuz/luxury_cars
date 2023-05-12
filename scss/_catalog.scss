@@ -146,11 +146,12 @@
 					margin-right: 10px;
 					a{
 						background: var(--filter-button);
-						border-bottom: 2px solid #4F7DF6;
+						border-bottom: 2px solid transparent;
 					}
 					&_active{
 						a{
-							background: var(--f-000);
+							border-bottom: 2px solid #4F7DF6;
+							// background: var(--f-000);
 						}
 					}
 				}
@@ -203,6 +204,9 @@
 						display: flex;
 						align-items: center;
 						justify-content: space-between;
+						.btn{
+							border-bottom: 2px solid transparent;
+						}
 						&:after{
 							content: '';
 							background: url('../img/icons/arr-down-wh.svg') no-repeat;
@@ -226,7 +230,8 @@
 
 					&_current{
 						.select__head .btn{
-							background: var(--f-000);
+							// background: var(--f-000);
+							border-bottom: 2px solid #4F7DF6;
 						}
 					}
 
