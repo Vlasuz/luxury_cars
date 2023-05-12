@@ -408,6 +408,29 @@ else{
 }
 
 
+const swiper_nav_service = new Swiper('.service__inner .slider-nav', {
+	slidesPerView: 2,
+	spaceBetween: 13,
+	breakpoints: {
+		576: {
+			slidesPerView: 4,
+			spaceBetween: 17,
+		},
+	}
+})
+const swiper_poster_service = new Swiper('.service__inner .slider-for', {
+	slidesPerView: 1,
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
+	thumbs: {
+		swiper: swiper_nav_service
+	},
+})
+
+
+
 
 
 
