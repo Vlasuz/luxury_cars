@@ -1,5 +1,5 @@
 .banner{
-	margin-top: 61px;
+	margin-top: 50px;
 	.wrapper{
 		display: flex;
 		align-items: center;
@@ -7,7 +7,7 @@
 	}
 	.btn{
 		width: 100%;
-		max-width: 175px;
+		max-width: 165px;
 		text-align: center;
 	}
 	&__bottom{
@@ -36,16 +36,18 @@
 			}
 		}
 		.link{
+			margin: 0 auto;
 			font-weight: 400;
 			font-size: 22px;
 			line-height: 25px;
 			text-align: center;
-			text-decoration-line: underline;
 			color: var(--c-fff);
 			margin-bottom: 21px;
 			display: block;
+			width: fit-content;
+			border-bottom: 2px solid var(--c-fff);
 			&:hover{
-				color: #4F7DF6;
+				border-color: #4F7DF6;
 			}
 		}
 	}
@@ -84,9 +86,19 @@
 	&__socials{
 		margin-top: auto;
 		position: fixed;
-		bottom: 50px;
+		top: 305px;
+		width: 100%;
+		// bottom: 50px;
 		right: 50px;
 		z-index: 50;
+		pointer-events: none;
+		.wrapper{
+			padding-right: 0;
+			display: flex;
+		}
+		ul{
+			margin-left: auto;
+		}
 		.li__head{
 			background: var(--button-bgd-radial-another);
 			border: var(--button-border);
@@ -177,6 +189,7 @@
 		li{
 			margin-bottom: 10px;
 			position: relative;
+			pointer-events: all;
 			&.li_active{
 				.li__body{
 					opacity: 1;
@@ -263,6 +276,9 @@
 	@media screen and (max-width: 576px) {
 		&{
 			margin-top: 24px;
+		}
+		ul{
+			margin-bottom: 10px;
 		}
 		ul li {
 			font-size: 16px;
@@ -403,8 +419,15 @@
 }
 
 .slider{
-	margin-top: 80px;
+	margin-top: 37px;
 	position: relative;
+	&__inner{
+		opacity: 0;
+		transition: all .3s ease;
+		&_show{
+			opacity: 1;
+		}
+	}
 	.swiper-button-next, .swiper-button-prev{
 		position: absolute;
 		top: 50%;
@@ -469,7 +492,7 @@
 			display: var(--display-dark-none);
 		}
 		&:hover{
-			box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.7);
+			box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.7);
 			z-index: 22;
 		}
 	}
@@ -528,6 +551,9 @@
 	@media screen and (max-width: 576px) {
 		&{
 			margin-top: 20px;
+		}
+		.swiper-slide:hover {
+			box-shadow: none;
 		}
 		&-photos .image{
 			position: relative;

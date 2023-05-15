@@ -37,7 +37,8 @@ body{
 			background: var(--header-bgd-scroll);
 			box-shadow: var(--header-bgd-scroll-shadow);
 			z-index: 30;
-			border: var(--header-scroll-border);
+			border-bottom: var(--header-scroll-border);
+			border-top: var(--header-scroll-border);
 		}
 	}
 
@@ -202,6 +203,9 @@ header{
 		transition: all .3s ease;
 		&.theme-light{
 			transform: scaleX(-1);
+		}
+		img{
+			width: 37px;
 		}
 		.dark-switcher{
 			display: var(--display-dark-block);
@@ -413,7 +417,7 @@ header{
 				content: '';
 				height: 7px;
 				width: 100%;
-				background: linear-gradient(180deg, rgba(79, 125, 246, 0.2) 0%, rgba(79, 125, 246, 0.55) 100%);
+				// background: linear-gradient(180deg, rgba(79, 125, 246, 0.2) 0%, rgba(79, 125, 246, 0.55) 100%);
 				filter: blur(2px);
 				display: block;
 				position: absolute;
@@ -757,13 +761,29 @@ footer{
 			min-width: 131px;
 			width: 100%;
 			z-index: 2;
+			span{
+				transition: all .3s ease;
+			}
 			img,
 			svg{
 				filter: var(--brightness-1);
 			}
+			path{
+				transition: all .3s ease;
+			}
 			&:hover{
 				background: #4F7DF6;
 				border: 1px solid #4F7DF6;
+				span{
+					color: #fff;
+				}
+				img,
+				svg{
+					filter: brightness(1.0);
+				}
+				path{
+					fill: #fff;
+				}
 			}
 		}
 		ul{
@@ -1140,7 +1160,7 @@ footer{
 			button{
 				background: var(--button-bgd-radial);
 				border: 1px solid var(--c-fff);
-				box-shadow: 0px 6px 30px #4F7DF6;
+				box-shadow: var(--header-button-shadow);
 				backdrop-filter: blur(5px);
 				border-radius: 50%;
 				margin-top: 50px;

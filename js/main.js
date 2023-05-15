@@ -248,6 +248,7 @@ const swiper_nav = new Swiper('.slider__nav', {
 new Swiper('.slider-photos', {
 	slidesPerView: 1.07,
 	spaceBetween: 6,
+	loop: true,
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
@@ -429,6 +430,12 @@ const swiper_poster_service = new Swiper('.service__inner .slider-for', {
 	},
 })
 
+
+if(document.querySelector('.slider__inner')) {
+	setTimeout(() => {
+		document.querySelector('.slider__inner').classList.add('slider__inner_show')
+	}, 300)
+}
 
 
 

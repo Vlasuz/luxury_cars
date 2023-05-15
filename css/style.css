@@ -266,7 +266,7 @@ button {
   --header-menu-arr-down: url("../img/icons/arr-down-dark.svg") no-repeat;
   --header-bgd: #F2EDE7;
   --header-bgd-scroll: #F2EDE7;
-  --header-bgd-scroll-shadow: none;
+  --header-bgd-scroll-shadow: 0rem 0.625rem 0.625rem #fff;
   --button-border: none;
   --button-bgd: linear-gradient(155.87deg, #4F7DF6 8.49%, #1B41A6 92.59%);
   --button-bgd-radial: linear-gradient(155.87deg, #4F7DF6 8.49%, #1B41A6 92.59%);
@@ -328,7 +328,8 @@ body.header_scroll header {
   -webkit-box-shadow: var(--header-bgd-scroll-shadow);
   box-shadow: var(--header-bgd-scroll-shadow);
   z-index: 30;
-  border: var(--header-scroll-border)
+  border-bottom: var(--header-scroll-border);
+  border-top: var(--header-scroll-border)
 }
 @media screen and (max-width:36em){
   body.header_scroll header {
@@ -504,6 +505,9 @@ header {
   -webkit-transform: scaleX(-1);
   -ms-transform: scaleX(-1);
   transform: scaleX(-1)
+}
+.header .theme__button img {
+  width: 2.3125rem
 }
 .header .theme__button .dark-switcher {
   display: var(--display-dark-block)
@@ -771,9 +775,6 @@ header {
   content: "";
   height: 0.4375rem;
   width: 100%;
-  background: -webkit-gradient(linear,left top,left bottom,from(rgba(79,125,246,.2)),to(rgba(79,125,246,.55)));
-  background: -o-linear-gradient(top,rgba(79,125,246,.2) 0,rgba(79,125,246,.55) 100%);
-  background: linear-gradient(180deg,rgba(79,125,246,.2) 0,rgba(79,125,246,.55) 100%);
   -webkit-filter: blur(2px);
   filter: blur(2px);
   display: block;
@@ -1130,14 +1131,35 @@ footer {
   width: 100%;
   z-index: 2
 }
+.footer__share .share__head span {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
 .footer__share .share__head img,
 .footer__share .share__head svg {
   -webkit-filter: var(--brightness-1);
   filter: var(--brightness-1)
 }
+.footer__share .share__head path {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
 .footer__share .share__head:hover {
   background: #4f7df6;
   border: 0.0625rem solid #4f7df6
+}
+.footer__share .share__head:hover span {
+  color: #fff
+}
+.footer__share .share__head:hover img,
+.footer__share .share__head:hover svg {
+  -webkit-filter: brightness(1);
+  filter: brightness(1)
+}
+.footer__share .share__head:hover path {
+  fill: #fff
 }
 .footer__share ul {
   display: -webkit-box;
@@ -1574,8 +1596,8 @@ footer {
 .popup#popup-email form button {
   background: var(--button-bgd-radial);
   border: 0.0625rem solid var(--c-fff);
-  -webkit-box-shadow: 0 0.375rem 1.875rem #4f7df6;
-  box-shadow: 0 0.375rem 1.875rem #4f7df6;
+  -webkit-box-shadow: var(--header-button-shadow);
+  box-shadow: var(--header-button-shadow);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   border-radius: 50%;
@@ -2045,7 +2067,7 @@ footer {
   display: var(--display-dark-block)
 }
 .banner {
-  margin-top: 3.8125rem
+  margin-top: 3.125rem
 }
 .banner .wrapper {
   display: -webkit-box;
@@ -2060,7 +2082,7 @@ footer {
 }
 .banner .btn {
   width: 100%;
-  max-width: 10.9375rem;
+  max-width: 10.3125rem;
   text-align: center
 }
 .banner__bottom {
@@ -2102,18 +2124,21 @@ footer {
   transform: scale(.95)
 }
 .banner__bottom .link {
+  margin: 0 auto;
   font-weight: 400;
   font-size: 1.375rem;
   line-height: 1.5625rem;
   text-align: center;
-  -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
   color: var(--c-fff);
   margin-bottom: 1.3125rem;
-  display: block
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 0.125rem solid var(--c-fff)
 }
 .banner__bottom .link:hover {
-  color: #4f7df6
+  border-color: #4f7df6
 }
 .banner ul {
   display: -webkit-box;
@@ -2161,9 +2186,20 @@ footer {
 .banner__socials {
   margin-top: auto;
   position: fixed;
-  bottom: 3.125rem;
+  top: 19.0625rem;
+  width: 100%;
   right: 3.125rem;
-  z-index: 50
+  z-index: 50;
+  pointer-events: none
+}
+.banner__socials .wrapper {
+  padding-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
+}
+.banner__socials ul {
+  margin-left: auto
 }
 .banner__socials .li__head {
   background: var(--button-bgd-radial-another);
@@ -2281,7 +2317,8 @@ footer {
 }
 .banner__socials li {
   margin-bottom: 0.625rem;
-  position: relative
+  position: relative;
+  pointer-events: all
 }
 .banner__socials li.li_active .li__body {
   opacity: 1;
@@ -2376,6 +2413,9 @@ footer {
 @media screen and (max-width:36em){
   .banner {
     margin-top: 1.5rem
+  }
+  .banner ul {
+    margin-bottom: 0.625rem
   }
   .banner ul li {
     font-size: 1rem;
@@ -2523,8 +2563,17 @@ footer {
   }
 }
 .slider {
-  margin-top: 5rem;
+  margin-top: 2.3125rem;
   position: relative
+}
+.slider__inner {
+  opacity: 0;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease
+}
+.slider__inner_show {
+  opacity: 1
 }
 .slider .swiper-button-next,
 .slider .swiper-button-prev {
@@ -2597,8 +2646,8 @@ footer {
   display: var(--display-dark-none)
 }
 .slider .swiper-slide:hover {
-  -webkit-box-shadow: 0 0.9375rem 2.5rem rgba(0,0,0,.7);
-  box-shadow: 0 0.9375rem 2.5rem rgba(0,0,0,.7);
+  -webkit-box-shadow: 0 0.4375rem 0.9375rem rgba(0,0,0,.7);
+  box-shadow: 0 0.4375rem 0.9375rem rgba(0,0,0,.7);
   z-index: 22
 }
 .slider h2 {
@@ -2660,6 +2709,10 @@ footer {
 @media screen and (max-width:36em){
   .slider {
     margin-top: 1.25rem
+  }
+  .slider .swiper-slide:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none
   }
   .slider-photos .image {
     position: relative
