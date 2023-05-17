@@ -17,6 +17,9 @@
 
 <body>
   <!-- ** HEADER ** -->
+  <div class="preloader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index:9999">
+    <p>Loading...</p>
+  </div>
   <header>
     <div class="wrapper">
       <div class="header"><a class="header__logo" href="index.html"><span>Luxury Cars</span></a>
@@ -183,7 +186,7 @@
           </div>
           <div class="scroll-block__text">
             <h3>BMW 7 <span>M60i xDrive; SZH, Navi, Panorama, Klima, LED</span></h3>
-            <p>M60i xDrive; SZH, Navi, Panorama, Klima, LED</p><span>Мы предоставим вам автомобиль вашей мечты одним щелчком мыши</span>
+            <p>M60i xDrive; SZH, Navi, Panorama, Klima, LED</p>
             <p class="mob">Первичный взнос 50% в размере<b>66.402,00 €</b>
             </p>
           </div>
@@ -333,6 +336,11 @@
               fill="white" />
             </svg><span>Wielenbach, DE</span>
           </div>
+          <div class="single__main single__main_mob">
+            <div class="info__bottom">
+              <button class="open-popup" data-popup="popup-email">Отправить E-mail</button><a class="button" href="#contacts">Связаться</a>
+            </div>
+          </div>
           <hr>
           <p class="info__price">€ 107 790,-*</p>
           <button class="info__calculate">Рассчитать финансирование</button>
@@ -432,29 +440,7 @@
             </ul>
           </div>
           <div class="info__bottom">
-            <button class="open-popup" data-popup="popup-email">Отправить E-mail</button>
-            <div class="select">
-              <div class="select__head"><span>Связаться</span>
-                <img>
-              </div>
-              <div class="select__body">
-                <a href="#">
-                  <div class="icon">
-                    <img src="img/icons/whatsapp.svg">
-                  </div><span>WhatsApp</span>
-                </a>
-                <a href="#">
-                  <div class="icon">
-                    <img src="img/icons/viber.svg">
-                  </div><span>Viber</span>
-                </a>
-                <a href="#">
-                  <div class="icon">
-                    <img src="img/icons/telegram.svg">
-                  </div><span>Telegram</span>
-                </a>
-              </div>
-            </div>
+            <button class="open-popup" data-popup="popup-email">Отправить E-mail</button><a class="button" href="#contacts">Связаться</a>
           </div>
           <div class="info__links"><a href="#">Читать блог о BMW</a><a href="#">Получать уведомления о новых поступлениях автомобилей</a>
           </div>
@@ -647,34 +633,7 @@
           </div>
         </div>
       </section>
-      <section class="single__main single__main_mob">
-        <div class="info__bottom">
-          <button class="open-popup" data-popup="popup-email">Отправить E-mail</button>
-          <div class="select">
-            <div class="select__head"><span>Связаться</span>
-              <img>
-            </div>
-            <div class="select__body">
-              <a href="#">
-                <div class="icon">
-                  <img src="img/icons/whatsapp.svg">
-                </div><span>WhatsApp</span>
-              </a>
-              <a href="#">
-                <div class="icon">
-                  <img src="img/icons/viber.svg">
-                </div><span>Viber</span>
-              </a>
-              <a href="#">
-                <div class="icon">
-                  <img src="img/icons/telegram.svg">
-                </div><span>Telegram</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="contacts__inner">
           <div class="contacts__people">
             <div class="contacts__info">
@@ -2319,38 +2278,45 @@
           <div class="block__socials">
             <ul>
               <li>
-                <a href="#">
+                <a class="messenger" href="#">
                   <img src="img/icons/socials/social-1.svg" alt="">
+                  <img class="hover-elem" src="img/icons/messenger-color.svg" alt="">
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a class="facebook" href="#">
                   <img src="img/icons/socials/social-2.svg" alt="">
+                  <img class="hover-elem" src="img/icons/facebook-color.svg" alt="">
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a class="instagram" href="#">
                   <img src="img/icons/socials/social-3.svg" alt="">
+                  <img class="hover-elem" src="img/icons/instagram-color.svg" alt="">
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a class="telegram" href="#">
                   <img src="img/icons/socials/social-4.svg" alt="">
+                  <img class="hover-elem" src="img/icons/telegram-color.svg" alt="">
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a class="viber" href="#">
                   <img src="img/icons/socials/social-5.svg" alt="">
+                  <img class="hover-elem" src="img/icons/viber-color.svg" alt="">
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a class="whatsapp" href="#">
                   <img src="img/icons/socials/social-6.svg" alt="">
+                  <img class="hover-elem" src="img/icons/whatsapp-color.svg" alt="">
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a class="youtube" href="#">
                   <img src="img/icons/socials/social-7.svg" alt="">
+                  <img class="hover-elem" src="img/icons/youtube-color.svg" alt="">
                 </a>
               </li>
             </ul>

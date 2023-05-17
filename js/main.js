@@ -1,4 +1,8 @@
 
+setTimeout(() => {
+	document.querySelector('.preloader').classList.add('preloader_hidden')
+}, 500)
+
 document.querySelector('.header__recall .recall__head').onclick = function() {
 	this.closest('.header__recall').classList.toggle('header__recall_active')
 }
@@ -364,9 +368,9 @@ new Swiper('.slider-cars__slider', {
 Zoom(".zoomable");
 
 
-if(document.querySelector('.info__price')) {
+if(document.querySelector('.info__bottom')) {
 	document.addEventListener('scroll', function(e) {
-		if(document.querySelector('.info__price').offsetTop < window.scrollY) {
+		if(document.querySelector('.info__bottom').offsetTop < window.scrollY) {
 			document.querySelector('.scroll-block').classList.add('scroll-block_active')
 		} else {
 			document.querySelector('.scroll-block').classList.remove('scroll-block_active')

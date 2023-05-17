@@ -22,6 +22,21 @@
 	}
 }
 
+.preloader{
+	background: #838383;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all .3s ease;
+	p{
+		color: #fff;
+	}
+	&_hidden{
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
 body{
 	background: var(--body-bgd);
 	&.white-theme{
@@ -44,6 +59,7 @@ body{
 
 	@media screen and (max-width: 576px) {
 		&.header_scroll{
+			padding-top: 81px;
 			header{
 				z-index: 40;
 			}
@@ -183,7 +199,7 @@ h1{
 
 header{
 	padding: 20px 0;
-	transition: all .3s ease;
+	transition: all .15s ease;
 	top: -100px;
 	background: var(--header-bgd);
 	&.open_menu{
@@ -697,6 +713,10 @@ footer{
 	.block__socials{
 		padding-top: 40px;
 		margin-top: auto;
+		.hover-elem{
+			position: absolute;
+			opacity: 0;
+		}
 		ul{
 			display: grid;
 			grid-template-columns: repeat(4, 1fr);
@@ -710,6 +730,53 @@ footer{
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			&:hover{
+				.hover-elem{
+					opacity: var(--opacity-1);
+				}
+				&.messenger{
+					background: #008AFF;
+					img{
+						filter: invert(1);
+					}
+				}
+				&.facebook{
+					background: #4267B2;
+					img{
+						filter: invert(1);
+					}
+				}
+				&.instagram{
+					background: #FF4E5C;
+					img{
+						filter: invert(1);
+					}
+				}
+				&.telegram{
+					background: #0088CC;
+					img{
+						filter: invert(1);
+					}
+				}
+				&.viber{
+					background: #7360F2;
+					img{
+						filter: invert(1);
+					}
+				}
+				&.whatsapp{
+					background: #25D366;
+					img{
+						filter: invert(1);
+					}
+				}
+				&.youtube{
+					background: #FF0000;
+					img{
+						filter: invert(1);
+					}
+				}
+			}
 		}
 	}
 	&__logo{
@@ -1009,6 +1076,13 @@ footer{
 				display: block;
 			}
 		}
+	}
+}
+
+html[theme="dark"] .footer .block__socials a:hover {
+	background: #fff !important;
+	img{
+		filter: invert(0);
 	}
 }
 

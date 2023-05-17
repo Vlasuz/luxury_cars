@@ -391,20 +391,14 @@
 			object-fit: cover;
 		}
 	}
-	.button-lupa{
-		background: rgba(255, 255, 255, 0.7);
-		box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		border-radius: 50%;
+	.open-big-photo{
+		padding: 12px;
+		background: #181818;
+		border-radius: 2px;
 		position: absolute;
 		bottom: 10px;
 		right: 10px;
-		width: 50px;
-		height: 50px;
 		pointer-events: none;
-		transition: all .3s ease;
 	}
 
 	@media screen and (max-width: 768px) {
