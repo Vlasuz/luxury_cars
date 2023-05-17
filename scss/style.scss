@@ -186,6 +186,9 @@ header{
 	transition: all .3s ease;
 	top: -100px;
 	background: var(--header-bgd);
+	&.open_menu{
+		z-index: 41 !important;
+	}
 	@media screen and (max-width: 576px) {
 		&{
 			padding: 0;
@@ -1444,6 +1447,9 @@ footer{
 			font-size: 35px;
 			line-height: 41px;
 		}
+		.swiper-slide:hover{
+			transform: scale(1);
+		}
 		.slide__text {
 			padding: 10px 12px;
 		}
@@ -1459,6 +1465,9 @@ footer{
 			img{
 				width: 16px;
 			}
+		}
+		.swiper-button-next, .swiper-button-prev{
+			background: var(--slider-arrow-bgd) !important;
 		}
 	}
 }
@@ -1570,7 +1579,6 @@ footer{
 		display: var(--display-dark-block);
 	}
 }
-
 
 
 @import '_main.scss';

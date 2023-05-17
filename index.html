@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Website">
   <meta name="keywords" content="Website">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="fonts/oswald/stylesheet.css">
   <link rel="stylesheet" href="fonts/roboto/stylesheet.css">
   <link rel="stylesheet" href="fonts/mazzard/stylesheet.css">
@@ -251,7 +251,7 @@
             <a class="swiper-slide" href="catalog.html?filter=audi">
               <div class="slide__mark">
                 <img class="dark-photo" src="img/cars-marks/audi.svg" alt="">
-                <img class="light-photo" src="img/cars-marks/audi-light.png" alt="">
+                <img class="light-photo" src="img/cars-marks/audi-light.webp" alt="">
               </div>
               <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее</p>
               <div class="slide__photo">
@@ -295,19 +295,7 @@
         <h2>Мы хотим, чтобы, купив автомобиль у нас, Вы испытали невероятно позитивные чувства!</h2>
         <p>Это дает нам гарантию, что Вы порекомендуете нас Вашим знакомым, друзьям и родственникам.
           <br>Качество наших автомобилей – это залог нашего и Вашего успеха! Закажите автомобиль Вашей мечты у нас и</p>
-        <div class="slider-photos swiper">
-          <div class="swiper-button-prev">
-            <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.72336 10.6306L15.635 0.719099C15.8643 0.489673 16.1703 0.363281 16.4966 0.363281C16.8229 0.363281 17.1289 0.489673 17.3581 0.719099L18.0881 1.44884C18.563 1.92435 18.563 2.69719 18.0881 3.17198L9.76502 11.495L18.0973 19.8273C18.3266 20.0567 18.4531 20.3626 18.4531 20.6887C18.4531 21.0152 18.3266 21.321 18.0973 21.5506L17.3674 22.2802C17.138 22.5096 16.8321 22.636 16.5058 22.636C16.1795 22.636 15.8735 22.5096 15.6442 22.2802L5.72336 12.3597C5.49358 12.1295 5.36737 11.8222 5.36809 11.4956C5.36737 11.1676 5.49358 10.8605 5.72336 10.6306Z"
-              fill="white" />
-            </svg>
-          </div>
-          <div class="swiper-button-next">
-            <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M18.2766 10.6306L8.36499 0.719099C8.13574 0.489673 7.82972 0.363281 7.50342 0.363281C7.17712 0.363281 6.8711 0.489673 6.64185 0.719099L5.91193 1.44884C5.43696 1.92435 5.43696 2.69719 5.91193 3.17198L14.235 11.495L5.90269 19.8273C5.67345 20.0567 5.54688 20.3626 5.54688 20.6887C5.54688 21.0152 5.67345 21.321 5.90269 21.5506L6.63262 22.2802C6.86204 22.5096 7.16788 22.636 7.49418 22.636C7.82049 22.636 8.12651 22.5096 8.35575 22.2802L18.2766 12.3597C18.5064 12.1295 18.6326 11.8222 18.6319 11.4956C18.6326 11.1676 18.5064 10.8605 18.2766 10.6306Z"
-              fill="white" />
-            </svg>
-          </div>
+        <div class="slider-photos-slider swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="image">
@@ -342,6 +330,20 @@
               </div>
             </div>
           </div>
+          <div class="swiper-button-prev">
+            <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.72336 10.6306L15.635 0.719099C15.8643 0.489673 16.1703 0.363281 16.4966 0.363281C16.8229 0.363281 17.1289 0.489673 17.3581 0.719099L18.0881 1.44884C18.563 1.92435 18.563 2.69719 18.0881 3.17198L9.76502 11.495L18.0973 19.8273C18.3266 20.0567 18.4531 20.3626 18.4531 20.6887C18.4531 21.0152 18.3266 21.321 18.0973 21.5506L17.3674 22.2802C17.138 22.5096 16.8321 22.636 16.5058 22.636C16.1795 22.636 15.8735 22.5096 15.6442 22.2802L5.72336 12.3597C5.49358 12.1295 5.36737 11.8222 5.36809 11.4956C5.36737 11.1676 5.49358 10.8605 5.72336 10.6306Z"
+              fill="white" />
+            </svg>
+          </div>
+          <div class="swiper-button-next">
+            <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.2766 10.6306L8.36499 0.719099C8.13574 0.489673 7.82972 0.363281 7.50342 0.363281C7.17712 0.363281 6.8711 0.489673 6.64185 0.719099L5.91193 1.44884C5.43696 1.92435 5.43696 2.69719 5.91193 3.17198L14.235 11.495L5.90269 19.8273C5.67345 20.0567 5.54688 20.3626 5.54688 20.6887C5.54688 21.0152 5.67345 21.321 5.90269 21.5506L6.63262 22.2802C6.86204 22.5096 7.16788 22.636 7.49418 22.636C7.82049 22.636 8.12651 22.5096 8.35575 22.2802L18.2766 12.3597C18.5064 12.1295 18.6326 11.8222 18.6319 11.4956C18.6326 11.1676 18.5064 10.8605 18.2766 10.6306Z"
+              fill="white" />
+            </svg>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-scrollbar"></div>
         </div>
       </div>
     </section>
@@ -707,7 +709,7 @@
   <!-- zoom JS -->
   <script src="js/zoom.min.js"></script>
   <!-- main JS -->
-  <script src="js/app.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

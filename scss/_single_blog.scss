@@ -6,7 +6,7 @@
 }
 
 .single-blog{
-	margin-top: 99px;
+	margin-top: 40px;
 	margin-bottom: 50px;
 	ol{
 		list-style-type: none;
@@ -212,6 +212,9 @@
 		}
 	}
 	@media screen and (max-width: 768px) {
+		&{
+			margin-top: 10px;
+		}
 		&__navigation{
 			// display: none;
 			.btn{

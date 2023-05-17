@@ -64,6 +64,11 @@
  --pagination-active-num-color: #fff;
 
  --slider-arrow-bgd: rgba(255, 255, 255, 0.15);
+ --slider-big-photo: #181818;
+
+ --form-input-border: 1px solid #414447;
+
+ --arrow-down-blog-svg: #fff;
 
  --brightness-1: brightness(1);
 }
@@ -127,7 +132,7 @@
  --display-dark-flex: none;
 
  --single-mini-info-bgd: #F2EDE7;
- --single-mini-info-car-shadow: 0px 10px 25px rgba(112, 112, 112, 0.4);
+ --single-mini-info-car-shadow: 0px 10px 10px 0px rgba(112, 112, 112, 0.4);
 
  --pagination-nums-bgd: #F2EDE7;
  --pagination-arr-bgd: #4F7DF6;
@@ -136,6 +141,11 @@
  --pagination-active-num-color: #fff;
 
  --slider-arrow-bgd: linear-gradient(155.87deg, #4F7DF6 8.49%, #1B41A6 92.59%);
+ --slider-big-photo: linear-gradient(155.87deg, #4F7DF6 8.49%, #1B41A6 92.59%);
+
+ --form-input-border: 1px solid transparent;
+
+ --arrow-down-blog-svg: #4F7DF6;
 
  --brightness-1: brightness(0);
 }

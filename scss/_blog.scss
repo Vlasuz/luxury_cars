@@ -1,4 +1,11 @@
 .blog-page{
+	.arrow-down{
+		text-align: center;
+		path{
+			fill: var(--arrow-down-blog-svg);
+		}
+	}
+
 	.catalog__pagination{
 		margin-top: 80px;
 	}
@@ -27,7 +34,7 @@
 		margin-top: 85px;
 		margin-bottom: 40px;
 		button{
-			background: var(--button-bgd-radial);
+			background: var(--button-bgd-radial-another);
 			border: 1px solid #FFFFFF;
 			backdrop-filter: blur(5px);
 			width: 122px;
@@ -80,6 +87,9 @@
 	@media screen and (max-width: 576px) {
 		.catalog__pagination{
 			margin-top: 33px;
+		}
+		.service {
+			margin-top: 0;
 		}
 		time{
 			font-size: 13px;

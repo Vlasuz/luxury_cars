@@ -12,7 +12,8 @@
 	.swiper-button-prev{
 		width: 35px;
 		height: 35px;
-		background: var(--slider-arrow-bgd);
+		// background: var(--slider-arrow-bgd);
+		background: rgba(255, 255, 255, 0.15);
 		backdrop-filter: blur(5px);
 		border-radius: 2px;
 		display: flex;
@@ -141,7 +142,7 @@
 				}
 				&:before{
 					content: '';
-					background: linear-gradient(180deg, rgba(79, 125, 246, 0.15) 0%, rgba(79, 125, 246, 0.75) 100%);
+					// background: linear-gradient(180deg, rgba(79, 125, 246, 0.15) 0%, rgba(79, 125, 246, 0.75) 100%);
 					width: 100%;
 					height: 13px;
 					filter: blur(2px);
@@ -176,6 +177,12 @@
 		.slider__big{
 			position: relative;
 		}
+		.swiper-button-next{
+			margin-right: 0;
+		}
+		.swiper-button-prev{
+			margin-left: 0;
+		}
 		.main__slider{
 			max-width: 883px;
 			width: 100%;
@@ -188,6 +195,7 @@
 			}
 			.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
 				pointer-events: auto;
+				// margin: 0 20px;
 			}
 			.swiper-button-prev,
 			.swiper-button-next {
@@ -213,7 +221,7 @@
 		}
 		.open-big-photo{
 			padding: 12px;
-			background: #181818;
+			background: var(--slider-big-photo);
 			border-radius: 2px;
 			position: absolute;
 			bottom: 19px;
@@ -241,7 +249,7 @@
 			height: 1px;
 			width: 100%;
 			border: none;
-			margin: 25px 0;
+			margin: 31px 0;
 		}
 
 
@@ -254,8 +262,8 @@
 			display: flex;
 			align-items: center;
 			button{
-				background: var(--button-bgd-radial);
-				border: 1px solid var(--c-fff);
+				background: var(--button-bgd-radial-another);
+				border: var(--button-border);
 				box-shadow: var(--header-button-shadow);
 				backdrop-filter: blur(5px);
 				border-radius: 150px;
@@ -378,7 +386,7 @@
 			.select__head,
 			button{
 				background: var(--button-bgd);
-				border: 1px solid var(--c-fff);
+				border: var(--header-scroll-border);
 				max-width: 214px;
 				width: 100%;
 				font-size: 18px;
@@ -415,7 +423,7 @@
 			}
 			.select__body{
 				background: var(--c-181818);
-				border: 1px solid var(--c-fff);
+				border: var(--header-scroll-border);
 				padding: 14px;
 				position: absolute;
 				top: calc(100% + 0px);
@@ -433,8 +441,8 @@
 					}
 				}
 				.icon{
-					background: var(--button-bgd-radial);
-					border: 1px solid var(--c-fff);
+					background: var(--button-bgd-radial-another);
+					border: var(--button-border);
 					box-shadow: var(--header-button-shadow);
 					backdrop-filter: blur(5px);
 					border-radius: 150px;
@@ -544,6 +552,10 @@
 				button{
 					margin-top: 11px;
 				}
+			}
+			p{
+				font-weight: 200;
+				color: var(--c-dbdbdb);
 			}
 			&_without-underline{
 				border: none;
@@ -824,12 +836,12 @@
 		align-items: center;
 		justify-content: space-between;
 		position: fixed;
-		z-index: 30;
+		z-index: 40;
 		left: 0;
 		top: -100px;
 		width: 100%;
 		background: var(--header-bgd);
-		border-bottom: 1px solid var(--c-fff);
+		border-bottom: var(--header-scroll-border);
 		box-shadow: var(--single-mini-info-car-shadow);
 
 		opacity: 0;
@@ -879,8 +891,8 @@
 			}
 			button{
 				background: var(--button-bgd-radial);
-				border: 1px solid var(--c-fff);
-				box-shadow: 0px 6px 30px #4F7DF6;
+				border: var(--header-scroll-border);
+				box-shadow: var(--header-button-shadow);
 				backdrop-filter: blur(5px);
 				border-radius: 150px;
 				width: 55px;
@@ -961,8 +973,11 @@
 	@media screen and (max-width: 576px) {
 		.scroll-block{
 			&_active{
-				top: 80px;
+				top: 65px;
 			}
+		}
+		&__main .info__general .icon {
+			background: var(--c-181818);
 		}
 	}
 }
