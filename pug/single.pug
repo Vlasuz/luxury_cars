@@ -2,7 +2,7 @@ extends includes/head.pug
 block body
 
 	body
-		include includes/header.pug
+		include includes/header-single.pug
 
 		section.breadcrumbs
 			.wrapper
@@ -205,7 +205,7 @@ block body
 										span Пробег
 										p 71.800 km
 
-						.info__bottom
+						.info__bottom.info__bottom_desc
 							button(data-popup="popup-email").open-popup Отправить E-mail
 							a(href="#contacts").button Связаться
 							//- .select

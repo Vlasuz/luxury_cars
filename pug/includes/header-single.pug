@@ -1,0 +1,166 @@
+<!-- ** HEADER ** -->
+
+include ../mixins.pug
+
+.preloader(style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index:9999")
+	p Loading...
+
+header.header-single
+	.wrapper
+		.header
+			a(href="index.html").header__logo
+				span Luxury Cars
+			nav.header__menu
+				ul
+					li
+						a(href="index.html") Главная
+					li.li_active
+						a(href="catalog.html") Автомашины
+					li.have-child
+						a(href="service.html") Сервис
+						ul
+							li
+								a(href="service.html") Осмотр
+							li
+								a(href="service.html") Оплата
+							li
+								a(href="service.html") Доставка
+							li
+								a(href="service.html") Покупка
+							li
+								a(href="service.html") Оформление документов
+							li
+								a(href="service.html") Растаможка
+							li
+								a(href="service.html") Запчасти
+							li
+								a(href="service.html") О компании
+					li
+						a(href="contacts.html") Контакты
+					li
+						a(href="blog.html") Блог
+					li
+						a(href="faq.html") Часто задаваемые вопросы
+
+			.header__switch.theme.theme-mob
+				.banner__socials
+					ul
+						li
+							button.li__head
+								img(src="img/icons/call.svg" alt="")
+							//- .li__body
+								ul
+									li
+										a(href="tel:+49671365234") DE +49 (67) 136-52-34
+									li
+										a(href="tel:+75765761465") KZ +7 (576) 576-14-65
+						li
+							button.li__head
+								img(src="img/single/info_icon-3.svg" alt="")
+							//- .li__body
+								ul.ul__socials
+									li
+										a(href="#")
+											img(src="img/icons/facebook-bd.svg" alt="")
+									li
+										a(href="#")
+											img(src="img/icons/instagram-bd.svg" alt="")
+						li
+							button.li__head
+								<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.1016 9.07812C10.2911 9.07812 9.57685 9.47682 9.12825 10.0831L5.24973 8.09714C5.31412 7.87765 5.35938 7.65018 5.35938 7.41016C5.35938 7.0846 5.29263 6.7751 5.17732 6.49042L9.23636 4.04786C9.68808 4.578 10.352 4.92188 11.1016 4.92188C12.4586 4.92188 13.5625 3.81798 13.5625 2.46094C13.5625 1.10389 12.4586 0 11.1016 0C9.74452 0 8.64062 1.10389 8.64062 2.46094C8.64062 2.77367 8.70502 3.07032 8.81185 3.34573L4.74072 5.79545C4.28939 5.28106 3.635 4.94922 2.89844 4.94922C1.54139 4.94922 0.4375 6.05311 0.4375 7.41016C0.4375 8.7672 1.54139 9.87109 2.89844 9.87109C3.7223 9.87109 4.44858 9.46069 4.89549 8.83734L8.76124 10.8169C8.69004 11.0467 8.64062 11.2861 8.64062 11.5391C8.64062 12.8961 9.74452 14 11.1016 14C12.4586 14 13.5625 12.8961 13.5625 11.5391C13.5625 10.182 12.4586 9.07812 11.1016 9.07812Z" fill="white"/></svg>
+							//- .li__body
+								ul.ul__socials
+									li
+										a(href="#")
+											img(src="img/icons/messenger.svg" alt="")
+									li
+										a(href="#")
+											img(src="img/icons/viber.svg" alt="")
+									li
+										a(href="#")
+											img(src="img/icons/telegram.svg" alt="")
+									li
+										a(href="#")
+											img(src="img/icons/whatsapp.svg" alt="")
+						
+				button.theme__button
+					img(src="img/dark-switcher.svg" alt="").dark-switcher
+					img(src="img/light-switcher.svg" alt="").light-switcher
+			.header__burger.btn
+				.line
+				.line
+				.line
+			.header__rht
+				.header__switch.theme
+					button.theme__button
+						img(src="img/dark-switcher.svg" alt="").dark-switcher
+						img(src="img/light-switcher.svg" alt="").light-switcher
+
+				.header__recall
+					.recall__head
+						.head__icon
+							img(src="img/icons/call.svg" alt="")
+						.head__arr
+							<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.54628 10.8893L13.7763 4.65908C13.9206 4.51498 14 4.32263 14 4.11752C14 3.91242 13.9206 3.72006 13.7763 3.57597L13.3176 3.11716C13.0188 2.81861 12.533 2.81861 12.2345 3.11716L7.0029 8.34879L1.76547 3.11135C1.62126 2.96726 1.42901 2.88769 1.22402 2.88769C1.01881 2.88769 0.826563 2.96726 0.68224 3.11135L0.223658 3.57016C0.0794477 3.71437 9.09136e-07 3.90661 9.00171e-07 4.11172C8.91205e-07 4.31682 0.0794477 4.50918 0.223658 4.65327L6.45941 10.8893C6.60408 11.0337 6.79723 11.113 7.00256 11.1126C7.20869 11.113 7.40173 11.0337 7.54628 10.8893Z" fill="white"/></svg>
+					.recall__body
+						ul
+							li
+								a(href="#") DE +49 (67) 136-52-34
+							li
+								a(href="#") KZ +7 (576) 576-14-65
+
+			.header__mob
+				.header__rht
+					ul.header__socials
+						li
+							a(href="#")
+								img(src="img/icons/whatsapp.svg" alt="ico")
+						li
+							a(href="#")
+								img(src="img/icons/messenger.svg" alt="ico")
+						li
+							a(href="#")
+								img(src="img/icons/telegram.svg" alt="ico")
+						li
+							a(href="#")
+								img(src="img/icons/viber.svg" alt="ico")
+
+					ul.header__calling
+						li
+							a(href="tel:+49671365234") DE +49 (67) 136-52-34
+						li
+							a(href="tel:+75765761465") KZ +7 (576) 576-14-65
+
+				nav.header__menu
+					ul
+						li
+							a(href="index.html") Главная
+						li
+							a(href="catalog.html") Автомашины
+						li.have-child
+							a(href="service.html") Сервис
+							ul
+								li
+									a(href="service.html") Осмотр
+								li
+									a(href="service.html") Оплата
+								li
+									a(href="service.html") Доставка
+								li
+									a(href="service.html") Покупка
+								li
+									a(href="service.html") Оформление документов
+								li
+									a(href="service.html") Растаможка
+								li
+									a(href="service.html") Запчасти
+								li
+									a(href="service.html") О компании
+						li
+							a(href="contacts.html") Контакты
+						li
+							a(href="blog.html") Блог
+						li
+							a(href="faq.html") Часто задаваемые вопросы
+
+<!-- ** HEADER ** -->

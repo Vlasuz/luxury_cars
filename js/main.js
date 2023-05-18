@@ -370,10 +370,22 @@ Zoom(".zoomable");
 
 if(document.querySelector('.info__bottom')) {
 	document.addEventListener('scroll', function(e) {
-		if(document.querySelector('.info__bottom').offsetTop < window.scrollY) {
-			document.querySelector('.scroll-block').classList.add('scroll-block_active')
+		if(window.innerWidth > 768) {		
+			if(document.querySelector('.info__bottom_desc').offsetTop < window.scrollY) {
+				document.querySelector('header.header-single').classList.add('scroll-to-socials')
+				document.querySelector('.scroll-block').classList.add('scroll-block_active')
+			} else {
+				document.querySelector('header.header-single').classList.remove('scroll-to-socials')
+				document.querySelector('.scroll-block').classList.remove('scroll-block_active')
+			}
 		} else {
-			document.querySelector('.scroll-block').classList.remove('scroll-block_active')
+			if(document.querySelector('.single__main_mob .info__bottom').offsetTop < window.scrollY) {
+				document.querySelector('header.header-single').classList.add('scroll-to-socials')
+				document.querySelector('.scroll-block').classList.add('scroll-block_active')
+			} else {
+				document.querySelector('header.header-single').classList.remove('scroll-to-socials')
+				document.querySelector('.scroll-block').classList.remove('scroll-block_active')
+			}
 		}
 	})
 }
