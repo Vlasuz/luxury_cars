@@ -1,4 +1,14 @@
 .contacts{
+
+	.wrapper{
+		position: relative;
+	}
+	.buttons-mob{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
 	h1{
 		font-family: 'Oswald';
 		font-weight: 300;

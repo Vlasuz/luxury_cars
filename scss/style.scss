@@ -1795,6 +1795,7 @@ html[theme="dark"] .footer .block__socials a:hover {
 }
 
 
+
 @import '_main.scss';
 @import '_catalog.scss';
 @import '_service.scss';
@@ -1804,3 +1805,26 @@ html[theme="dark"] .footer .block__socials a:hover {
 @import '_single_blog.scss';
 @import '_single.scss';
 @import '_description.scss';
+
+.buttons-mob{
+	display: none;
+	.banner__socials{
+		position: static;
+		display: block;
+	}
+	ul{
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+	li{
+		margin-bottom: 0;
+		margin-left: 10px;
+	}
+
+	@media screen and (max-width: 576px) {
+		&{
+			display: flex;
+		}
+	}
+}

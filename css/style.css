@@ -3044,6 +3044,9 @@ html[theme=dark] .footer .block__socials a:hover img {
     display: block
   }
 }
+.filter {
+  margin-bottom: 1.25rem
+}
 .filter .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3376,7 +3379,7 @@ html[theme=dark] .footer .block__socials a:hover img {
   display: block
 }
 .catalog__inner {
-  margin-top: 3.125rem
+  margin-top: 0.625rem
 }
 .catalog__mark {
   display: none
@@ -4569,6 +4572,14 @@ html[theme=dark] .footer .block__socials a:hover img {
     font-size: 0.875rem;
     line-height: 1.375rem
   }
+}
+.contacts .wrapper {
+  position: relative
+}
+.contacts .buttons-mob {
+  position: absolute;
+  right: 0;
+  top: 0
 }
 .contacts h1 {
   font-family: Oswald;
@@ -6883,5 +6894,34 @@ html[theme=dark] .footer .block__socials a:hover img {
     grid-column-start: 1;
     -ms-grid-column-span: 1;
     grid-column-end: 2
+  }
+}
+.buttons-mob {
+  display: none
+}
+.buttons-mob .banner__socials {
+  position: static;
+  display: block
+}
+.buttons-mob ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end
+}
+.buttons-mob li {
+  margin-bottom: 0;
+  margin-left: 0.625rem
+}
+@media screen and (max-width:36em){
+  .buttons-mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
   }
 }
