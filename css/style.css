@@ -584,7 +584,7 @@ header.open_menu {
   -ms-flex-align: center;
   align-items: center
 }
-.header-single .theme__button {
+.header-single .theme-mob .theme__button {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -592,7 +592,7 @@ header.open_menu {
   transform: translateY(-50%);
   right: 0
 }
-.header-single .theme__button.theme-light {
+.header-single .theme-mob .theme__button.theme-light {
   -webkit-transform: translateY(-50%) scaleX(-1);
   -ms-transform: translateY(-50%) scaleX(-1);
   transform: translateY(-50%) scaleX(-1)

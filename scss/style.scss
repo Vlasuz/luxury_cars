@@ -264,6 +264,8 @@ header{
 			}
 		}
 
+		.theme-mob{
+
 		.theme__button{
 			position: absolute;
 			top: 50%;
@@ -272,6 +274,8 @@ header{
 			&.theme-light{
 				transform: translateY(-50%) scaleX(-1);
 			}
+		}
+			
 		}
 
 	}
