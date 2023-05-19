@@ -119,7 +119,7 @@ h1{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 100px auto 50px;
+	margin: 50px auto 50px;
 	path{
 		fill: var(--c-fff);
 	}
@@ -402,8 +402,11 @@ header{
 		path{
 			fill: var(--c-fff);
 		}
+		img{
+			filter:var(--brightness-1);
+		}
 		a{
-			background: #262626;
+			background: var(--header-mob-socials);
 			width: 39px;
 			height: 39px;
 			display: flex;
@@ -794,6 +797,16 @@ header{
 			padding: 18px 0;
 		}
 
+		&__socials {
+			a {
+				width: 31px;
+				height: 31px;
+				img{
+					width: 18px;
+				}
+			}
+		}
+
 		.theme__button img {
 			width: 32px;
 			height: 32px;
@@ -843,6 +856,12 @@ footer{
 			left: 50%;
 			transform: translateX(-50%);
 		}
+		a{
+			&:hover{
+				color: #4F7DF6;
+			}
+		}
+		a,
 		p{
 			font-weight: 300;
 			font-size: 16px;
@@ -1146,6 +1165,9 @@ footer{
 		}
 		&__bottom{
 			flex-wrap: wrap;
+			a{
+				order: 4;
+			}
 			p{
 				order: 2;
 				font-size: 16px;

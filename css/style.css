@@ -214,6 +214,7 @@ button {
   --header-bgd: #131519;
   --header-bgd-scroll: #000;
   --header-bgd-scroll-shadow: 0rem 0.625rem 0.625rem #000000;
+  --header-mob-socials: #262626;
   --button-border: 0.0625rem solid #fff;
   --button-bgd: linear-gradient(180deg, #0F0F0F -22.5%, #4F7DF6 133.36%, #4F7DF6 292.5%);
   --button-bgd-radial: radial-gradient(62.39% 62.39% at 50% 50%, #030B21 0%, #04102D 2.6%, #04102D 7.29%, #04102D 18.23%, #0B1C4A 30.21%, #0A1D4F 34.9%, #203A7D 50.52%, #2E4B97 62.5%, #3252A7 70.83%, #5382FF 88.54%, #5181FF 95.83%);
@@ -239,9 +240,10 @@ button {
   --pagination-active-num-color: #fff;
   --slider-arrow-bgd: rgba(255, 255, 255, 0.15);
   --slider-big-photo: #181818;
+  --single-blog-button: #181818;
   --form-input-border: 0.0625rem solid #414447;
   --arrow-down-blog-svg: #fff;
-  --brightness-1: brightness(1);
+  --brightness-1: invert(0);
   --opacity-1: 1
 }
 :root[theme=light] {
@@ -271,6 +273,7 @@ button {
   --header-bgd: #F2EDE7;
   --header-bgd-scroll: #F2EDE7;
   --header-bgd-scroll-shadow: 0rem 0.625rem 0.625rem #fff;
+  --header-mob-socials: #fff;
   --button-border: none;
   --button-bgd: linear-gradient(155.87deg, #4F7DF6 8.49%, #1B41A6 92.59%);
   --button-bgd-radial: linear-gradient(155.87deg, #4F7DF6 8.49%, #1B41A6 92.59%);
@@ -296,9 +299,10 @@ button {
   --pagination-active-num-color: #fff;
   --slider-arrow-bgd: linear-gradient(155.87deg, #4F7DF6 8.49%, #1B41A6 92.59%);
   --slider-big-photo: linear-gradient(155.87deg, #4F7DF6 8.49%, #1B41A6 92.59%);
+  --single-blog-button: #4F7DF6;
   --form-input-border: 0.0625rem solid transparent;
   --arrow-down-blog-svg: #4F7DF6;
-  --brightness-1: brightness(0);
+  --brightness-1: invert(1);
   --opacity-1: 0
 }
 * {
@@ -426,7 +430,7 @@ span {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 6.25rem auto 3.125rem
+  margin: 3.125rem auto 3.125rem
 }
 .block-to-up path {
   fill: var(--c-fff)
@@ -749,8 +753,12 @@ header.open_menu {
 .header__socials path {
   fill: var(--c-fff)
 }
+.header__socials img {
+  -webkit-filter: var(--brightness-1);
+  filter: var(--brightness-1)
+}
 .header__socials a {
-  background: #262626;
+  background: var(--header-mob-socials);
   width: 2.4375rem;
   height: 2.4375rem;
   display: -webkit-box;
@@ -1169,6 +1177,13 @@ header.open_menu {
     border-bottom: 0.0625rem solid rgba(255,255,255,.2);
     padding: 1.125rem 0
   }
+  .header__socials a {
+    width: 1.9375rem;
+    height: 1.9375rem
+  }
+  .header__socials a img {
+    width: 1.125rem
+  }
   .header .theme__button img {
     width: 2rem;
     height: 2rem
@@ -1220,6 +1235,10 @@ footer {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%)
 }
+.footer__bottom a:hover {
+  color: #4f7df6
+}
+.footer__bottom a,
 .footer__bottom p {
   font-weight: 300;
   font-size: 1rem;
@@ -1580,6 +1599,11 @@ footer {
   .footer__bottom {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap
+  }
+  .footer__bottom a {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4
   }
   .footer__bottom p {
     -webkit-box-ordinal-group: 3;
@@ -4323,17 +4347,17 @@ html[theme=dark] .footer .block__socials a:hover img {
 }
 @media screen and (max-width:64em){
   .blog-page .service__item:nth-child(2n+2) button {
-    -webkit-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
     margin-left: auto
   }
   .blog-page .service button {
     width: 5.625rem;
     height: 5.625rem;
-    -webkit-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
     margin-top: 1.25rem;
     margin-bottom: 2.5rem
   }
@@ -4586,7 +4610,6 @@ html[theme=dark] .footer .block__socials a:hover img {
   font-weight: 300;
   font-size: 4.0625rem;
   line-height: 4.6875rem;
-  margin-bottom: 2.625rem;
   color: var(--c-fff)
 }
 .contacts__info {
@@ -4599,7 +4622,8 @@ html[theme=dark] .footer .block__socials a:hover img {
   justify-content: space-between;
   border-bottom: 0.0625rem solid rgba(255,255,255,.4);
   padding-bottom: 1.6875rem;
-  margin-bottom: 3.75rem
+  margin-bottom: 3.75rem;
+  margin-top: 2.5rem
 }
 .contacts__info:last-child {
   border: none;
@@ -5059,8 +5083,8 @@ html[theme=dark] .footer .block__socials a:hover img {
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
-  background: var(--c-181818);
-  color: var(--c-fff);
+  background: var(--single-blog-button);
+  color: #fff;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease
@@ -5436,7 +5460,7 @@ html[theme=dark] .footer .block__socials a:hover img {
 }
 .single .goto-catalog {
   background: var(--button-bgd-radial);
-  border: 0.0625rem solid var(--c-fff);
+  border: var(--button-border);
   -webkit-box-shadow: var(--header-button-shadow);
   box-shadow: var(--header-button-shadow);
   -webkit-backdrop-filter: blur(5px);
@@ -6406,8 +6430,7 @@ html[theme=dark] .footer .block__socials a:hover img {
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 1.875rem;
-  color: var(--c-fff);
-  margin-bottom: 0.5rem
+  color: var(--c-fff)
 }
 .single .scroll-block h3 span {
   display: none
@@ -6473,7 +6496,8 @@ html[theme=dark] .footer .block__socials a:hover img {
 }
 .single .scroll-block__image {
   width: 12.5rem;
-  margin-right: 1.875rem
+  margin-right: 1.875rem;
+  height: 5rem
 }
 .single .scroll-block__image img {
   width: 100%;

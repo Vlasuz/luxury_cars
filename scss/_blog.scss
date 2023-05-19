@@ -67,7 +67,7 @@
 			&__item{
 				&:nth-child(2n + 2){
 					button{
-						transform: rotate(-90deg);
+						transform: rotate(0deg);
 						margin-left: auto;
 					}
 				}
@@ -75,7 +75,7 @@
 			button{
 				width: 90px;
 				height: 90px;
-				transform: rotate(-90deg);
+				transform: rotate(0deg);
 				margin-top: 20px;
 				margin-bottom: 40px;
 				img{
