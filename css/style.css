@@ -299,7 +299,7 @@ button {
   --pagination-active-num-color: #fff;
   --slider-arrow-bgd: linear-gradient(155.87deg, #4F7DF6 8.49%, #1B41A6 92.59%);
   --slider-big-photo: linear-gradient(155.87deg, #4F7DF6 8.49%, #1B41A6 92.59%);
-  --single-blog-button: #4F7DF6;
+  --single-blog-button: #F2EDE7;
   --form-input-border: 0.0625rem solid transparent;
   --arrow-down-blog-svg: #4F7DF6;
   --brightness-1: invert(1);
@@ -2992,10 +2992,13 @@ html[theme=dark] .footer .block__socials a:hover img {
   margin: 0 auto;
   margin-top: 2.5rem
 }
-@media screen and (max-width:48em){
+@media screen and (max-width:62em){
   .slider .swiper-slide {
     padding: 1.875rem 1.25rem;
     padding-bottom: 0
+  }
+  .slider p {
+    min-height: 3.9375rem
   }
 }
 @media screen and (max-width:36em){
@@ -3018,7 +3021,7 @@ html[theme=dark] .footer .block__socials a:hover img {
     height: 100%;
     display: block
   }
-  .slider-photos .button-lupa {
+  .slider-photos .open-big-photo {
     display: none
   }
   .slider hr {
@@ -3252,10 +3255,12 @@ html[theme=dark] .footer .block__socials a:hover img {
   }
   .filter__type_mob .type__all a {
     background: var(--filter-button);
-    border-bottom: 0.125rem solid transparent
+    border-bottom: 0.0625rem solid #fff;
+    margin-bottom: 0.0625rem
   }
   .filter__type_mob .type__all_active a {
-    border-bottom: 0.125rem solid #4f7df6
+    border-bottom: 0.125rem solid #4f7df6;
+    margin-bottom: 0
   }
   .filter__type_mob .btn {
     font-size: 1rem;
@@ -3317,7 +3322,8 @@ html[theme=dark] .footer .block__socials a:hover img {
     justify-content: space-between
   }
   .filter__type_mob .select__head .btn {
-    border-bottom: 0.125rem solid transparent
+    border-bottom: 0.0625rem solid #fff;
+    margin-bottom: 0.0625rem
   }
   .filter__type_mob .select__head:after {
     content: "";
@@ -3344,7 +3350,8 @@ html[theme=dark] .footer .block__socials a:hover img {
     width: 100%
   }
   .filter__type_mob .select_current .select__head .btn {
-    border-bottom: 0.125rem solid #4f7df6
+    border-bottom: 0.125rem solid #4f7df6;
+    margin-bottom: 0
   }
   .filter__type_mob .select .dark-photo {
     width: 3.125rem
@@ -4278,7 +4285,8 @@ html[theme=dark] .footer .block__socials a:hover img {
   }
 }
 .blog-page .arrow-down {
-  text-align: center
+  text-align: center;
+  display: none
 }
 .blog-page .arrow-down path {
   fill: var(--arrow-down-blog-svg)

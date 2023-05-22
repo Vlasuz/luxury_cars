@@ -1,6 +1,7 @@
 .blog-page{
 	.arrow-down{
 		text-align: center;
+		display: none;
 		path{
 			fill: var(--arrow-down-blog-svg);
 		}

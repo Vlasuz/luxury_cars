@@ -232,8 +232,8 @@ new Swiper('.slider__inner', {
 			centeredSlides: true,
 			initialSlide: 0,
 		},
-		768: {
-			slidesPerView: 3,
+		992: {
+			slidesPerView: 2,
 			centeredSlides: true,
 			initialSlide: 0,
 		},

@@ -147,12 +147,14 @@
 					margin-right: 10px;
 					a{
 						background: var(--filter-button);
-						border-bottom: 2px solid transparent;
+						border-bottom: 1px solid #fff;
+						margin-bottom: 1px;
 					}
 					&_active{
 						a{
 							border-bottom: 2px solid #4F7DF6;
 							// background: var(--f-000);
+							margin-bottom: 0px;
 						}
 					}
 				}
@@ -206,7 +208,8 @@
 						align-items: center;
 						justify-content: space-between;
 						.btn{
-							border-bottom: 2px solid transparent;
+							border-bottom: 1px solid #fff;
+							margin-bottom: 1px;
 						}
 						&:after{
 							content: '';
@@ -231,13 +234,12 @@
 
 					&_current{
 						.select__head .btn{
-							// background: var(--f-000);
 							border-bottom: 2px solid #4F7DF6;
+							margin-bottom: 0px;
 						}
 					}
 
 					.dark-photo{
-						// display: none;
 						width: 50px;
 					}
 					.btn{
